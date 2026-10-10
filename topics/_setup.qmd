@@ -1,0 +1,12 @@
+```{python}
+#| echo: false
+import matplotlib.pyplot as plt
+import numpy as np
+import polars as pl
+
+from utils.style import COLORS, CYCLE, apply_style
+
+apply_style()
+np.set_printoptions(precision=4, suppress=True, linewidth=110)
+_ = pl.Config.set_float_precision(4)
+```

@@ -1,0 +1,28 @@
+---
+title: "Topic 7. Data quality and missing data"
+---
+
+{{< include _setup.qmd >}}
+
+::: {.callout-note}
+## Topic in preparation
+
+This topic is a placeholder. The planned contents are listed below.
+:::
+
+## Data cleaning: errors, duplicates and inconsistencies
+
+## Missing data: patterns and mechanisms (MCAR, MAR, MNAR)
+
+## Effects of missing data on descriptive summaries
+
+## Simple imputation methods and their limitations
+
+## Reproducible exploratory data analysis
+
+## Exercises
+
+## References {.unnumbered}
+
+::: {#refs}
+:::

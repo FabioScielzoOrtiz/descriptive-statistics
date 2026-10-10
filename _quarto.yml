@@ -1,0 +1,54 @@
+project:
+  type: website
+  output-dir: _site
+  execute-dir: project
+
+website:
+  title: "Descriptive Statistics"
+  description: "Summarising, displaying and exploring data"
+  search: true
+  page-navigation: true
+  navbar:
+    left:
+      - text: "Home"
+        href: index.qmd
+  sidebar:
+    - title: "Topics"
+      style: docked
+      contents:
+        - section: "Topic 1. Introduction"
+          contents:
+            - topics/01-introduction/index.qmd
+            - topics/01-introduction/02-types-of-variables.qmd
+        - section: "Topic 2. Univariate data"
+          contents:
+            - topics/02-univariate/index.qmd
+            - topics/02-univariate/02-numerical-summaries.qmd
+            - topics/02-univariate/03-exercises.qmd
+        - topics/03-bivariate.qmd
+        - topics/04-distribution-estimation.qmd
+        - topics/05-robust-statistics.qmd
+        - topics/06-inequality.qmd
+        - topics/07-data-quality.qmd
+        - topics/08-index-numbers-time-series.qmd
+
+lang: en
+bibliography: references.bib
+
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: darkly
+    toc: true
+    number-sections: false
+    code-copy: true
+    fig-align: center
+    link-citations: true
+
+execute:
+  echo: true
+  warning: false
+  freeze: auto
+
+jupyter: python3

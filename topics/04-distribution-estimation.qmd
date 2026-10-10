@@ -1,0 +1,30 @@
+---
+title: "Topic 4. Estimating distributions"
+---
+
+{{< include _setup.qmd >}}
+
+::: {.callout-note}
+## Topic in preparation
+
+This topic is a placeholder. The planned contents are listed below.
+:::
+
+## The empirical distribution function
+
+## Quantile–quantile plots and comparing distributions
+
+## Histograms revisited: choosing the bin width
+
+## Kernel density estimation
+
+## Bandwidth selection
+
+## Multimodality and mixtures
+
+## Exercises
+
+## References {.unnumbered}
+
+::: {#refs}
+:::

@@ -1,0 +1,30 @@
+---
+title: "Topic 8. Index numbers and describing time series"
+---
+
+{{< include _setup.qmd >}}
+
+::: {.callout-note}
+## Topic in preparation
+
+This topic is a placeholder. The planned contents are listed below.
+:::
+
+## Simple index numbers and rates of change
+
+## Composite indices: Laspeyres, Paasche and Fisher
+
+## Deflating: nominal and real values
+
+## Components of a time series: trend, seasonality and irregular variation
+
+## Moving averages and smoothing
+
+## Seasonal adjustment (descriptive introduction)
+
+## Exercises
+
+## References {.unnumbered}
+
+::: {#refs}
+:::

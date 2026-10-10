@@ -1,0 +1,13 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Quarto: preview current file",
+      "type": "shell",
+      "command": "$env:QUARTO_PYTHON = '${workspaceFolder}\\.venv\\Scripts\\python.exe'; quarto preview '${file}'",
+      "isBackground": true,
+      "problemMatcher": [],
+      "group": { "kind": "build", "isDefault": true }
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+polars>=1.20
+numpy
+scipy
+matplotlib>=3.10
+jupyter
+ipykernel

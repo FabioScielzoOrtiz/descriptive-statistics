@@ -1,0 +1,30 @@
+---
+title: "Topic 5. Robust descriptive statistics"
+---
+
+{{< include _setup.qmd >}}
+
+::: {.callout-note}
+## Topic in preparation
+
+This topic is a placeholder. The planned contents are listed below.
+:::
+
+## Outliers and why classical summaries break down
+
+## Trimmed and winsorised means
+
+## Robust measures of spread: MAD and IQR
+
+## M-estimators of location (Huber)
+
+## Breakdown point and influence
+
+## Outlier detection in skewed data
+
+## Exercises
+
+## References {.unnumbered}
+
+::: {#refs}
+:::

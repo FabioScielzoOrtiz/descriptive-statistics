@@ -1,0 +1,34 @@
+---
+title: "Topic 3. Bivariate data"
+---
+
+{{< include _setup.qmd >}}
+
+::: {.callout-note}
+## Topic in preparation
+
+This topic is a placeholder. The planned contents are listed below.
+:::
+
+## Contingency tables: joint, marginal and conditional distributions
+
+## Association between qualitative variables: chi-square statistic, Cramér's V, odds ratio
+
+## Simpson's paradox (UC Berkeley admissions, 1973)
+
+## Quantitative and qualitative variables: conditional summaries and graphs
+
+## Two quantitative variables: scatterplots, covariance and Pearson's correlation
+
+## Rank correlations: Spearman and Kendall
+
+## The least-squares line as a descriptive tool
+
+## Correlation is not causation; Anscombe's quartet and the Datasaurus dozen
+
+## Exercises
+
+## References {.unnumbered}
+
+::: {#refs}
+:::

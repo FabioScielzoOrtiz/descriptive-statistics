@@ -1,0 +1,30 @@
+---
+title: "Topic 6. Inequality and concentration"
+---
+
+{{< include _setup.qmd >}}
+
+::: {.callout-note}
+## Topic in preparation
+
+This topic is a placeholder. The planned contents are listed below.
+:::
+
+## Measuring inequality: requirements of an index
+
+## The Lorenz curve
+
+## The Gini index
+
+## Entropy indices (Theil) and decomposition by groups
+
+## Quantile ratios (P90/P10, S80/S20) and poverty rates
+
+## Market concentration: the Herfindahl–Hirschman index
+
+## Exercises
+
+## References {.unnumbered}
+
+::: {#refs}
+:::

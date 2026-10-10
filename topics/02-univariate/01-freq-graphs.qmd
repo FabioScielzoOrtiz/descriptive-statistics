@@ -1,0 +1,258 @@
+---
+title: "2.1 Frequency tables and graphs"
+---
+
+{{< include ../_setup.qmd >}}
+
+In this topic we study **one variable at a time**. The aim is to summarise a set
+of observations $x_1, x_2, \dots, x_n$ with tables, graphs and a few numbers that
+describe how the data are distributed. This part covers tables and graphs; the
+[second part](02-numerical-summaries.qmd) covers numerical summaries, and the
+[third](03-exercises.qmd) contains exercises.
+
+::: {.callout-tip}
+## Learning outcomes
+
+After this topic you should be able to:
+
+1. Build and interpret frequency tables (absolute, relative and cumulative) for
+   qualitative and quantitative variables.
+2. Choose and draw the appropriate graph for each type of variable: bar chart,
+   histogram or boxplot.
+3. Compute and interpret measures of centre, position, dispersion and shape, and
+   know their robustness to outliers.
+4. Detect outliers with the boxplot rule, and know how linear transformations
+   affect the summaries.
+:::
+
+We work with the simulated household survey that accompanies the notes:
+
+```{python}
+households = pl.read_csv("data/households.csv")
+print(households.head())
+```
+
+::: {.callout-tip}
+## Polars in one line
+
+A Polars `DataFrame` is a table: each **column** is a variable and each **row** an
+individual (here, a household). Almost everything we do consists of selecting
+columns (`pl.col(...)`) and computing something on them.
+:::
+
+## Qualitative data
+
+### Frequency table
+
+Let a qualitative variable with categories $c_1, \dots, c_k$ be observed on $n$
+individuals.
+
+::: {.callout-note}
+## Definition
+
+- **Absolute frequency** $n_i$: number of observations in category $c_i$. Then
+  $\sum_{i=1}^k n_i = n$.
+- **Relative frequency** $f_i = n_i / n$: proportion of observations in $c_i$.
+  Then $\sum_{i=1}^k f_i = 1$.
+:::
+
+Frequency table of the region of residence:
+
+```{python}
+#| label: tbl-region
+#| tbl-cap: "Frequency distribution of the region of residence."
+region_table = (
+    households["region"]
+    .value_counts(sort=True, name="n_i")
+    .with_columns(f_i=pl.col("n_i") / pl.col("n_i").sum())
+)
+region_table
+```
+
+### Bar chart
+
+A **bar chart** represents each category with a bar whose length is proportional
+to its frequency. For nominal variables the bars should be **sorted by
+frequency**, because the categories have no natural order.
+
+```{python}
+#| label: fig-bar-region
+#| fig-cap: "Bar chart of the region of residence (relative frequencies)."
+fig, ax = plt.subplots()
+ax.barh(region_table["region"], region_table["f_i"], color=COLORS["blue"])
+ax.invert_yaxis()  # most frequent category at the top
+ax.set_xlabel("Relative frequency")
+ax.grid(axis="x"); ax.grid(axis="y", visible=False)
+for y, f in enumerate(region_table["f_i"]):
+    ax.text(f + 0.004, y, f"{f:.0%}", va="center", color=COLORS["ink_soft"])
+plt.show()
+```
+
+::: {.callout-warning}
+## What about pie charts?
+
+Pie charts are very popular, but we compare angles and areas much less
+accurately than lengths along a common scale. This was shown experimentally by
+@cleveland1984. With more than two or three categories, a bar chart conveys the
+same information more precisely.
+:::
+
+::: {.callout-note}
+## Historical note: the first bar and pie charts
+
+Both graphs were invented by the Scottish engineer and economist William
+Playfair. The bar chart appeared in his *Commercial and Political Atlas* (1786),
+to show Scotland's imports and exports with its trading partners, because he
+lacked the time series needed for a line chart. The pie chart appeared in his
+*Statistical Breviary* (1801). Playfair is also credited with the first line
+charts of economic time series.
+:::
+
+### Ordinal variables: cumulative frequencies
+
+If the categories have a **natural order** (such as the education level), it
+makes sense to accumulate frequencies:
+
+::: {.callout-note}
+## Definition
+
+- **Cumulative absolute frequency**: $N_i = n_1 + n_2 + \dots + n_i$.
+- **Cumulative relative frequency**: $F_i = N_i / n = f_1 + \dots + f_i$.
+:::
+
+In Polars, the order of the categories is fixed with the `pl.Enum` type, so the
+table follows the logical order instead of the alphabetical one:
+
+```{python}
+education_order = pl.Enum(["Primary", "Secondary", "Tertiary"])
+
+education_table = (
+    households
+    .with_columns(pl.col("education").cast(education_order))
+    .group_by("education")
+    .agg(n_i=pl.len())
+    .sort("education")
+    .with_columns(f_i=pl.col("n_i") / pl.col("n_i").sum())
+    .with_columns(N_i=pl.col("n_i").cum_sum(), F_i=pl.col("f_i").cum_sum())
+)
+education_table
+```
+
+For example, $F_2 =$ `{python} f"{education_table['F_i'][1]:.2f}"` is the
+proportion of households with at most secondary education.
+
+## Quantitative data
+
+### Discrete variables
+
+A **discrete** variable takes few distinct values, such as the number of household
+members. Its table is built as for an ordinal variable, sorting by value:
+
+```{python}
+size_table = (
+    households["household_size"]
+    .value_counts(name="n_i")
+    .sort("household_size")
+    .with_columns(f_i=pl.col("n_i") / pl.col("n_i").sum())
+    .with_columns(N_i=pl.col("n_i").cum_sum(), F_i=pl.col("f_i").cum_sum())
+)
+size_table
+```
+
+```{python}
+#| label: fig-bar-size
+#| fig-cap: "Bar chart of household size."
+fig, ax = plt.subplots()
+ax.bar(size_table["household_size"], size_table["n_i"], width=0.6, color=COLORS["blue"])
+ax.set_xlabel("Number of household members")
+ax.set_ylabel("Absolute frequency")
+plt.show()
+```
+
+### Continuous variables: grouping into classes
+
+A **continuous** variable (income, expenditure) takes almost as many distinct
+values as there are observations, so a table of individual values summarises
+nothing. The data are grouped into **intervals or classes** $[L_{i-1}, L_i)$,
+each with its **class mark** $x_i = (L_{i-1} + L_i)/2$ and its **width**
+$a_i = L_i - L_{i-1}$.
+
+```{python}
+#| label: tbl-income-classes
+#| tbl-cap: "Annual household income grouped into classes of €10,000."
+breaks = list(range(10_000, 100_001, 10_000))
+
+income_table = (
+    households
+    .with_columns(interval=pl.col("annual_income").cut(breaks, left_closed=True))
+    .group_by("interval")
+    .agg(n_i=pl.len())
+    .sort("interval")
+    .with_columns(f_i=pl.col("n_i") / pl.col("n_i").sum())
+    .with_columns(F_i=pl.col("f_i").cum_sum())
+)
+income_table
+```
+
+::: {.callout-tip}
+## Polars detail
+
+`cut()` creates intervals closed on the right, $(a, b]$, unless
+`left_closed=True` is given, as here. The first and last intervals are open
+($-\infty$ and $\infty$) so that all the data are included.
+:::
+
+### Histogram
+
+The **histogram** is the graph of a grouped variable: each class is drawn as a
+rectangle whose **area** is proportional to its frequency. With **density** on the
+vertical axis, the height of rectangle $i$ is
+$$
+h_i = \frac{f_i}{a_i},
+$$ {#eq-histogram-density}
+and the total area of the histogram is 1. This is essential when the classes have
+**different widths**.
+
+```{python}
+#| label: fig-hist-income
+#| fig-cap: "Histogram of annual household income. The distribution is right-skewed."
+income = households["annual_income"].to_numpy()
+
+fig, ax = plt.subplots()
+ax.hist(income / 1000, bins=np.arange(0, 175, 10), density=True,
+        color=COLORS["blue"], edgecolor="white", linewidth=1.5)
+ax.set_xlabel("Annual household income (thousands of €)")
+ax.set_ylabel("Density")
+plt.show()
+```
+
+@fig-hist-income shows a **right-skewed** distribution: most households have
+middle incomes, and a few have very high incomes. This is the typical shape of
+income and wealth, but also of many health and engineering variables (hospital
+stays, insurance claims, failure times).
+
+::: {.callout-important}
+## The number of classes matters
+
+Too few classes hide the shape of the distribution; too many make it noisy. A
+classical reference is **Sturges' rule**, $k \approx 1 + \log_2 n$
+[@sturges1926], although in practice it is worth trying several values. Sturges'
+rule tends to produce too few classes for large samples. Rules based on the
+spread of the data, and the kernel density estimates of
+[Topic 4](../04-distribution-estimation.qmd), address this problem.
+:::
+
+::: {.callout-note}
+## Historical note: the word "histogram"
+
+The term *histogram* was coined by Karl Pearson, who used it in his lectures in
+the early 1890s and in print in 1895, in his work on skewed distributions
+[@pearson1895]. Pearson was trying to describe biological and economic data whose
+distributions, like the income of @fig-hist-income, were far from the
+symmetric normal curve.
+:::
+
+## References {.unnumbered}
+
+::: {#refs}
+:::
