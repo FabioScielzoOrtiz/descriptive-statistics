@@ -1,6 +1,7 @@
-polars>=1.20
+polars==1.44.2
 numpy
 scipy
 matplotlib>=3.10
+seaborn>=0.13
 jupyter
 ipykernel
