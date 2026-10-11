@@ -11,10 +11,15 @@ descriptive-statistics/
 ├── _quarto.yml          Website settings (sidebar lists every page)
 ├── index.qmd            Home page
 ├── topics/
-│   ├── _setup.qmd       Shared setup (Python imports and plot style), included by every page
-│   ├── 01-introduction/ One folder per topic, split into short pages (index.qmd = part 1)
+│   ├── _setup.qmd       Shared setup for the remaining .qmd pages
+│   ├── 01-introduction/ One folder per topic, split into short pages (Jupyter notebooks)
 │   └── 03-….qmd         Topics in preparation (placeholders)
-├── data/                Datasets (+ generate_households.py)
+├── src/
+│   ├── download/        Scripts that download the raw data (download_epf.py)
+│   └── processing/      Scripts that build the clean datasets (prepare_epf.py)
+├── data/
+│   ├── raw/             Raw files as published by the INE (not in git)
+│   └── processed/       Clean datasets used by the notes (+ README with the variables)
 ├── utils/style.py       Common plot style (Matplotlib)
 └── references.bib       Bibliography
 ```
@@ -31,6 +36,12 @@ descriptive-statistics/
 
 3. Open the folder in VS Code, accept the recommended extensions (Quarto, Python,
    Jupyter) and select `.venv` as the Python interpreter.
+4. Download and prepare the data (about 225 MB from the INE, only once):
+
+   ```powershell
+   .venv\Scripts\python.exe src\download\download_epf.py
+   .venv\Scripts\python.exe src\processing\prepare_epf.py
+   ```
 
 ## Daily use
 
@@ -48,8 +59,16 @@ descriptive-statistics/
   Quarto extension slow and can block the Python and Jupyter extensions. When a
   placeholder topic is written, turn it into a folder with several pages and add
   them to the sidebar in `_quarto.yml`.
-- Every page starts with `{{< include ../_setup.qmd >}}` (or `_setup.qmd` for
-  pages directly in `topics/`) and loads the data it uses.
+- Pages with code are Jupyter notebooks (`.ipynb`), so they can be edited and run
+  in the VS Code notebook editor. Each notebook starts with a **raw cell** holding
+  the YAML header (`title: …`) and a **setup code cell** with `#| include: false`
+  (imports and plot style); then it loads the data it uses. Quarto runs the
+  notebooks on render (`execute: enabled: true`), so the outputs saved in the
+  files do not matter.
+- To read well both in VS Code and on the website: put a table and its caption
+  (`: …`) in the same cell, and do not use inline expressions (`` `{python} …` ``),
+  which VS Code shows as plain code. Callout markers (`:::`) and cross-references
+  (`@fig-…`) appear as plain text in VS Code but render properly on the website.
 - Cross-references (`@fig-…`, `@exr-…`) only work within a page; link to other
   pages with ordinary links.
 - Solutions go right after each exercise, in a collapsible callout:

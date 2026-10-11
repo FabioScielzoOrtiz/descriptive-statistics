@@ -18,13 +18,13 @@ website:
       contents:
         - section: "Topic 1. Introduction"
           contents:
-            - topics/01-introduction/index.qmd
-            - topics/01-introduction/02-types-of-variables.qmd
+            - topics/01-introduction/01-stats-population-samples.ipynb
+            - topics/01-introduction/02-types-of-variables.ipynb
         - section: "Topic 2. Univariate data"
           contents:
-            - topics/02-univariate/index.qmd
-            - topics/02-univariate/02-numerical-summaries.qmd
-            - topics/02-univariate/03-exercises.qmd
+            - topics/02-univariate/01-freq-graphs.ipynb
+            - topics/02-univariate/02-numerical-summaries.ipynb
+            - topics/02-univariate/03-exercises.ipynb
         - topics/03-bivariate.qmd
         - topics/04-distribution-estimation.qmd
         - topics/05-robust-statistics.qmd
@@ -47,6 +47,7 @@ format:
     link-citations: true
 
 execute:
+  enabled: true      # run notebooks on render (outputs saved in the .ipynb are ignored)
   echo: true
   warning: false
   freeze: auto
