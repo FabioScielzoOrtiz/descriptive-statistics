@@ -1,0 +1,45 @@
+---
+title: "Descriptive Statistics"
+subtitle: "Summarising, displaying and exploring data"
+toc: false
+---
+
+An introductory course (undergraduate level) on how to summarise, display and
+explore data: frequency tables and graphs, numerical summaries, the relationship
+between two variables, inequality and concentration measures, and index numbers.
+
+Each topic combines definitions with applications to real data and reproducible
+examples in **Python** ([Polars](https://docs.pola.rs/),
+[NumPy](https://numpy.org/), [Matplotlib](https://matplotlib.org/) and
+[Seaborn](https://seaborn.pydata.org/)). Exercises include their solutions.
+
+## Topics
+
+| Topic | Status |
+|---|---|
+| [Topic 1. Introduction](topics/01-introduction/01-stats-population-samples.ipynb) | Done |
+| [Topic 2. Univariate data](topics/02-univariate/01-freq-graphs.ipynb) | Draft, to be reviewed |
+| [Topic 3. Bivariate data](topics/03-bivariate.qmd) | In preparation |
+| [Topic 4. Inequality and concentration](topics/04-inequality-concentration.qmd) | In preparation |
+| [Topic 5. Index numbers and time series](topics/05-index-numbers-time-series.qmd) | In preparation |
+
+## Data
+
+The examples use real data that need no background to understand: the **dwellings
+advertised for sale in the city of Madrid** on the property portal idealista in
+2018, about 75,700 listings with their asking price, floor area, number of rooms,
+district and features (lift, terrace, condition…). The data were released for
+research by @reyblanco2024 under the Open Database License.
+
+They are downloaded and cleaned by two scripts, `src/download/download_idealista.py`
+and `src/processing/prepare_idealista.py`, which produce the file
+`data/processed/idealista/madrid_listings_2018.csv`. The variables are described in
+`data/processed/idealista/README.md`.
+
+## Main references
+
+@freedman2007, @pena2014, @tukey1977 and @wickham2023. More specific references
+are given in each topic.
+
+::: {#refs}
+:::

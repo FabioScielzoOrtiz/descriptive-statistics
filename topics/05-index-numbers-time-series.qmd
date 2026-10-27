@@ -1,0 +1,30 @@
+---
+title: "Topic 5. Index numbers and time series"
+---
+
+{{< include _setup.qmd >}}
+
+::: {.callout-note}
+## Topic in preparation
+
+This topic is a placeholder. The planned contents are listed below.
+:::
+
+## Simple index numbers, rates of change and base changes
+
+## Composite indices: Laspeyres, Paasche and Fisher
+
+## Deflating: nominal and real prices (house prices and the CPI)
+
+## The housing price index of the INE
+
+## Components of a time series: trend, seasonality and irregular variation
+
+## Moving averages and year-on-year rates
+
+## Exercises
+
+## References {.unnumbered}
+
+::: {#refs}
+:::

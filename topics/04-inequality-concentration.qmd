@@ -1,0 +1,30 @@
+---
+title: "Topic 4. Inequality and concentration"
+---
+
+{{< include _setup.qmd >}}
+
+::: {.callout-note}
+## Topic in preparation
+
+This topic is a placeholder. The planned contents are listed below.
+:::
+
+## Measuring inequality: what an index should satisfy
+
+## The Lorenz curve
+
+## The Gini index
+
+## Quantile ratios (P90/P10, S80/S20)
+
+## Application: housing affordability (price-to-income ratios) and the concentration of housing value across districts
+
+## Market concentration: the Herfindahl–Hirschman index
+
+## Exercises
+
+## References {.unnumbered}
+
+::: {#refs}
+:::

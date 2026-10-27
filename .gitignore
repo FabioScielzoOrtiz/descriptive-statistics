@@ -1,0 +1,10 @@
+/.quarto/
+/_site/
+/_freeze/
+**/*_files/
+**/*.quarto_ipynb
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+/data
+

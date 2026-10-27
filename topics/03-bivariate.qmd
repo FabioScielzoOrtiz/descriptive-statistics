@@ -1,0 +1,32 @@
+---
+title: "Topic 3. Bivariate data"
+---
+
+{{< include _setup.qmd >}}
+
+::: {.callout-note}
+## Topic in preparation
+
+This topic is a placeholder. The planned contents are listed below.
+:::
+
+## Two qualitative variables: contingency tables, joint, marginal and conditional distributions (zone × condition, district × lift)
+
+## Association between qualitative variables: comparing conditional distributions, the chi-square statistic and Cramér's V
+
+## A quantitative and a qualitative variable: summaries and boxplots by group (price per m² by zone and condition)
+
+## Two quantitative variables: scatterplots, covariance and Pearson's correlation (price and floor area)
+
+## The least-squares line: slope, intercept and the coefficient of determination as descriptive tools
+
+## Transformations: price per m² and logarithms
+
+## Correlation is not causation: Simpson's paradox with our data (overall, new dwellings ask the least per m², but within each zone they ask the most, because three quarters of them are in the periphery) and Anscombe's quartet
+
+## Exercises
+
+## References {.unnumbered}
+
+::: {#refs}
+:::
