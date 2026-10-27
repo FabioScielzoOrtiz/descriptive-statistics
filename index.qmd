@@ -17,7 +17,7 @@ examples in **Python** ([Polars](https://docs.pola.rs/),
 
 | Topic | Status |
 |---|---|
-| [Topic 1. Introduction](topics/01-introduction/01-stats-population-samples.ipynb) | Done |
+| [Topic 1. Introduction](topics/01-introduction/01-stats-population-samples.ipynb) | Draft, to be reviewed |
 | [Topic 2. Univariate data](topics/02-univariate/01-freq-graphs.ipynb) | Draft, to be reviewed |
 | [Topic 3. Bivariate data](topics/03-bivariate.qmd) | In preparation |
 | [Topic 4. Inequality and concentration](topics/04-inequality-concentration.qmd) | In preparation |
