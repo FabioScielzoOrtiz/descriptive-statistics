@@ -1,0 +1,1355 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>2.2 The empirical distribution, centre and position – Descriptive Statistics</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script><script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../topics/02-univariate/03-dispersion-shape.html" rel="next">
+<link href="../../topics/02-univariate/01-freq-graphs.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-2aa33e8751edae3f9b77d048c1294c38.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-9f8723262d8d9b08b94973cdb1b7f173.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-2aa33e8751edae3f9b77d048c1294c38.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script src="https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.min.js" integrity="sha384-c9c+LnTbwQ3aujuU7ULEPVvgLs+Fn6fJUvIGTsuu1ZcCf11fiEubah0ttpca4ntM sha384-6V1/AdqZRWk1KAlWbKBlGhN7VG4iE/yAZcO6NZPMF8od0vukrvr0tg4qY6NSrItx" crossorigin="anonymous"></script>
+
+
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Descriptive Statistics</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../topics/02-univariate/01-freq-graphs.html">Topic 2. Univariate data</a></li><li class="breadcrumb-item"><a href="../../topics/02-univariate/02-centre-position.html">2.2 The empirical distribution, centre and position</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Topic 1. Introduction</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../topics/01-introduction/01-stats-population-samples.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.1 Statistics, populations and samples</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../topics/01-introduction/02-types-of-variables.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.2 Types of variables</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Topic 2. Univariate data</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../topics/02-univariate/01-freq-graphs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.1 Frequency tables and graphs</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../topics/02-univariate/02-centre-position.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">2.2 The empirical distribution, centre and position</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../topics/02-univariate/03-dispersion-shape.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.3 Dispersion, shape and outliers</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../topics/02-univariate/04-exercises.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.4 Exercises</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../topics/03-bivariate.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Topic 3. Bivariate data</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../topics/04-inequality-concentration.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Topic 4. Inequality and concentration</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../topics/05-index-numbers-time-series.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Topic 5. Index numbers and time series</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#the-empirical-distribution-function" id="toc-the-empirical-distribution-function" class="nav-link active" data-scroll-target="#the-empirical-distribution-function">The empirical distribution function</a></li>
+  <li><a href="#measures-of-centre" id="toc-measures-of-centre" class="nav-link" data-scroll-target="#measures-of-centre">Measures of centre</a>
+  <ul class="collapse">
+  <li><a href="#properties-of-the-mean-and-the-median" id="toc-properties-of-the-mean-and-the-median" class="nav-link" data-scroll-target="#properties-of-the-mean-and-the-median">Properties of the mean and the median</a></li>
+  <li><a href="#weighted-means-and-means-of-groups" id="toc-weighted-means-and-means-of-groups" class="nav-link" data-scroll-target="#weighted-means-and-means-of-groups">Weighted means and means of groups</a></li>
+  <li><a href="#grouped-data" id="toc-grouped-data" class="nav-link" data-scroll-target="#grouped-data">Grouped data</a></li>
+  </ul></li>
+  <li><a href="#measures-of-position-quantiles" id="toc-measures-of-position-quantiles" class="nav-link" data-scroll-target="#measures-of-position-quantiles">Measures of position: quantiles</a>
+  <ul class="collapse">
+  <li><a href="#quantiles-of-grouped-data" id="toc-quantiles-of-grouped-data" class="nav-link" data-scroll-target="#quantiles-of-grouped-data">Quantiles of grouped data</a></li>
+  <li><a href="#the-geometric-mean" id="toc-the-geometric-mean" class="nav-link" data-scroll-target="#the-geometric-mean">The geometric mean</a></li>
+  </ul></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../topics/02-univariate/01-freq-graphs.html">Topic 2. Univariate data</a></li><li class="breadcrumb-item"><a href="../../topics/02-univariate/02-centre-position.html">2.2 The empirical distribution, centre and position</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">2.2 The empirical distribution, centre and position</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Graphs show the whole distribution. <strong>Summary measures</strong> condense it into a few numbers that describe its centre, its spread and its shape. This part introduces the empirical distribution function, which contains all the information of the data, and the measures of centre and position; the <a href="../../topics/02-univariate/03-dispersion-shape.html">next part</a> covers dispersion and shape. We continue with the Madrid listings.</p>
+<div id="6cd417ad" class="cell" data-execution_count="2">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>listings <span class="op">=</span> pl.read_csv(<span class="st">"data/processed/idealista/madrid_listings_2018.csv"</span>).select(</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">"listing_id"</span>, <span class="st">"district"</span>, <span class="st">"zone"</span>, <span class="st">"condition"</span>,</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"price"</span>, <span class="st">"price_m2"</span>, <span class="st">"area_m2"</span>, <span class="st">"bedrooms"</span>, <span class="st">"bathrooms"</span>,</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"floor"</span>, <span class="st">"lift"</span>, <span class="st">"terrace"</span>, <span class="st">"construction_year"</span>, <span class="st">"dist_centre_km"</span>,</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p><strong>Notation.</strong> For data <span class="math inline">\(x_1, \dots, x_n\)</span> we write <span class="math inline">\(x_{(1)} \le x_{(2)} \le \dots \le x_{(n)}\)</span> for the same values sorted in increasing order, the <strong>order statistics</strong>. Thus <span class="math inline">\(x_{(1)}\)</span> is the minimum and <span class="math inline">\(x_{(n)}\)</span> the maximum.</p>
+<section id="the-empirical-distribution-function" class="level2">
+<h2 class="anchored" data-anchor-id="the-empirical-distribution-function">The empirical distribution function</h2>
+<div id="def-ecdf" class="theorem definition">
+<p><span class="theorem-title"><strong>Definition 1 (Empirical distribution function)</strong></span> The <strong>empirical distribution function</strong> of <span class="math inline">\(x_1, \dots, x_n\)</span> is the function <span class="math inline">\(F_n : \mathbb{R} \to [0, 1]\)</span>, <span class="math display">\[
+F_n(x) = \frac{1}{n}\,\#\{i : x_i \le x\},
+\]</span> the proportion of observations less than or equal to <span class="math inline">\(x\)</span>.</p>
+</div>
+<p>It extends the cumulative frequencies <span class="math inline">\(F_i\)</span> of <a href="../../topics/02-univariate/01-freq-graphs.html#ordinal-variables-cumulative-frequencies">part 1</a> to every real number <span class="math inline">\(x\)</span>, and does not require grouping the data.</p>
+<div id="prp-ecdf" class="theorem proposition">
+<p><span class="theorem-title"><strong>Proposition 1 (Properties of the empirical distribution function)</strong></span> &nbsp;</p>
+<ol type="1">
+<li><span class="math inline">\(F_n\)</span> is non-decreasing, <span class="math inline">\(F_n(x) = 0\)</span> for <span class="math inline">\(x &lt; x_{(1)}\)</span> and <span class="math inline">\(F_n(x) = 1\)</span> for <span class="math inline">\(x \ge x_{(n)}\)</span>.</li>
+<li><span class="math inline">\(F_n\)</span> is a step function: it is constant between consecutive distinct values, and at each observed value <span class="math inline">\(v\)</span> it jumps by the relative frequency of <span class="math inline">\(v\)</span>.</li>
+<li>For <span class="math inline">\(a &lt; b\)</span>, the proportion of observations in <span class="math inline">\((a, b]\)</span> is <span class="math inline">\(F_n(b) - F_n(a)\)</span>.</li>
+</ol>
+</div>
+<div class="proof">
+<p><span class="proof-title"><em>Proof</em>. </span>If <span class="math inline">\(x \le y\)</span>, every observation with <span class="math inline">\(x_i \le x\)</span> also satisfies <span class="math inline">\(x_i \le y\)</span>, so the count defining <span class="math inline">\(F_n(x)\)</span> cannot exceed that of <span class="math inline">\(F_n(y)\)</span>. No observation is below <span class="math inline">\(x_{(1)}\)</span> and all are at most <span class="math inline">\(x_{(n)}\)</span>, which gives the values 0 and 1. The set <span class="math inline">\(\{i : x_i \le x\}\)</span> only changes when <span class="math inline">\(x\)</span> reaches an observed value <span class="math inline">\(v\)</span>, and then it gains the observations equal to <span class="math inline">\(v\)</span>, which proves 2. Finally, <span class="math inline">\(\{i : x_i \le b\}\)</span> is the disjoint union of <span class="math inline">\(\{i : x_i \le a\}\)</span> and <span class="math inline">\(\{i : a &lt; x_i \le b\}\)</span>, so the counts add up, which proves 3.</p>
+</div>
+<div id="cell-fig-ecdf" class="cell" data-execution_count="3">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>price_sorted <span class="op">=</span> np.sort(listings[<span class="st">"price"</span>].to_numpy())</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="bu">len</span>(price_sorted)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>F300 <span class="op">=</span> np.mean(price_sorted <span class="op">&lt;=</span> <span class="dv">300_000</span>)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots()</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>ax.step(price_sorted <span class="op">/</span> <span class="dv">1000</span>, np.arange(<span class="dv">1</span>, n <span class="op">+</span> <span class="dv">1</span>) <span class="op">/</span> n, where<span class="op">=</span><span class="st">"post"</span>, color<span class="op">=</span>COLORS[<span class="st">"blue"</span>])</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>ax.plot([<span class="dv">300</span>, <span class="dv">300</span>, <span class="dv">0</span>], [<span class="dv">0</span>, F300, F300], ls<span class="op">=</span><span class="st">"--"</span>, color<span class="op">=</span>COLORS[<span class="st">"orange"</span>])</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>ax.set_xlim(<span class="dv">0</span>, <span class="dv">1_500</span>)</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>ax.set_ylim(<span class="dv">0</span>, <span class="fl">1.02</span>)</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="st">"Asking price (thousands of €)"</span>)</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">"$F_n(x)$"</span>)</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"F_n(300,000) = </span><span class="sc">{</span>F300<span class="sc">:.3f}</span><span class="ss">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div id="fig-ecdf" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ecdf-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="02-centre-position_files/figure-html/fig-ecdf-output-1.png" width="680" height="411" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ecdf-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Empirical distribution function of the asking price (axis cut at 1.5 million €). The dashed lines read off F_n(300,000).
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>F_n(300,000) = 0.571</code></pre>
+</div>
+</div>
+<p>About 57 % of the listings ask for 300,000 € or less. The empirical distribution function answers any question of this kind without grouping, and it is the basis of the quantiles defined below. With 75,735 observations the steps are too small to see, and <span class="math inline">\(F_n\)</span> looks like a continuous curve: steep where the data are concentrated, flat in the tail.</p>
+</section>
+<section id="measures-of-centre" class="level2">
+<h2 class="anchored" data-anchor-id="measures-of-centre">Measures of centre</h2>
+<div id="def-centre" class="theorem definition">
+<p><span class="theorem-title"><strong>Definition 2 (Mean, median and mode)</strong></span> &nbsp;</p>
+<ul>
+<li>The <strong>mean</strong> is <span class="math inline">\(\displaystyle \bar{x} = \frac{1}{n}\sum_{i=1}^{n} x_i\)</span>.</li>
+<li>The <strong>median</strong> is the central value of the ordered data: <span class="math inline">\(Me = x_{((n+1)/2)}\)</span> if <span class="math inline">\(n\)</span> is odd, and <span class="math inline">\(Me = \frac12\big(x_{(n/2)} + x_{(n/2+1)}\big)\)</span> if <span class="math inline">\(n\)</span> is even.</li>
+<li>The <strong>mode</strong> is the most frequent value (or category).</li>
+</ul>
+</div>
+<div id="b17bb351" class="cell" data-execution_count="4">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>listings.select(</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    mean<span class="op">=</span>pl.col(<span class="st">"price"</span>).mean(),</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    median<span class="op">=</span>pl.col(<span class="st">"price"</span>).median(),</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="4">
+<table class="table table-sm caption-top table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: right;" data-quarto-table-cell-role="th">mean</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">median</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">388,892.1</td>
+<td style="text-align: right;">257,000.0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>The mean (about 389,000 €) is much larger than the median (257,000 €): a few very expensive dwellings pull the mean upwards but hardly affect the median. Half of the listings ask for less than 257,000 €, and the mean is above what most of them ask.</p>
+<section id="properties-of-the-mean-and-the-median" class="level3">
+<h3 class="anchored" data-anchor-id="properties-of-the-mean-and-the-median">Properties of the mean and the median</h3>
+<div id="prp-mean" class="theorem proposition">
+<p><span class="theorem-title"><strong>Proposition 2 (Least-squares property of the mean)</strong></span> For any data <span class="math inline">\(x_1, \dots, x_n\)</span>:</p>
+<ol type="1">
+<li><span class="math inline">\(\sum_{i=1}^n (x_i - \bar x) = 0\)</span>: the deviations from the mean cancel out.</li>
+<li>For every <span class="math inline">\(c \in \mathbb{R}\)</span>, <span class="math inline">\(\displaystyle \sum_{i=1}^n (x_i - c)^2 = \sum_{i=1}^n (x_i - \bar x)^2 + n(\bar x - c)^2 .\)</span></li>
+</ol>
+<p>Hence the mean is the unique value <span class="math inline">\(c\)</span> that minimises <span class="math inline">\(\sum_i (x_i - c)^2\)</span>.</p>
+</div>
+<div class="proof">
+<p><span class="proof-title"><em>Proof</em>. </span></p>
+<ol type="1">
+<li><p><span class="math inline">\(\sum_i (x_i - \bar x) = \sum_i x_i - n\bar x = n\bar x - n\bar x = 0\)</span>.</p></li>
+<li><p>Add and subtract <span class="math inline">\(\bar x\)</span>: <span class="math inline">\(x_i - c = (x_i - \bar x) + (\bar x - c)\)</span>. Squaring and adding, <span class="math display">\[
+\sum_i (x_i - c)^2 = \sum_i (x_i - \bar x)^2 + 2(\bar x - c)\sum_i (x_i - \bar x) + n(\bar x - c)^2,
+\]</span> and the middle term is zero by 1. The last term is non-negative and vanishes only for <span class="math inline">\(c = \bar x\)</span>.</p></li>
+</ol>
+</div>
+<p>The “add and subtract, expand, the cross term vanishes” argument of this proof is the most frequent proof in statistics: it reappears in the decomposition of the variance into groups (<a href="../../topics/02-univariate/03-dispersion-shape.html">part 3</a>), in regression and in analysis of variance.</p>
+<div id="prp-median" class="theorem proposition">
+<p><span class="theorem-title"><strong>Proposition 3 (The median minimises the sum of absolute deviations)</strong></span> For any data, a median <span class="math inline">\(Me\)</span> satisfies <span class="math inline">\(\sum_i |x_i - Me| \le \sum_i |x_i - c|\)</span> for every <span class="math inline">\(c \in \mathbb{R}\)</span>.</p>
+</div>
+<div class="proof">
+<p><span class="proof-title"><em>Proof</em>. </span>The function <span class="math inline">\(g(c) = \sum_i |x_i - c|\)</span> is continuous and piecewise linear. On an interval that contains no observation, moving <span class="math inline">\(c\)</span> to the right by <span class="math inline">\(\delta &gt; 0\)</span> increases by <span class="math inline">\(\delta\)</span> the distance to each observation on its left and decreases by <span class="math inline">\(\delta\)</span> the distance to each one on its right, so the slope of <span class="math inline">\(g\)</span> is <span class="math display">\[
+\#\{i : x_i &lt; c\} - \#\{i : x_i &gt; c\}.
+\]</span> For <span class="math inline">\(c\)</span> below the median at least half of the observations are above <span class="math inline">\(c\)</span>, so the slope is <span class="math inline">\(\le 0\)</span>; for <span class="math inline">\(c\)</span> above the median it is <span class="math inline">\(\ge 0\)</span>. Hence <span class="math inline">\(g\)</span> decreases up to the median and increases after it, and attains its minimum there.</p>
+</div>
+<p>The two propositions say what each measure is best at: the mean is the best single value when errors are penalised by their <strong>square</strong>, and the median when they are penalised by their <strong>absolute value</strong>. Squares penalise large errors heavily, which is why the mean follows the extreme observations.</p>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Caution</span>Robustness: mean versus median
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>What happens if we add <strong>a single listing</strong>, a palace for sale at 100 million €?</p>
+<div id="b11e444d" class="cell" data-execution_count="5">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>price_with_palace <span class="op">=</span> pl.concat([listings[<span class="st">"price"</span>], pl.Series([<span class="fl">100_000_000.0</span>])])</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>pl.DataFrame({</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"measure"</span>: [<span class="st">"mean"</span>, <span class="st">"median"</span>],</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">"original"</span>: [listings[<span class="st">"price"</span>].mean(), listings[<span class="st">"price"</span>].median()],</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">"with the palace"</span>: [price_with_palace.mean(), price_with_palace.median()],</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="5">
+<table class="table table-sm caption-top table-striped small">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th">measure</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">original</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">with the palace</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>mean</td>
+<td style="text-align: right;">388,892.1</td>
+<td style="text-align: right;">390,207.4</td>
+</tr>
+<tr class="even">
+<td>median</td>
+<td style="text-align: right;">257,000.0</td>
+<td style="text-align: right;">257,000.0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>Even among more than 75,000 listings, one observation raises the mean by about 1,300 €, while the median does not move. In general, changing a single observation by an amount <span class="math inline">\(\Delta\)</span> changes the mean by <span class="math inline">\(\Delta / n\)</span>, with no limit, while the median can only move to a neighbouring order statistic. This is why housing and income statistics often report the <strong>median</strong> rather than the mean.</p>
+</div>
+</div>
+</section>
+<section id="weighted-means-and-means-of-groups" class="level3">
+<h3 class="anchored" data-anchor-id="weighted-means-and-means-of-groups">Weighted means and means of groups</h3>
+<div id="def-weighted-mean" class="theorem definition">
+<p><span class="theorem-title"><strong>Definition 3 (Weighted mean)</strong></span> Given weights <span class="math inline">\(w_1, \dots, w_n \ge 0\)</span> with <span class="math inline">\(\sum_i w_i &gt; 0\)</span>, the <strong>weighted mean</strong> is <span class="math inline">\(\displaystyle \bar x_w = \frac{\sum_{i=1}^n w_i x_i}{\sum_{i=1}^n w_i}\)</span>.</p>
+</div>
+<div id="prp-group-means" class="theorem proposition">
+<p><span class="theorem-title"><strong>Proposition 4 (Mean of a union of groups)</strong></span> If the <span class="math inline">\(n\)</span> observations are divided into <span class="math inline">\(G\)</span> groups with sizes <span class="math inline">\(n_1, \dots, n_G\)</span> and means <span class="math inline">\(\bar x_1, \dots, \bar x_G\)</span>, then <span class="math inline">\(\displaystyle \bar x = \sum_{g=1}^G \frac{n_g}{n}\,\bar x_g\)</span>: the overall mean is the mean of the group means <strong>weighted by the group sizes</strong>.</p>
+</div>
+<div class="proof">
+<p><span class="proof-title"><em>Proof</em>. </span>The sum of the observations of group <span class="math inline">\(g\)</span> is <span class="math inline">\(n_g \bar x_g\)</span>, so <span class="math inline">\(\bar x = \frac1n\sum_g n_g \bar x_g\)</span>.</p>
+</div>
+<div id="96754e69" class="cell" data-execution_count="6">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>by_zone <span class="op">=</span> listings.group_by(<span class="st">"zone"</span>).agg(n_g<span class="op">=</span>pl.<span class="bu">len</span>(), mean_g<span class="op">=</span>pl.col(<span class="st">"price"</span>).mean())</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>by_district <span class="op">=</span> listings.group_by(<span class="st">"district"</span>).agg(mean_g<span class="op">=</span>pl.col(<span class="st">"price"</span>).mean())</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Overall mean                    : </span><span class="sc">{</span>listings[<span class="st">'price'</span>]<span class="sc">.</span>mean()<span class="sc">:,.0f}</span><span class="ss"> €"</span>)</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Weighted mean of the zone means : "</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>      <span class="ss">f"</span><span class="sc">{</span>(by_zone[<span class="st">'n_g'</span>] <span class="op">*</span> by_zone[<span class="st">'mean_g'</span>])<span class="sc">.</span><span class="bu">sum</span>() <span class="op">/</span> by_zone[<span class="st">'n_g'</span>]<span class="sc">.</span><span class="bu">sum</span>()<span class="sc">:,.0f}</span><span class="ss"> €"</span>)</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Simple mean of the 21 district means: </span><span class="sc">{</span>by_district[<span class="st">'mean_g'</span>]<span class="sc">.</span>mean()<span class="sc">:,.0f}</span><span class="ss"> €"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Overall mean                    : 388,892 €
+Weighted mean of the zone means : 388,892 €
+Simple mean of the 21 district means: 349,573 €</code></pre>
+</div>
+</div>
+<p>The simple mean of the district means gives each district the same weight, whatever its number of listings, and does not equal the overall mean.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Example: what is “the” price per m² of a market?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The mean of <code>price_m2</code> gives the same weight to a studio and to a mansion. A housing market is often summarised instead by the <strong>total value over the total area</strong>, <span class="math inline">\(\sum_i p_i / \sum_i a_i\)</span>. Writing <span class="math inline">\(r_i = p_i / a_i\)</span> for the price per m² of dwelling <span class="math inline">\(i\)</span>, <span class="math display">\[
+\frac{\sum_i p_i}{\sum_i a_i} = \sum_i \frac{a_i}{\sum_j a_j}\, r_i ,
+\]</span> a mean of the prices per m² <strong>weighted by the areas</strong>:</p>
+<div id="afd9cced" class="cell" data-execution_count="7">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>listings.select(</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    simple_mean<span class="op">=</span>pl.col(<span class="st">"price_m2"</span>).mean(),</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    area_weighted<span class="op">=</span>pl.col(<span class="st">"price"</span>).<span class="bu">sum</span>() <span class="op">/</span> pl.col(<span class="st">"area_m2"</span>).<span class="bu">sum</span>(),</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="7">
+<table class="table table-sm caption-top table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: right;" data-quarto-table-cell-role="th">simple_mean</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">area_weighted</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">3,636.3</td>
+<td style="text-align: right;">3,880.4</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>The two answers differ because large dwellings, concentrated in the expensive districts, ask more per m². Neither is wrong: they answer different questions (the typical listing or the market as a whole), and a report must say which one it uses.</p>
+</div>
+</div>
+</section>
+<section id="grouped-data" class="level3">
+<h3 class="anchored" data-anchor-id="grouped-data">Grouped data</h3>
+<p>When only a frequency table with classes is available, as in many official publications, the individual values are unknown. The usual approximation assumes that all the observations of a class are at its <strong>class mark</strong> <span class="math inline">\(x_i\)</span>, which gives <span class="math inline">\(\bar x \approx \sum_i f_i x_i\)</span>. For the distance to the centre, grouped in classes of 1 km:</p>
+<div id="43941f90" class="cell" data-execution_count="8">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>dist_table <span class="op">=</span> (</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>    listings</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>    .with_columns(lower<span class="op">=</span>pl.col(<span class="st">"dist_centre_km"</span>).floor())</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>    .group_by(<span class="st">"lower"</span>).agg(n_i<span class="op">=</span>pl.<span class="bu">len</span>()).sort(<span class="st">"lower"</span>)</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>    .with_columns(mark<span class="op">=</span>pl.col(<span class="st">"lower"</span>) <span class="op">+</span> <span class="fl">0.5</span>, f_i<span class="op">=</span>pl.col(<span class="st">"n_i"</span>) <span class="op">/</span> pl.col(<span class="st">"n_i"</span>).<span class="bu">sum</span>())</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>    .with_columns(F_i<span class="op">=</span>pl.col(<span class="st">"f_i"</span>).cum_sum())</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Mean from the classes: </span><span class="sc">{</span>(dist_table[<span class="st">'f_i'</span>] <span class="op">*</span> dist_table[<span class="st">'mark'</span>])<span class="sc">.</span><span class="bu">sum</span>()<span class="sc">:.3f}</span><span class="ss"> km"</span>)</span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Exact mean           : </span><span class="sc">{</span>listings[<span class="st">'dist_centre_km'</span>]<span class="sc">.</span>mean()<span class="sc">:.3f}</span><span class="ss"> km"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Mean from the classes: 4.475 km
+Exact mean           : 4.475 km</code></pre>
+</div>
+</div>
+<p>The error is small because the classes are narrow. A table with an open last class (“1 million € or more”) has no class mark for that class, and the grouped mean cannot be computed without an assumption about it. For grouped data the <strong>modal class</strong> is the one with the greatest <strong>density</strong> <span class="math inline">\(f_i / a_i\)</span>, which coincides with the most frequent class only when all the widths are equal.</p>
+</section>
+</section>
+<section id="measures-of-position-quantiles" class="level2">
+<h2 class="anchored" data-anchor-id="measures-of-position-quantiles">Measures of position: quantiles</h2>
+<div id="def-quantile" class="theorem definition">
+<p><span class="theorem-title"><strong>Definition 4 (Quantile)</strong></span> The <strong>quantile</strong> of order <span class="math inline">\(p \in (0, 1)\)</span> is <span class="math display">\[
+Q_p = \min\{x : F_n(x) \ge p\},
+\]</span> the smallest observed value that leaves at least a proportion <span class="math inline">\(p\)</span> of the data at or below it. Special cases are the <strong>quartiles</strong> <span class="math inline">\(Q_{0.25}\)</span>, <span class="math inline">\(Q_{0.5}\)</span> and <span class="math inline">\(Q_{0.75}\)</span>, and the <strong>percentiles</strong> <span class="math inline">\(P_k = Q_{k/100}\)</span>.</p>
+</div>
+<p>For even <span class="math inline">\(n\)</span>, this definition gives <span class="math inline">\(Q_{0.5} = x_{(n/2)}\)</span>, while <a href="#def-centre" class="quarto-xref">Definition&nbsp;2</a> averages the two central values: any value between them leaves half of the data on each side, and both conventions are used. With finite data the definition also produces jumps, and software often smooths it by <strong>linear interpolation</strong> between order statistics: with <span class="math inline">\(h = 1 + (n-1)p\)</span>, <span class="math display">\[
+Q_p = x_{(\lfloor h \rfloor)} + \big(h - \lfloor h \rfloor\big)\big(x_{(\lfloor h \rfloor + 1)} - x_{(\lfloor h \rfloor)}\big).
+\]</span> This is the default of NumPy, R and Excel; <span class="citation" data-cites="hyndman1996">Hyndman and Fan (<a href="#ref-hyndman1996" role="doc-biblioref">1996</a>)</span> compare nine such conventions. Polars uses <code>interpolation="nearest"</code> unless told otherwise. With large data the differences are negligible:</p>
+<div id="8f7a3e32" class="cell" data-execution_count="9">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>listings.select(</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>    [pl.col(<span class="st">"price"</span>).quantile(p, interpolation<span class="op">=</span><span class="st">"linear"</span>).alias(<span class="ss">f"Q_</span><span class="sc">{</span>p<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>     <span class="cf">for</span> p <span class="kw">in</span> [<span class="fl">0.10</span>, <span class="fl">0.25</span>, <span class="fl">0.50</span>, <span class="fl">0.75</span>, <span class="fl">0.90</span>]]</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="9">
+<table class="table table-sm caption-top table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: right;" data-quarto-table-cell-role="th">Q_0.1</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Q_0.25</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Q_0.5</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Q_0.75</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Q_0.9</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">116,000.0</td>
+<td style="text-align: right;">157,000.0</td>
+<td style="text-align: right;">257,000.0</td>
+<td style="text-align: right;">456,000.0</td>
+<td style="text-align: right;">785,000.0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>A quarter of the listings ask for less than 157,000 €, and a quarter for more than 456,000 €; only one in ten asks for more than 785,000 €.</p>
+<div id="prp-equivariance" class="theorem proposition">
+<p><span class="theorem-title"><strong>Proposition 5 (Quantiles and monotone transformations)</strong></span> If <span class="math inline">\(g\)</span> is strictly increasing and <span class="math inline">\(y_i = g(x_i)\)</span>, then <span class="math inline">\(Q_p(y) = g\big(Q_p(x)\big)\)</span> for every <span class="math inline">\(p\)</span>. The mean has this property only for linear transformations <span class="math inline">\(g(x) = a + bx\)</span>.</p>
+</div>
+<div class="proof">
+<p><span class="proof-title"><em>Proof</em>. </span>A strictly increasing <span class="math inline">\(g\)</span> preserves the order, so <span class="math inline">\(x_i \le x\)</span> if and only if <span class="math inline">\(g(x_i) \le g(x)\)</span>, and <span class="math inline">\(F_n^{y}(g(x)) = F_n^{x}(x)\)</span>. The smallest observed <span class="math inline">\(x\)</span> with <span class="math inline">\(F_n^{x}(x) \ge p\)</span> is therefore mapped to the smallest observed <span class="math inline">\(y\)</span> with <span class="math inline">\(F_n^{y}(y) \ge p\)</span>. For the mean, <span class="math inline">\(\frac1n\sum(a + bx_i) = a + b\bar x\)</span>; the counterexample below shows that it fails for the logarithm.</p>
+</div>
+<div id="585ce7a9" class="cell" data-execution_count="10">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>log_price <span class="op">=</span> listings[<span class="st">"price"</span>].log()</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"median of log(price) = </span><span class="sc">{</span>log_price<span class="sc">.</span>median()<span class="sc">:.4f}</span><span class="ss">   "</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>      <span class="ss">f"log(median price) = </span><span class="sc">{</span>np<span class="sc">.</span>log(listings[<span class="st">'price'</span>].median())<span class="sc">:.4f}</span><span class="ss">"</span>)</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"mean of log(price)   = </span><span class="sc">{</span>log_price<span class="sc">.</span>mean()<span class="sc">:.4f}</span><span class="ss">   "</span></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>      <span class="ss">f"log(mean price)   = </span><span class="sc">{</span>np<span class="sc">.</span>log(listings[<span class="st">'price'</span>].mean())<span class="sc">:.4f}</span><span class="ss">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>median of log(price) = 12.4568   log(median price) = 12.4568
+mean of log(price)   = 12.5436   log(mean price)   = 12.8711</code></pre>
+</div>
+</div>
+<p>This is why the median and the quantiles are the natural summaries of <strong>ordinal</strong> variables (Stevens’ scales of <a href="../../topics/01-introduction/02-types-of-variables.html#measurement-scales">Topic 1</a>): they do not change their meaning under any relabelling that preserves the order.</p>
+<section id="quantiles-of-grouped-data" class="level3">
+<h3 class="anchored" data-anchor-id="quantiles-of-grouped-data">Quantiles of grouped data</h3>
+<p>If only classes are known, we assume that the observations are spread <strong>uniformly</strong> within each class. The cumulative frequency is then a polygon, the <strong>ogive</strong>, joining the points <span class="math inline">\((L_i, F_i)\)</span>, and the quantile is read off it by linear interpolation: if class <span class="math inline">\(i\)</span>, <span class="math inline">\([L_{i-1}, L_i)\)</span>, is the first with <span class="math inline">\(F_i \ge p\)</span>, <span id="eq-grouped-quantile"><span class="math display">\[
+Q_p \approx L_{i-1} + \frac{p - F_{i-1}}{f_i}\, a_i .
+\tag{1}\]</span></span></p>
+<div id="cell-fig-ogive" class="cell" data-execution_count="11">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>p <span class="op">=</span> <span class="fl">0.5</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>row <span class="op">=</span> dist_table.with_columns(F_prev<span class="op">=</span>pl.col(<span class="st">"F_i"</span>).shift(<span class="dv">1</span>, fill_value<span class="op">=</span><span class="fl">0.0</span>)) <span class="op">\</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>    .<span class="bu">filter</span>(pl.col(<span class="st">"F_i"</span>) <span class="op">&gt;=</span> p).row(<span class="dv">0</span>, named<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>median_grouped <span class="op">=</span> row[<span class="st">"lower"</span>] <span class="op">+</span> (p <span class="op">-</span> row[<span class="st">"F_prev"</span>]) <span class="op">/</span> row[<span class="st">"f_i"</span>] <span class="op">*</span> <span class="fl">1.0</span></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>x_sorted <span class="op">=</span> np.sort(listings[<span class="st">"dist_centre_km"</span>].to_numpy())</span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots()</span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>ax.step(x_sorted, np.arange(<span class="dv">1</span>, <span class="bu">len</span>(x_sorted) <span class="op">+</span> <span class="dv">1</span>) <span class="op">/</span> <span class="bu">len</span>(x_sorted), where<span class="op">=</span><span class="st">"post"</span>,</span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>        color<span class="op">=</span>COLORS[<span class="st">"grey"</span>], linewidth<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a>ax.plot(np.r_[<span class="dv">0</span>, dist_table[<span class="st">"lower"</span>] <span class="op">+</span> <span class="dv">1</span>], np.r_[<span class="dv">0</span>, dist_table[<span class="st">"F_i"</span>]], <span class="st">"o-"</span>,</span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a>        color<span class="op">=</span>COLORS[<span class="st">"blue"</span>], markersize<span class="op">=</span><span class="dv">4</span>)</span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a>ax.axhline(p, color<span class="op">=</span>COLORS[<span class="st">"orange"</span>], ls<span class="op">=</span><span class="st">"--"</span>, linewidth<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="st">"Distance to the centre (km)"</span>)</span>
+<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">"Cumulative relative frequency"</span>)</span>
+<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb14-16"><a href="#cb14-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Median from the classes: </span><span class="sc">{</span>median_grouped<span class="sc">:.3f}</span><span class="ss"> km   "</span></span>
+<span id="cb14-17"><a href="#cb14-17" aria-hidden="true" tabindex="-1"></a>      <span class="ss">f"exact median: </span><span class="sc">{</span>listings[<span class="st">'dist_centre_km'</span>]<span class="sc">.</span>median()<span class="sc">:.3f}</span><span class="ss"> km"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div id="fig-ogive" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ogive-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="02-centre-position_files/figure-html/fig-ogive-output-1.png" width="680" height="411" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ogive-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Ogive of the distance to the centre in classes of 1 km (points and segments) over the empirical distribution function (thin line).
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Median from the classes: 4.122 km   exact median: 4.114 km</code></pre>
+</div>
+</div>
+</section>
+<section id="the-geometric-mean" class="level3">
+<h3 class="anchored" data-anchor-id="the-geometric-mean">The geometric mean</h3>
+<p>For positive data, the <strong>geometric mean</strong> is <span class="math display">\[
+G = \Big(\prod_{i=1}^n x_i\Big)^{1/n} = \exp\Big(\frac1n\sum_{i=1}^n \log x_i\Big),
+\]</span> the mean computed on the logarithmic scale and brought back. It is the right mean for quantities that combine by <strong>multiplication</strong>, such as growth rates (<a href="../../topics/05-index-numbers-time-series.html">Topic 5</a>).</p>
+<div id="prp-am-gm" class="theorem proposition">
+<p><span class="theorem-title"><strong>Proposition 6 (Inequality of the arithmetic and geometric means)</strong></span> For positive data, <span class="math inline">\(G \le \bar x\)</span>, with equality if and only if all the <span class="math inline">\(x_i\)</span> are equal.</p>
+</div>
+<div class="proof">
+<p><span class="proof-title"><em>Proof</em>. </span>We use the inequality <span class="math inline">\(\log t \le t - 1\)</span> for <span class="math inline">\(t &gt; 0\)</span>, with equality only at <span class="math inline">\(t = 1\)</span> (the line <span class="math inline">\(t - 1\)</span> is tangent to the concave function <span class="math inline">\(\log t\)</span> at <span class="math inline">\(t = 1\)</span>). With <span class="math inline">\(t = x_i / \bar x\)</span>, <span class="math display">\[
+\frac1n\sum_i \log\frac{x_i}{\bar x} \le \frac1n\sum_i\Big(\frac{x_i}{\bar x} - 1\Big) = 0,
+\]</span> so <span class="math inline">\(\log G - \log \bar x \le 0\)</span>. Equality requires <span class="math inline">\(x_i / \bar x = 1\)</span> for every <span class="math inline">\(i\)</span>.</p>
+</div>
+<div id="12dfe232" class="cell" data-execution_count="12">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>listings.select(</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>    arithmetic<span class="op">=</span>pl.col(<span class="st">"price"</span>).mean(),</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>    geometric<span class="op">=</span>pl.col(<span class="st">"price"</span>).log().mean().exp(),</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>    median<span class="op">=</span>pl.col(<span class="st">"price"</span>).median(),</span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="12">
+<table class="table table-sm caption-top table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: right;" data-quarto-table-cell-role="th">arithmetic</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">geometric</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">median</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">388,892.1</td>
+<td style="text-align: right;">280,307.5</td>
+<td style="text-align: right;">257,000.0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>For right-skewed data such as prices, the geometric mean is much closer to the median than the arithmetic mean is.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Historical note: the median
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In 1774 Pierre-Simon Laplace showed that, to combine several discordant observations, the value that minimises the expected absolute error is the median of their distribution, the probabilistic version of <a href="#prp-median" class="quarto-xref">Proposition&nbsp;3</a>. The idea remained marginal for a century, while astronomers and geodesists used the mean, which minimises squared errors and is easier to compute. It was Francis Galton who popularised the median, and the English word, in the 1880s, as a summary of skewed data that was easy to obtain by simply ranking the observations.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="references" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="references">References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-hyndman1996" class="csl-entry" role="listitem">
+Hyndman, Rob J., and Yanan Fan. 1996. <span>“Sample Quantiles in Statistical Packages.”</span> <em>The American Statistician</em> 50 (4): 361–65.
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../topics/02-univariate/01-freq-graphs.html" class="pagination-link" aria-label="2.1 Frequency tables and graphs">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">2.1 Frequency tables and graphs</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../topics/02-univariate/03-dispersion-shape.html" class="pagination-link" aria-label="2.3 Dispersion, shape and outliers">
+        <span class="nav-page-text">2.3 Dispersion, shape and outliers</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

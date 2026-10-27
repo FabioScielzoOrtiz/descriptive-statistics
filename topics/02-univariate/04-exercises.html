@@ -1,0 +1,1671 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>2.4 Exercises – Descriptive Statistics</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script><script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../topics/03-bivariate.html" rel="next">
+<link href="../../topics/02-univariate/03-dispersion-shape.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-2aa33e8751edae3f9b77d048c1294c38.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-9f8723262d8d9b08b94973cdb1b7f173.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-2aa33e8751edae3f9b77d048c1294c38.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script src="https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.min.js" integrity="sha384-c9c+LnTbwQ3aujuU7ULEPVvgLs+Fn6fJUvIGTsuu1ZcCf11fiEubah0ttpca4ntM sha384-6V1/AdqZRWk1KAlWbKBlGhN7VG4iE/yAZcO6NZPMF8od0vukrvr0tg4qY6NSrItx" crossorigin="anonymous"></script>
+
+
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Descriptive Statistics</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../topics/02-univariate/01-freq-graphs.html">Topic 2. Univariate data</a></li><li class="breadcrumb-item"><a href="../../topics/02-univariate/04-exercises.html">2.4 Exercises</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Topic 1. Introduction</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../topics/01-introduction/01-stats-population-samples.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.1 Statistics, populations and samples</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../topics/01-introduction/02-types-of-variables.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.2 Types of variables</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Topic 2. Univariate data</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../topics/02-univariate/01-freq-graphs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.1 Frequency tables and graphs</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../topics/02-univariate/02-centre-position.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.2 The empirical distribution, centre and position</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../topics/02-univariate/03-dispersion-shape.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.3 Dispersion, shape and outliers</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../topics/02-univariate/04-exercises.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">2.4 Exercises</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../topics/03-bivariate.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Topic 3. Bivariate data</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../topics/04-inequality-concentration.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Topic 4. Inequality and concentration</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../topics/05-index-numbers-time-series.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Topic 5. Index numbers and time series</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#references" id="toc-references" class="nav-link active" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../topics/02-univariate/01-freq-graphs.html">Topic 2. Univariate data</a></li><li class="breadcrumb-item"><a href="../../topics/02-univariate/04-exercises.html">2.4 Exercises</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">2.4 Exercises</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Solutions are hidden: open them only after trying. Exercises 3, 6 and 10 are also meant to be done with pen and paper. The exercises with Python use the Madrid listings:</p>
+<div id="33455061" class="cell" data-execution_count="2">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>listings <span class="op">=</span> pl.read_csv(<span class="st">"data/processed/idealista/madrid_listings_2018.csv"</span>).select(</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">"listing_id"</span>, <span class="st">"district"</span>, <span class="st">"zone"</span>, <span class="st">"condition"</span>,</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"price"</span>, <span class="st">"price_m2"</span>, <span class="st">"area_m2"</span>, <span class="st">"bedrooms"</span>, <span class="st">"bathrooms"</span>,</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"floor"</span>, <span class="st">"lift"</span>, <span class="st">"terrace"</span>, <span class="st">"construction_year"</span>, <span class="st">"dist_centre_km"</span>,</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="exr-lift-terrace" class="theorem exercise">
+<p><span class="theorem-title"><strong>Exercise 1 (Lift and terrace)</strong></span> &nbsp;</p>
+<ol type="a">
+<li>What type of variables are <code>lift</code> and <code>terrace</code>?</li>
+<li>Compute the proportion of listings with a lift and with a terrace, and draw both in a single bar chart.</li>
+<li>Is it correct to draw a pie chart of <code>lift</code>?</li>
+</ol>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Solution
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="a">
+<li><p>Both are qualitative binary variables.</p></li>
+<li><p>The mean of a binary variable is the proportion of <code>true</code> values:</p></li>
+</ol>
+<div id="dfa9c0e9" class="cell" data-execution_count="3">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>shares <span class="op">=</span> listings.select(pl.col(<span class="st">"lift"</span>, <span class="st">"terrace"</span>).mean())</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>shares</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="3">
+<table class="table table-sm caption-top table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: right;" data-quarto-table-cell-role="th">lift</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">terrace</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">0.689</td>
+<td style="text-align: right;">0.351</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="800847f2" class="cell" data-execution_count="4">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">5</span>, <span class="dv">3</span>))</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>ax.bar([<span class="st">"Lift"</span>, <span class="st">"Terrace"</span>], shares.row(<span class="dv">0</span>), width<span class="op">=</span><span class="fl">0.5</span>, color<span class="op">=</span>COLORS[<span class="st">"blue"</span>])</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>ax.set_ylim(<span class="dv">0</span>, <span class="dv">1</span>)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">"Proportion of listings"</span>)</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="04-exercises_files/figure-html/cell-5-output-1.png" width="509" height="310" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>About 69 % of the listings are in a building with a lift, and 35 % have a terrace.</p>
+<ol start="3" type="a">
+<li>Yes. With two categories a pie chart is easy to read, although a single sentence (“69 % have a lift”) says the same. What would be wrong is a single pie with “lift” and “terrace” as slices: they are not categories of one variable, and a dwelling can have both.</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="exr-bathrooms" class="theorem exercise">
+<p><span class="theorem-title"><strong>Exercise 2 (Number of bathrooms)</strong></span> &nbsp;</p>
+<ol type="a">
+<li>Build the frequency table of <code>bathrooms</code>, with a last class “4 or more”, including cumulative frequencies.</li>
+<li>What are the mode and the median of the number of bathrooms?</li>
+<li>What proportion of listings have at most two bathrooms?</li>
+</ol>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Solution
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="a">
+<li></li>
+</ol>
+<div id="a2afb90b" class="cell" data-execution_count="5">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>bathrooms_table <span class="op">=</span> (</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    listings</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    .with_columns(</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>        bathrooms<span class="op">=</span>pl.when(pl.col(<span class="st">"bathrooms"</span>) <span class="op">&gt;=</span> <span class="dv">4</span>).then(pl.lit(<span class="st">"4+"</span>))</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>        .otherwise(pl.col(<span class="st">"bathrooms"</span>).cast(pl.String))</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    .group_by(<span class="st">"bathrooms"</span>)</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>    .agg(n_i<span class="op">=</span>pl.<span class="bu">len</span>())</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>    .sort(<span class="st">"bathrooms"</span>)</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>    .with_columns(f_i<span class="op">=</span>pl.col(<span class="st">"n_i"</span>) <span class="op">/</span> pl.col(<span class="st">"n_i"</span>).<span class="bu">sum</span>())</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>    .with_columns(F_i<span class="op">=</span>pl.col(<span class="st">"f_i"</span>).cum_sum())</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>bathrooms_table</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="5">
+<table class="table table-sm caption-top table-striped small">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th">bathrooms</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">n_i</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">f_i</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">F_i</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">0.001</td>
+<td style="text-align: right;">0.001</td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td style="text-align: right;">43,447</td>
+<td style="text-align: right;">0.574</td>
+<td style="text-align: right;">0.575</td>
+</tr>
+<tr class="odd">
+<td>2</td>
+<td style="text-align: right;">24,783</td>
+<td style="text-align: right;">0.327</td>
+<td style="text-align: right;">0.902</td>
+</tr>
+<tr class="even">
+<td>3</td>
+<td style="text-align: right;">5027</td>
+<td style="text-align: right;">0.066</td>
+<td style="text-align: right;">0.968</td>
+</tr>
+<tr class="odd">
+<td>4+</td>
+<td style="text-align: right;">2408</td>
+<td style="text-align: right;">0.032</td>
+<td style="text-align: right;">1.000</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>The class “0” holds a few listings with no bathroom, probably errors or premises listed as dwellings.</p>
+<ol start="2" type="a">
+<li>The mode is 1 bathroom, the most frequent value. The median is also 1: the cumulative frequency <span class="math inline">\(F_i\)</span> first exceeds 0.5 in the row of 1.</li>
+</ol>
+<div id="42f7207b" class="cell" data-execution_count="6">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>listings.select(mode<span class="op">=</span>pl.col(<span class="st">"bathrooms"</span>).mode(), median<span class="op">=</span>pl.col(<span class="st">"bathrooms"</span>).median())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="6">
+<table class="table table-sm caption-top table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: right;" data-quarto-table-cell-role="th">mode</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">median</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1.000</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<ol start="3" type="a">
+<li>It is the cumulative relative frequency of the row “2”: about 90 %.</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="exr-grouped" class="theorem exercise">
+<p><span class="theorem-title"><strong>Exercise 3 (Grouped data by hand)</strong></span> A property portal publishes only this table of the asking prices (thousands of €) of the 200 flats for sale in a town:</p>
+<table class="caption-top table">
+<caption>Asking prices in a town, grouped into classes of different widths.</caption>
+<colgroup>
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Class</th>
+<th><span class="math inline">\([50, 100)\)</span></th>
+<th><span class="math inline">\([100, 150)\)</span></th>
+<th><span class="math inline">\([150, 200)\)</span></th>
+<th><span class="math inline">\([200, 300)\)</span></th>
+<th><span class="math inline">\([300, 500)\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(n_i\)</span></td>
+<td>20</td>
+<td>50</td>
+<td>45</td>
+<td>65</td>
+<td>20</td>
+</tr>
+</tbody>
+</table>
+<ol type="a">
+<li>Complete the table with <span class="math inline">\(f_i\)</span>, <span class="math inline">\(F_i\)</span>, the class marks <span class="math inline">\(x_i\)</span> and the densities <span class="math inline">\(h_i = f_i / a_i\)</span>. Which is the most frequent class? Which is the modal class?</li>
+<li>Compute the approximate mean, variance and standard deviation, using the computational formula for the variance.</li>
+<li>Compute the approximate median and third quartile with the ogive.</li>
+</ol>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Solution
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="a">
+<li><p><span class="math inline">\(f_i = 0.10, 0.25, 0.225, 0.325, 0.10\)</span>; <span class="math inline">\(F_i = 0.10, 0.35, 0.575, 0.90, 1\)</span>; class marks 75, 125, 175, 250, 400; widths 50, 50, 50, 100, 200; densities (per thousand €) 0.0020, 0.0050, 0.0045, 0.00325, 0.0005. The most frequent class is <span class="math inline">\([200, 300)\)</span>, but it is twice as wide as the first three; the <strong>modal class</strong>, the one with the greatest density, is <span class="math inline">\([100, 150)\)</span>.</p></li>
+<li><p><span class="math inline">\(\bar x \approx \sum f_i x_i = 7.5 + 31.25 + 39.375 + 81.25 + 40 = 199.375\)</span>, and <span class="math inline">\(\sum f_i x_i^2 = 562.5 + 3906.25 + 6890.625 + 20312.5 + 16000 = 47671.875\)</span>. By the computational formula, <span class="math inline">\(s^2 \approx 47671.875 - 199.375^2 \approx 7921.5\)</span> and <span class="math inline">\(s \approx 89.0\)</span> thousand €.</p></li>
+<li><p>The median is in the first class with <span class="math inline">\(F_i \ge 0.5\)</span>, <span class="math inline">\([150, 200)\)</span>: <span class="math inline">\(Me \approx 150 + \frac{0.5 - 0.35}{0.225}\cdot 50 \approx 183.3\)</span>. For <span class="math inline">\(Q_{0.75}\)</span> the class is <span class="math inline">\([200, 300)\)</span>: <span class="math inline">\(Q_{0.75} \approx 200 + \frac{0.75 - 0.575}{0.325}\cdot 100 \approx 253.8\)</span>.</p></li>
+</ol>
+<div id="2fd24784" class="cell" data-execution_count="7">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>lower <span class="op">=</span> np.array([<span class="dv">50</span>, <span class="dv">100</span>, <span class="dv">150</span>, <span class="dv">200</span>, <span class="dv">300</span>])<span class="op">;</span> upper <span class="op">=</span> np.array([<span class="dv">100</span>, <span class="dv">150</span>, <span class="dv">200</span>, <span class="dv">300</span>, <span class="dv">500</span>])</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>n_i <span class="op">=</span> np.array([<span class="dv">20</span>, <span class="dv">50</span>, <span class="dv">45</span>, <span class="dv">65</span>, <span class="dv">20</span>])</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>f <span class="op">=</span> n_i <span class="op">/</span> n_i.<span class="bu">sum</span>()<span class="op">;</span> F <span class="op">=</span> np.cumsum(f)<span class="op">;</span> mark <span class="op">=</span> (lower <span class="op">+</span> upper) <span class="op">/</span> <span class="dv">2</span><span class="op">;</span> width <span class="op">=</span> upper <span class="op">-</span> lower</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>mean <span class="op">=</span> np.<span class="bu">sum</span>(f <span class="op">*</span> mark)<span class="op">;</span> var <span class="op">=</span> np.<span class="bu">sum</span>(f <span class="op">*</span> mark<span class="op">**</span><span class="dv">2</span>) <span class="op">-</span> mean<span class="op">**</span><span class="dv">2</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> grouped_quantile(p):</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>    i <span class="op">=</span> np.argmax(F <span class="op">&gt;=</span> p)</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>    F_prev <span class="op">=</span> F[i <span class="op">-</span> <span class="dv">1</span>] <span class="cf">if</span> i <span class="op">&gt;</span> <span class="dv">0</span> <span class="cf">else</span> <span class="fl">0.0</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> lower[i] <span class="op">+</span> (p <span class="op">-</span> F_prev) <span class="op">/</span> f[i] <span class="op">*</span> width[i]</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"densities:"</span>, np.<span class="bu">round</span>(f <span class="op">/</span> width, <span class="dv">5</span>))</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"mean </span><span class="sc">{</span>mean<span class="sc">:.3f}</span><span class="ss">, variance </span><span class="sc">{</span>var<span class="sc">:.2f}</span><span class="ss">, sd </span><span class="sc">{</span>np<span class="sc">.</span>sqrt(var)<span class="sc">:.2f}</span><span class="ss">"</span>)</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"median </span><span class="sc">{</span>grouped_quantile(<span class="fl">0.5</span>)<span class="sc">:.2f}</span><span class="ss">, Q3 </span><span class="sc">{</span>grouped_quantile(<span class="fl">0.75</span>)<span class="sc">:.2f}</span><span class="ss">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>densities: [0.002  0.005  0.0045 0.0032 0.0005]
+mean 199.375, variance 7921.48, sd 89.00
+median 183.33, Q3 253.85</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="exr-by-hand" class="theorem exercise">
+<p><span class="theorem-title"><strong>Exercise 4 (Computing by hand)</strong></span> These are the asking prices, in thousands of euros, of the eight flats for sale in a street:</p>
+<p><span class="math display">\[
+180, \quad 210, \quad 195, \quad 240, \quad 1150, \quad 205, \quad 225, \quad 190 .
+\]</span></p>
+<ol type="a">
+<li>Compute the mean and the median. Which one describes better the price of a flat in this street?</li>
+<li>Compute the variance <span class="math inline">\(s^2\)</span>, the standard deviation <span class="math inline">\(s\)</span> and the corrected variance <span class="math inline">\(\hat s^2\)</span>.</li>
+<li>Compute the quartiles (with linear interpolation, as in NumPy) and the fences of the boxplot. Is there any outlier?</li>
+<li>Repeat a) and b) without the flat of 1,150. What do you conclude?</li>
+</ol>
+<p>Check your results with Python.</p>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Solution
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="a">
+<li><p>Ordered: 180, 190, 195, 205, 210, 225, 240, 1150. The mean is <span class="math inline">\(\bar x = 2595 / 8 = 324.4\)</span>. With <span class="math inline">\(n = 8\)</span> (even), the median is the average of the two central values, <span class="math inline">\((205 + 210)/2 = 207.5\)</span>. Seven of the eight flats cost between 180 and 240: the median describes them well, while the mean is above all of them except one.</p></li>
+<li><p>The squared deviations from 324.375 add up to <span class="math inline">\(\sum(x_i - \bar x)^2 \approx 781{,}622\)</span>, so <span class="math inline">\(s^2 = 781{,}622 / 8 \approx 97{,}703\)</span>, <span class="math inline">\(s \approx 312.6\)</span> and <span class="math inline">\(\hat s^2 = 781{,}622 / 7 \approx 111{,}660\)</span>. With <span class="math inline">\(n = 8\)</span>, dividing by <span class="math inline">\(n\)</span> or by <span class="math inline">\(n - 1\)</span> makes a visible difference.</p></li>
+<li><p>With linear interpolation, the quartile <span class="math inline">\(Q_p\)</span> is at position <span class="math inline">\(1 + p(n-1)\)</span> of the ordered data. For <span class="math inline">\(Q_1\)</span>: position <span class="math inline">\(1 + 0.25 \cdot 7 = 2.75\)</span>, between 190 and 195, so <span class="math inline">\(Q_1 = 190 + 0.75 \cdot 5 = 193.75\)</span>. For <span class="math inline">\(Q_3\)</span>: position 6.25, so <span class="math inline">\(Q_3 = 225 + 0.25 \cdot 15 = 228.75\)</span>. Then <span class="math inline">\(IQR = 35\)</span>, <span class="math inline">\(LF = 141.25\)</span> and <span class="math inline">\(UF = 281.25\)</span>: the flat of 1,150 is an outlier.</p></li>
+<li><p>Without it, <span class="math inline">\(\bar x = 1445/7 \approx 206.4\)</span> and the median is 205: both now agree. The standard deviation falls from about 313 to about 19. A single observation dominated the mean and, even more, the standard deviation.</p></li>
+</ol>
+<div id="5afbb808" class="cell" data-execution_count="8">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> np.array([<span class="dv">180</span>, <span class="dv">210</span>, <span class="dv">195</span>, <span class="dv">240</span>, <span class="dv">1150</span>, <span class="dv">205</span>, <span class="dv">225</span>, <span class="dv">190</span>])</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>q1, q3 <span class="op">=</span> np.quantile(x, [<span class="fl">0.25</span>, <span class="fl">0.75</span>])</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"mean </span><span class="sc">{</span>x<span class="sc">.</span>mean()<span class="sc">:.1f}</span><span class="ss">, median </span><span class="sc">{</span>np<span class="sc">.</span>median(x)<span class="sc">:.1f}</span><span class="ss">"</span>)</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"s^2 </span><span class="sc">{</span>x<span class="sc">.</span>var()<span class="sc">:,.1f}</span><span class="ss">, s </span><span class="sc">{</span>x<span class="sc">.</span>std()<span class="sc">:.1f}</span><span class="ss">, corrected variance </span><span class="sc">{</span>x<span class="sc">.</span>var(ddof<span class="op">=</span><span class="dv">1</span>)<span class="sc">:,.1f}</span><span class="ss">"</span>)</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Q1 </span><span class="sc">{</span>q1<span class="sc">}</span><span class="ss">, Q3 </span><span class="sc">{</span>q3<span class="sc">}</span><span class="ss">, fences [</span><span class="sc">{</span>q1 <span class="op">-</span> <span class="fl">1.5</span> <span class="op">*</span> (q3 <span class="op">-</span> q1)<span class="sc">}</span><span class="ss">, </span><span class="sc">{</span>q3 <span class="op">+</span> <span class="fl">1.5</span> <span class="op">*</span> (q3 <span class="op">-</span> q1)<span class="sc">}</span><span class="ss">]"</span>)</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> x[x <span class="op">!=</span> <span class="dv">1150</span>]</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"without 1150: mean </span><span class="sc">{</span>y<span class="sc">.</span>mean()<span class="sc">:.1f}</span><span class="ss">, median </span><span class="sc">{</span>np<span class="sc">.</span>median(y)<span class="sc">:.1f}</span><span class="ss">, s </span><span class="sc">{</span>y<span class="sc">.</span>std()<span class="sc">:.1f}</span><span class="ss">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>mean 324.4, median 207.5
+s^2 97,702.7, s 312.6, corrected variance 111,660.3
+Q1 193.75, Q3 228.75, fences [141.25, 281.25]
+without 1150: mean 206.4, median 205.0, s 19.2</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="exr-combine" class="theorem exercise">
+<p><span class="theorem-title"><strong>Exercise 5 (Combining groups)</strong></span> The price per m² of the listings has these summaries by zone (standard deviations with divisor <span class="math inline">\(n_g\)</span>):</p>
+<table class="caption-top table">
+<caption>Price per m² by zone.</caption>
+<thead>
+<tr class="header">
+<th>Zone</th>
+<th><span class="math inline">\(n_g\)</span></th>
+<th>Mean (€/m²)</th>
+<th>Standard deviation (€/m²)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Centre</td>
+<td>36,176</td>
+<td>4,811</td>
+<td>1,473</td>
+</tr>
+<tr class="even">
+<td>Periphery</td>
+<td>39,559</td>
+<td>2,562</td>
+<td>1,096</td>
+</tr>
+</tbody>
+</table>
+<ol type="a">
+<li>Compute the mean and the standard deviation of the price per m² of all the listings, without using the individual data.</li>
+<li>What proportion of the variance is explained by the zone? Compare it with the proportion explained by the district in <a href="../../topics/02-univariate/03-dispersion-shape.html#variance-within-and-between-groups">part 3</a>.</li>
+<li>Check a) with Python.</li>
+</ol>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Solution
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="a">
+<li><p>With <span class="math inline">\(n = 75{,}735\)</span>, the weights are <span class="math inline">\(0.4777\)</span> and <span class="math inline">\(0.5223\)</span>. The mean is <span class="math inline">\(\bar x = 0.4777 \cdot 4811 + 0.5223 \cdot 2562 \approx 3636\)</span> €/m². By the decomposition of the variance, the within part is <span class="math inline">\(0.4777 \cdot 1473^2 + 0.5223 \cdot 1096^2 \approx 1{,}664{,}000\)</span> and the between part is <span class="math inline">\(0.4777(4811 - 3636)^2 + 0.5223(2562 - 3636)^2 \approx 1{,}262{,}000\)</span>, so <span class="math inline">\(s^2 \approx 2{,}926{,}000\)</span> and <span class="math inline">\(s \approx 1711\)</span> €/m².</p></li>
+<li><p><span class="math inline">\(\eta^2 \approx 1{,}262{,}000 / 2{,}926{,}000 \approx 0.43\)</span>. The district explains more (0.59), because its 21 groups contain the 2 zones: splitting groups can only increase the between part.</p></li>
+<li></li>
+</ol>
+<div id="470d2220" class="cell" data-execution_count="9">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>listings.select(mean<span class="op">=</span>pl.col(<span class="st">"price_m2"</span>).mean(), std_dev<span class="op">=</span>pl.col(<span class="st">"price_m2"</span>).std(ddof<span class="op">=</span><span class="dv">0</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="9">
+<table class="table table-sm caption-top table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: right;" data-quarto-table-cell-role="th">mean</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">std_dev</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">3,636.3</td>
+<td style="text-align: right;">1,710.4</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="exr-shape-invariance" class="theorem exercise">
+<p><span class="theorem-title"><strong>Exercise 6 (Shape does not depend on the units)</strong></span> Let <span class="math inline">\(y_i = a + b\,x_i\)</span> with <span class="math inline">\(b \neq 0\)</span>.</p>
+<ol type="a">
+<li>Prove that the skewness coefficient satisfies <span class="math inline">\(g_1(y) = g_1(x)\)</span> if <span class="math inline">\(b &gt; 0\)</span> and <span class="math inline">\(g_1(y) = -g_1(x)\)</span> if <span class="math inline">\(b &lt; 0\)</span>, and that the excess kurtosis does not change.</li>
+<li>Prove that the coefficient of variation does not change if <span class="math inline">\(a = 0\)</span> and <span class="math inline">\(b &gt; 0\)</span>, but can change if <span class="math inline">\(a \neq 0\)</span>.</li>
+<li>Check a) with the prices in euros and in thousands of euros, and with <span class="math inline">\(y = -x\)</span>.</li>
+</ol>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Solution
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="a">
+<li><p>By the result on linear transformations, <span class="math inline">\(y_i - \bar y = b(x_i - \bar x)\)</span> and <span class="math inline">\(s_y = |b|\,s_x\)</span>. Hence <span class="math display">\[
+g_1(y) = \frac{\frac1n\sum b^3(x_i - \bar x)^3}{|b|^3 s_x^3} = \frac{b^3}{|b|^3}\,g_1(x),
+\]</span> and <span class="math inline">\(b^3/|b|^3\)</span> is the sign of <span class="math inline">\(b\)</span>. For the kurtosis the powers are even, <span class="math inline">\(b^4/|b|^4 = 1\)</span>.</p></li>
+<li><p><span class="math inline">\(CV_y = |b|\,s_x / (a + b\bar x)\)</span>, which equals <span class="math inline">\(s_x / \bar x\)</span> when <span class="math inline">\(a = 0\)</span> and <span class="math inline">\(b &gt; 0\)</span>. With <span class="math inline">\(a \neq 0\)</span> the denominator changes but the numerator does not.</p></li>
+<li></li>
+</ol>
+<div id="1dafb874" class="cell" data-execution_count="10">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>price <span class="op">=</span> listings[<span class="st">"price"</span>]</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>pl.DataFrame({</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"variable"</span>: [<span class="st">"price (€)"</span>, <span class="st">"price (thousands of €)"</span>, <span class="st">"-price"</span>],</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"skewness"</span>: [price.skew(), (price <span class="op">/</span> <span class="dv">1000</span>).skew(), (<span class="op">-</span>price).skew()],</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">"kurtosis"</span>: [price.kurtosis(), (price <span class="op">/</span> <span class="dv">1000</span>).kurtosis(), (<span class="op">-</span>price).kurtosis()],</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="10">
+<table class="table table-sm caption-top table-striped small">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th">variable</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">skewness</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">kurtosis</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>price (€)</td>
+<td style="text-align: right;">4.074</td>
+<td style="text-align: right;">29.472</td>
+</tr>
+<tr class="even">
+<td>price (thousands of €)</td>
+<td style="text-align: right;">4.074</td>
+<td style="text-align: right;">29.472</td>
+</tr>
+<tr class="odd">
+<td>-price</td>
+<td style="text-align: right;">-4.074</td>
+<td style="text-align: right;">29.472</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="exr-area" class="theorem exercise">
+<p><span class="theorem-title"><strong>Exercise 7 (Floor area)</strong></span> &nbsp;</p>
+<ol type="a">
+<li>Draw a histogram of <code>area_m2</code> (up to 400 m²) and describe its shape.</li>
+<li>Compute the mean, the median and the quartiles of the floor area.</li>
+<li>A family looks for a flat of at least 150 m². What proportion of the listings meets this condition? Which percentile is 150 m², approximately?</li>
+</ol>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Solution
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="a">
+<li></li>
+</ol>
+<div id="d89c2da2" class="cell" data-execution_count="11">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots()</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>sns.histplot(x<span class="op">=</span>listings[<span class="st">"area_m2"</span>].to_numpy(), bins<span class="op">=</span>np.arange(<span class="dv">0</span>, <span class="dv">405</span>, <span class="dv">10</span>),</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>             stat<span class="op">=</span><span class="st">"probability"</span>, color<span class="op">=</span>COLORS[<span class="st">"blue"</span>], edgecolor<span class="op">=</span><span class="st">"white"</span>,</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>             linewidth<span class="op">=</span><span class="fl">0.5</span>, alpha<span class="op">=</span><span class="dv">1</span>, ax<span class="op">=</span>ax)</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>ax.set_xlim(<span class="dv">0</span>, <span class="dv">400</span>)</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="st">"Floor area (m²)"</span>)</span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">"Relative frequency"</span>)</span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="04-exercises_files/figure-html/cell-12-output-1.png" width="707" height="411" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>The distribution is right-skewed, like the price: two thirds of the dwellings have between 50 and 120 m², and a long tail reaches several hundred square metres.</p>
+<ol start="2" type="a">
+<li></li>
+</ol>
+<div id="72430f77" class="cell" data-execution_count="12">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>listings.select(</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>    mean<span class="op">=</span>pl.col(<span class="st">"area_m2"</span>).mean(),</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>    Q1<span class="op">=</span>pl.col(<span class="st">"area_m2"</span>).quantile(<span class="fl">0.25</span>, <span class="st">"linear"</span>),</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>    median<span class="op">=</span>pl.col(<span class="st">"area_m2"</span>).median(),</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>    Q3<span class="op">=</span>pl.col(<span class="st">"area_m2"</span>).quantile(<span class="fl">0.75</span>, <span class="st">"linear"</span>),</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="12">
+<table class="table table-sm caption-top table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: right;" data-quarto-table-cell-role="th">mean</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Q1</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">median</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Q3</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">100.221</td>
+<td style="text-align: right;">62.000</td>
+<td style="text-align: right;">82.000</td>
+<td style="text-align: right;">115.000</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>As expected with right skewness, the mean (about 100 m²) is larger than the median (82 m²).</p>
+<ol start="3" type="a">
+<li></li>
+</ol>
+<div id="69f76058" class="cell" data-execution_count="13">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>share <span class="op">=</span> (listings[<span class="st">"area_m2"</span>] <span class="op">&gt;=</span> <span class="dv">150</span>).mean()</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Proportion with at least 150 m²: </span><span class="sc">{</span>share<span class="sc">:.3f}</span><span class="ss">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Proportion with at least 150 m²: 0.137</code></pre>
+</div>
+</div>
+<p>About 14 % of the listings have 150 m² or more, so 150 m² is approximately the 86th percentile: it leaves about 86 % of the listings below it.</p>
+</div>
+</div>
+</div>
+<div id="exr-zone" class="theorem exercise">
+<p><span class="theorem-title"><strong>Exercise 8 (Centre and periphery)</strong></span> &nbsp;</p>
+<ol type="a">
+<li>Compute, for each zone, the number of listings and the mean, median, standard deviation and coefficient of variation of the price per m².</li>
+<li>Draw boxplots of the price per m² in the two zones.</li>
+<li>In which zone are prices per m² higher? In which one are they more dispersed, in absolute terms and relative to the mean?</li>
+</ol>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Solution
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="a">
+<li></li>
+</ol>
+<div id="8b163d5c" class="cell" data-execution_count="14">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> pl.col(<span class="st">"price_m2"</span>)</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>(</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>    listings.group_by(<span class="st">"zone"</span>)</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>    .agg(n<span class="op">=</span>pl.<span class="bu">len</span>(), mean<span class="op">=</span>x.mean(), median<span class="op">=</span>x.median(),</span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>         std_dev<span class="op">=</span>x.std(ddof<span class="op">=</span><span class="dv">0</span>), CV<span class="op">=</span>x.std(ddof<span class="op">=</span><span class="dv">0</span>) <span class="op">/</span> x.mean())</span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>    .sort(<span class="st">"zone"</span>)</span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="14">
+<table class="table table-sm caption-top table-striped small">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th">zone</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">n</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">mean</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">median</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">std_dev</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">CV</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Centre</td>
+<td style="text-align: right;">36,176</td>
+<td style="text-align: right;">4,811.1</td>
+<td style="text-align: right;">4,623.6</td>
+<td style="text-align: right;">1,472.8</td>
+<td style="text-align: right;">0.306</td>
+</tr>
+<tr class="even">
+<td>Periphery</td>
+<td style="text-align: right;">39,559</td>
+<td style="text-align: right;">2,562.0</td>
+<td style="text-align: right;">2,300.0</td>
+<td style="text-align: right;">1,096.0</td>
+<td style="text-align: right;">0.428</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<ol start="2" type="a">
+<li></li>
+</ol>
+<div id="5a5ae838" class="cell" data-execution_count="15">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">6</span>, <span class="dv">3</span>))</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>sns.boxplot(x<span class="op">=</span>listings[<span class="st">"price_m2"</span>].to_numpy(), y<span class="op">=</span>listings[<span class="st">"zone"</span>].to_numpy(),</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>            order<span class="op">=</span>[<span class="st">"Centre"</span>, <span class="st">"Periphery"</span>],</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>            color<span class="op">=</span>COLORS[<span class="st">"blue"</span>], width<span class="op">=</span><span class="fl">0.5</span>,</span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>            medianprops<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span>COLORS[<span class="st">"orange"</span>], linewidth<span class="op">=</span><span class="dv">2</span>),</span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>            flierprops<span class="op">=</span><span class="bu">dict</span>(marker<span class="op">=</span><span class="st">"o"</span>, markersize<span class="op">=</span><span class="dv">2</span>, alpha<span class="op">=</span><span class="fl">0.3</span>), ax<span class="op">=</span>ax)</span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="st">"Asking price per m² (€)"</span>)</span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">""</span>)</span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a>ax.grid(axis<span class="op">=</span><span class="st">"x"</span>)<span class="op">;</span> ax.grid(axis<span class="op">=</span><span class="st">"y"</span>, visible<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="04-exercises_files/figure-html/cell-16-output-1.png" width="629" height="326" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="3" type="a">
+<li>The median price per m² in the centre (about 4,600 €) is about twice that of the periphery (2,300 €). The centre also has a larger standard deviation, but relative to its mean its spread is smaller: its coefficient of variation is lower. The periphery is more heterogeneous, because it mixes neighbourhoods as different as those of Moncloa-Aravaca and Villaverde.</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="exr-units" class="theorem exercise">
+<p><span class="theorem-title"><strong>Exercise 9 (Change of units)</strong></span> A British investor wants the floor area in square feet (1 m² = 10.764 ft²) and the price in thousands of euros.</p>
+<ol type="a">
+<li>Without using the data, how do the mean, the standard deviation and the coefficient of variation of the area change when it is expressed in ft²?</li>
+<li>Check it with Python, for the area and for the price.</li>
+<li>The investor also wants a variable “area above 90 m²”, <span class="math inline">\(y_i = x_i - 90\)</span>. How do its mean, standard deviation and coefficient of variation compare with those of the area?</li>
+</ol>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Solution
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="a">
+<li><p>By the result on linear transformations of <a href="../../topics/02-univariate/03-dispersion-shape.html#linear-transformations-and-standardisation">part 3</a>, with <span class="math inline">\(y = 10.764\,x\)</span> the mean and the standard deviation are multiplied by 10.764, and the coefficient of variation, their ratio, does not change. It has no units.</p></li>
+<li></li>
+</ol>
+<div id="1d52304d" class="cell" data-execution_count="16">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> summary(s: pl.Series) <span class="op">-&gt;</span> <span class="bu">dict</span>:</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> {<span class="st">"mean"</span>: s.mean(), <span class="st">"std_dev"</span>: s.std(ddof<span class="op">=</span><span class="dv">0</span>), <span class="st">"CV"</span>: s.std(ddof<span class="op">=</span><span class="dv">0</span>) <span class="op">/</span> s.mean()}</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>pl.DataFrame([</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>    {<span class="st">"variable"</span>: <span class="st">"area (m²)"</span>, <span class="op">**</span>summary(listings[<span class="st">"area_m2"</span>])},</span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>    {<span class="st">"variable"</span>: <span class="st">"area (ft²)"</span>, <span class="op">**</span>summary(listings[<span class="st">"area_m2"</span>] <span class="op">*</span> <span class="fl">10.764</span>)},</span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>    {<span class="st">"variable"</span>: <span class="st">"price (€)"</span>, <span class="op">**</span>summary(listings[<span class="st">"price"</span>])},</span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a>    {<span class="st">"variable"</span>: <span class="st">"price (thousands of €)"</span>, <span class="op">**</span>summary(listings[<span class="st">"price"</span>] <span class="op">/</span> <span class="dv">1000</span>)},</span>
+<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="16">
+<table class="table table-sm caption-top table-striped small">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th">variable</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">mean</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">std_dev</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">CV</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>area (m²)</td>
+<td style="text-align: right;">100.221</td>
+<td style="text-align: right;">66.412</td>
+<td style="text-align: right;">0.663</td>
+</tr>
+<tr class="even">
+<td>area (ft²)</td>
+<td style="text-align: right;">1,078.8</td>
+<td style="text-align: right;">714.858</td>
+<td style="text-align: right;">0.663</td>
+</tr>
+<tr class="odd">
+<td>price (€)</td>
+<td style="text-align: right;">388,892.1</td>
+<td style="text-align: right;">412,406.6</td>
+<td style="text-align: right;">1.060</td>
+</tr>
+<tr class="even">
+<td>price (thousands of €)</td>
+<td style="text-align: right;">388.892</td>
+<td style="text-align: right;">412.407</td>
+<td style="text-align: right;">1.060</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<ol start="3" type="a">
+<li>With <span class="math inline">\(a = -90\)</span> and <span class="math inline">\(b = 1\)</span>, the mean decreases by 90 m² and the standard deviation does not change. The coefficient of variation does change, because the mean changes but the standard deviation does not: the CV only makes sense on a ratio scale, with a true zero, and “area above 90 m²” has lost it (it can even be negative).</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="exr-chebyshev-sharp" class="theorem exercise">
+<p><span class="theorem-title"><strong>Exercise 10 (Chebyshev’s bound cannot be improved)</strong></span> Consider the eight observations <span class="math inline">\(-1, 0, 0, 0, 0, 0, 0, 1\)</span>.</p>
+<ol type="a">
+<li>Compute <span class="math inline">\(\bar x\)</span> and <span class="math inline">\(s\)</span>.</li>
+<li>What proportion of the observations satisfies <span class="math inline">\(|x_i - \bar x| \ge 2s\)</span>? Compare it with the bound of Chebyshev’s inequality for <span class="math inline">\(k = 2\)</span>.</li>
+<li>Why does this show that, without further information on the data, the bound <span class="math inline">\(1/k^2\)</span> cannot be lowered?</li>
+</ol>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Solution
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-10" class="callout-10-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="a">
+<li><p><span class="math inline">\(\bar x = 0\)</span> and <span class="math inline">\(s^2 = \frac18(1 + 1) = \frac14\)</span>, so <span class="math inline">\(s = \frac12\)</span>.</p></li>
+<li><p><span class="math inline">\(2s = 1\)</span>, and the observations with <span class="math inline">\(|x_i| \ge 1\)</span> are <span class="math inline">\(-1\)</span> and <span class="math inline">\(1\)</span>: a proportion of <span class="math inline">\(2/8 = 1/4\)</span>, exactly the bound <span class="math inline">\(1/k^2 = 1/4\)</span>.</p></li>
+<li><p>The inequality claims that the proportion is <strong>at most</strong> <span class="math inline">\(1/k^2\)</span> for <strong>every</strong> data set. Since here the proportion equals <span class="math inline">\(1/4\)</span>, no smaller number can be a valid bound for all data sets. The bound is attained when the observations far from the mean are all exactly at distance <span class="math inline">\(ks\)</span> and the rest are exactly at the mean, which is what the proof shows: equality requires both inequalities in it to be equalities.</p></li>
+</ol>
+</div>
+</div>
+</div>
+<section id="references" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="references">References</h2>
+<div id="refs" role="list">
+
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../topics/02-univariate/03-dispersion-shape.html" class="pagination-link" aria-label="2.3 Dispersion, shape and outliers">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">2.3 Dispersion, shape and outliers</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../topics/03-bivariate.html" class="pagination-link" aria-label="Topic 3. Bivariate data">
+        <span class="nav-page-text">Topic 3. Bivariate data</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

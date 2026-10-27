@@ -1,0 +1,673 @@
+[
+  {
+    "objectID": "topics/05-index-numbers-time-series.html",
+    "href": "topics/05-index-numbers-time-series.html",
+    "title": "Topic 5. Index numbers and time series",
+    "section": "",
+    "text": "NoteTopic in preparation\n\n\n\nThis topic is a placeholder. The planned contents are listed below.",
+    "crumbs": [
+      "Topic 5. Index numbers and time series"
+    ]
+  },
+  {
+    "objectID": "topics/05-index-numbers-time-series.html#simple-index-numbers-rates-of-change-and-base-changes",
+    "href": "topics/05-index-numbers-time-series.html#simple-index-numbers-rates-of-change-and-base-changes",
+    "title": "Topic 5. Index numbers and time series",
+    "section": "Simple index numbers, rates of change and base changes",
+    "text": "Simple index numbers, rates of change and base changes",
+    "crumbs": [
+      "Topic 5. Index numbers and time series"
+    ]
+  },
+  {
+    "objectID": "topics/05-index-numbers-time-series.html#composite-indices-laspeyres-paasche-and-fisher",
+    "href": "topics/05-index-numbers-time-series.html#composite-indices-laspeyres-paasche-and-fisher",
+    "title": "Topic 5. Index numbers and time series",
+    "section": "Composite indices: Laspeyres, Paasche and Fisher",
+    "text": "Composite indices: Laspeyres, Paasche and Fisher",
+    "crumbs": [
+      "Topic 5. Index numbers and time series"
+    ]
+  },
+  {
+    "objectID": "topics/05-index-numbers-time-series.html#deflating-nominal-and-real-prices-house-prices-and-the-cpi",
+    "href": "topics/05-index-numbers-time-series.html#deflating-nominal-and-real-prices-house-prices-and-the-cpi",
+    "title": "Topic 5. Index numbers and time series",
+    "section": "Deflating: nominal and real prices (house prices and the CPI)",
+    "text": "Deflating: nominal and real prices (house prices and the CPI)",
+    "crumbs": [
+      "Topic 5. Index numbers and time series"
+    ]
+  },
+  {
+    "objectID": "topics/05-index-numbers-time-series.html#the-housing-price-index-of-the-ine",
+    "href": "topics/05-index-numbers-time-series.html#the-housing-price-index-of-the-ine",
+    "title": "Topic 5. Index numbers and time series",
+    "section": "The housing price index of the INE",
+    "text": "The housing price index of the INE",
+    "crumbs": [
+      "Topic 5. Index numbers and time series"
+    ]
+  },
+  {
+    "objectID": "topics/05-index-numbers-time-series.html#components-of-a-time-series-trend-seasonality-and-irregular-variation",
+    "href": "topics/05-index-numbers-time-series.html#components-of-a-time-series-trend-seasonality-and-irregular-variation",
+    "title": "Topic 5. Index numbers and time series",
+    "section": "Components of a time series: trend, seasonality and irregular variation",
+    "text": "Components of a time series: trend, seasonality and irregular variation",
+    "crumbs": [
+      "Topic 5. Index numbers and time series"
+    ]
+  },
+  {
+    "objectID": "topics/05-index-numbers-time-series.html#moving-averages-and-year-on-year-rates",
+    "href": "topics/05-index-numbers-time-series.html#moving-averages-and-year-on-year-rates",
+    "title": "Topic 5. Index numbers and time series",
+    "section": "Moving averages and year-on-year rates",
+    "text": "Moving averages and year-on-year rates",
+    "crumbs": [
+      "Topic 5. Index numbers and time series"
+    ]
+  },
+  {
+    "objectID": "topics/05-index-numbers-time-series.html#exercises",
+    "href": "topics/05-index-numbers-time-series.html#exercises",
+    "title": "Topic 5. Index numbers and time series",
+    "section": "Exercises",
+    "text": "Exercises",
+    "crumbs": [
+      "Topic 5. Index numbers and time series"
+    ]
+  },
+  {
+    "objectID": "topics/05-index-numbers-time-series.html#references",
+    "href": "topics/05-index-numbers-time-series.html#references",
+    "title": "Topic 5. Index numbers and time series",
+    "section": "References",
+    "text": "References",
+    "crumbs": [
+      "Topic 5. Index numbers and time series"
+    ]
+  },
+  {
+    "objectID": "topics/03-bivariate.html",
+    "href": "topics/03-bivariate.html",
+    "title": "Topic 3. Bivariate data",
+    "section": "",
+    "text": "NoteTopic in preparation\n\n\n\nThis topic is a placeholder. The planned contents are listed below.",
+    "crumbs": [
+      "Topic 3. Bivariate data"
+    ]
+  },
+  {
+    "objectID": "topics/03-bivariate.html#two-qualitative-variables-contingency-tables-joint-marginal-and-conditional-distributions-zone-condition-district-lift",
+    "href": "topics/03-bivariate.html#two-qualitative-variables-contingency-tables-joint-marginal-and-conditional-distributions-zone-condition-district-lift",
+    "title": "Topic 3. Bivariate data",
+    "section": "Two qualitative variables: contingency tables, joint, marginal and conditional distributions (zone × condition, district × lift)",
+    "text": "Two qualitative variables: contingency tables, joint, marginal and conditional distributions (zone × condition, district × lift)",
+    "crumbs": [
+      "Topic 3. Bivariate data"
+    ]
+  },
+  {
+    "objectID": "topics/03-bivariate.html#association-between-qualitative-variables-comparing-conditional-distributions-the-chi-square-statistic-and-cramérs-v",
+    "href": "topics/03-bivariate.html#association-between-qualitative-variables-comparing-conditional-distributions-the-chi-square-statistic-and-cramérs-v",
+    "title": "Topic 3. Bivariate data",
+    "section": "Association between qualitative variables: comparing conditional distributions, the chi-square statistic and Cramér’s V",
+    "text": "Association between qualitative variables: comparing conditional distributions, the chi-square statistic and Cramér’s V",
+    "crumbs": [
+      "Topic 3. Bivariate data"
+    ]
+  },
+  {
+    "objectID": "topics/03-bivariate.html#a-quantitative-and-a-qualitative-variable-summaries-and-boxplots-by-group-price-per-m²-by-zone-and-condition",
+    "href": "topics/03-bivariate.html#a-quantitative-and-a-qualitative-variable-summaries-and-boxplots-by-group-price-per-m²-by-zone-and-condition",
+    "title": "Topic 3. Bivariate data",
+    "section": "A quantitative and a qualitative variable: summaries and boxplots by group (price per m² by zone and condition)",
+    "text": "A quantitative and a qualitative variable: summaries and boxplots by group (price per m² by zone and condition)",
+    "crumbs": [
+      "Topic 3. Bivariate data"
+    ]
+  },
+  {
+    "objectID": "topics/03-bivariate.html#two-quantitative-variables-scatterplots-covariance-and-pearsons-correlation-price-and-floor-area",
+    "href": "topics/03-bivariate.html#two-quantitative-variables-scatterplots-covariance-and-pearsons-correlation-price-and-floor-area",
+    "title": "Topic 3. Bivariate data",
+    "section": "Two quantitative variables: scatterplots, covariance and Pearson’s correlation (price and floor area)",
+    "text": "Two quantitative variables: scatterplots, covariance and Pearson’s correlation (price and floor area)",
+    "crumbs": [
+      "Topic 3. Bivariate data"
+    ]
+  },
+  {
+    "objectID": "topics/03-bivariate.html#the-least-squares-line-slope-intercept-and-the-coefficient-of-determination-as-descriptive-tools",
+    "href": "topics/03-bivariate.html#the-least-squares-line-slope-intercept-and-the-coefficient-of-determination-as-descriptive-tools",
+    "title": "Topic 3. Bivariate data",
+    "section": "The least-squares line: slope, intercept and the coefficient of determination as descriptive tools",
+    "text": "The least-squares line: slope, intercept and the coefficient of determination as descriptive tools",
+    "crumbs": [
+      "Topic 3. Bivariate data"
+    ]
+  },
+  {
+    "objectID": "topics/03-bivariate.html#transformations-price-per-m²-and-logarithms",
+    "href": "topics/03-bivariate.html#transformations-price-per-m²-and-logarithms",
+    "title": "Topic 3. Bivariate data",
+    "section": "Transformations: price per m² and logarithms",
+    "text": "Transformations: price per m² and logarithms",
+    "crumbs": [
+      "Topic 3. Bivariate data"
+    ]
+  },
+  {
+    "objectID": "topics/03-bivariate.html#correlation-is-not-causation-simpsons-paradox-with-our-data-overall-new-dwellings-ask-the-least-per-m²-but-within-each-zone-they-ask-the-most-because-three-quarters-of-them-are-in-the-periphery-and-anscombes-quartet",
+    "href": "topics/03-bivariate.html#correlation-is-not-causation-simpsons-paradox-with-our-data-overall-new-dwellings-ask-the-least-per-m²-but-within-each-zone-they-ask-the-most-because-three-quarters-of-them-are-in-the-periphery-and-anscombes-quartet",
+    "title": "Topic 3. Bivariate data",
+    "section": "Correlation is not causation: Simpson’s paradox with our data (overall, new dwellings ask the least per m², but within each zone they ask the most, because three quarters of them are in the periphery) and Anscombe’s quartet",
+    "text": "Correlation is not causation: Simpson’s paradox with our data (overall, new dwellings ask the least per m², but within each zone they ask the most, because three quarters of them are in the periphery) and Anscombe’s quartet",
+    "crumbs": [
+      "Topic 3. Bivariate data"
+    ]
+  },
+  {
+    "objectID": "topics/03-bivariate.html#exercises",
+    "href": "topics/03-bivariate.html#exercises",
+    "title": "Topic 3. Bivariate data",
+    "section": "Exercises",
+    "text": "Exercises",
+    "crumbs": [
+      "Topic 3. Bivariate data"
+    ]
+  },
+  {
+    "objectID": "topics/03-bivariate.html#references",
+    "href": "topics/03-bivariate.html#references",
+    "title": "Topic 3. Bivariate data",
+    "section": "References",
+    "text": "References",
+    "crumbs": [
+      "Topic 3. Bivariate data"
+    ]
+  },
+  {
+    "objectID": "topics/02-univariate/03-dispersion-shape.html",
+    "href": "topics/02-univariate/03-dispersion-shape.html",
+    "title": "2.3 Dispersion, shape and outliers",
+    "section": "",
+    "text": "Two variables can have the same centre and very different variability. This part measures the spread and the shape of a distribution, and introduces the boxplot and the detection of outliers. We continue with the Madrid listings.\nlistings = pl.read_csv(\"data/processed/idealista/madrid_listings_2018.csv\").select(\n    \"listing_id\", \"district\", \"zone\", \"condition\",\n    \"price\", \"price_m2\", \"area_m2\", \"bedrooms\", \"bathrooms\",\n    \"floor\", \"lift\", \"terrace\", \"construction_year\", \"dist_centre_km\",\n)",
+    "crumbs": [
+      "Topic 2. Univariate data",
+      "2.3 Dispersion, shape and outliers"
+    ]
+  },
+  {
+    "objectID": "topics/02-univariate/03-dispersion-shape.html#measures-of-dispersion",
+    "href": "topics/02-univariate/03-dispersion-shape.html#measures-of-dispersion",
+    "title": "2.3 Dispersion, shape and outliers",
+    "section": "Measures of dispersion",
+    "text": "Measures of dispersion\n\nDefinition 1 (Measures of dispersion)  \n\nRange: \\(R = x_{(n)} - x_{(1)}\\).\nVariance: \\(\\displaystyle s^2 = \\frac{1}{n}\\sum_{i=1}^{n}(x_i - \\bar{x})^2\\), the mean of the squared deviations from the mean.\nStandard deviation: \\(s = \\sqrt{s^2}\\), in the same units as the data.\nCorrected (sample) variance: \\(\\displaystyle \\hat{s}^2 = \\frac{1}{n-1}\\sum_{i=1}^{n}(x_i - \\bar{x})^2 = \\frac{n}{n-1}\\,s^2\\). It is the version used in statistical inference.\nInterquartile range: \\(IQR = Q_{0.75} - Q_{0.25}\\), the width of the central half of the data.\nMedian absolute deviation: \\(MAD = \\text{median}_i\\,|x_i - Me|\\).\nCoefficient of variation, for positive variables: \\(CV = s / \\bar{x}\\).\n\n\nThe variance, the standard deviation and the range depend on every observation; the interquartile range and the MAD, like the median, ignore the extremes.\n\nx = pl.col(\"price\")\n\nlistings.select(\n    range=x.max() - x.min(),\n    variance=x.var(ddof=0),\n    std_dev=x.std(ddof=0),\n    IQR=x.quantile(0.75, \"linear\") - x.quantile(0.25, \"linear\"),\n    MAD=(x - x.median()).abs().median(),\n    CV=x.std(ddof=0) / x.mean(),\n)\n\n\n\n\nrange\nvariance\nstd_dev\nIQR\nMAD\nCV\n\n\n\n\n8,112,000.0\n170,079,231,502.8\n412,406.6\n299,000.0\n121,000.0\n1.060\n\n\n\n\n\nThe variance is a huge number, in euros squared, which is why we report the standard deviation: asking prices are typically about 412,000 € away from their mean, a spread larger than the mean itself (\\(CV &gt; 1\\)). The central half of the listings, however, lies in an interval of about 300,000 €.\n\n\n\n\n\n\nImportantWatch out for ddof\n\n\n\nPolars (like pandas, R and Excel’s STDEV) computes the corrected variance by default, dividing by \\(n - 1\\). To obtain \\(s^2\\) as defined above we need ddof=0. With 75,735 listings the difference is negligible, but with small samples it is not (exercise 4).\n\n\n\nProperties of the variance\n\nProposition 1 (Computational formula) \\(\\displaystyle s^2 = \\frac1n\\sum_{i=1}^n x_i^2 - \\bar x^2\\), the mean of the squares minus the square of the mean. In particular \\(\\frac1n\\sum_i x_i^2 \\ge \\bar x^2\\).\n\n\nProof. Take \\(c = 0\\) in the least-squares property of the mean (part 2): \\(\\sum_i x_i^2 = \\sum_i (x_i - \\bar x)^2 + n\\bar x^2\\). Divide by \\(n\\) and rearrange.\n\nThe formula is convenient by hand and for grouped data, \\(s^2 \\approx \\sum_i f_i x_i^2 - \\big(\\sum_i f_i x_i\\big)^2\\) with the class marks \\(x_i\\). On a computer it should be avoided when the mean is large compared with the standard deviation: it subtracts two huge, almost equal numbers, and loses precision.\nThe standard deviation is a “typical” distance to the mean. The next result makes this precise: few observations can be many standard deviations away from the mean.\n\nProposition 2 (Chebyshev’s inequality (for data)) For any data with \\(s &gt; 0\\) and any \\(k &gt; 0\\), the proportion of observations with \\(|x_i - \\bar x| \\ge k s\\) is at most \\(1/k^2\\). Equivalently, at least \\(1 - 1/k^2\\) of the observations lie in the interval \\((\\bar x - ks, \\bar x + ks)\\).\n\n\nProof. Let \\(A = \\{i : |x_i - \\bar x| \\ge ks\\}\\) and \\(m = \\#A\\). Each \\(i \\in A\\) contributes at least \\(k^2 s^2\\) to the sum of squared deviations, and the other terms are non-negative, so \\[\nn s^2 = \\sum_{i=1}^n (x_i - \\bar x)^2 \\ge \\sum_{i \\in A}(x_i - \\bar x)^2 \\ge m\\,k^2 s^2 .\n\\] Dividing by \\(n k^2 s^2\\) gives \\(m / n \\le 1/k^2\\).\n\n\nmean, sd = listings.select(m=pl.col(\"price\").mean(), s=pl.col(\"price\").std(ddof=0)).row(0)\npl.DataFrame([\n    {\"k\": k,\n     \"proportion beyond k s\": (listings[\"price\"] - mean).abs().ge(k * sd).mean(),\n     \"Chebyshev bound 1/k^2\": 1 / k**2}\n    for k in [1.5, 2, 3, 5]\n])\n\n\n\n\nk\nproportion beyond k s\nChebyshev bound 1/k^2\n\n\n\n\n1.500\n0.058\n0.444\n\n\n2.000\n0.043\n0.250\n\n\n3.000\n0.022\n0.111\n\n\n5.000\n0.007\n0.040\n\n\n\n\n\nThe bound holds for any data, whatever its shape, and is therefore conservative: for the prices, the proportions are well below it. For bell-shaped data the “68–95–99.7 rule” of the normal distribution is much sharper, but it requires that shape.\n\n\n\n\n\n\nNoteHistorical note: Bienaymé and Chebyshev\n\n\n\nThe inequality was proved by Irénée-Jules Bienaymé in 1853 and, independently and with a more general argument, by Pafnuty Chebyshev in 1867, who used it to give a simple proof of the law of large numbers. It is the first example of a statistical result that holds without assumptions on the shape of the distribution.\n\n\n\n\nThe coefficient of variation\nThe coefficient of variation has no units, so it compares the spread of variables measured in different units: the price (€), the floor area (m²) and the price per m² (€/m²):\n\ncols = [\"price\", \"area_m2\", \"price_m2\"]\nlistings.select(pl.col(cols).std(ddof=0) / pl.col(cols).mean())\n\n\n\n\nprice\narea_m2\nprice_m2\n\n\n\n\n1.060\n0.663\n0.470\n\n\n\n\n\nTotal prices are relatively much more dispersed than prices per square metre. A large part of the differences in price comes from the size of the dwellings: dividing by the area removes it, and what remains (mostly location and quality) varies less. This is why property markets are compared with the price per m².\n\n\nVariance within and between groups\nHow much of the variability of the price per m² is due to the district? The answer is a decomposition of the variance, the descriptive core of the analysis of variance.\n\nProposition 3 (Decomposition of the variance) If the observations are divided into \\(G\\) groups with sizes \\(n_g\\), means \\(\\bar x_g\\) and variances \\(s_g^2\\), then \\[\ns^2 = \\underbrace{\\sum_{g=1}^G \\frac{n_g}{n}\\, s_g^2}_{\\text{within groups}}\n\\;+\\; \\underbrace{\\sum_{g=1}^G \\frac{n_g}{n}\\,(\\bar x_g - \\bar x)^2}_{\\text{between groups}} .\n\\]\n\n\nProof. Apply the least-squares property of the mean (part 2 of the proposition in part 2) to the observations of group \\(g\\) with \\(c = \\bar x\\): \\(\\sum_{i \\in g}(x_i - \\bar x)^2 = n_g s_g^2 + n_g(\\bar x_g - \\bar x)^2\\). Adding over the groups gives \\(n s^2\\) on the left; divide by \\(n\\).\n\nThe ratio \\(\\eta^2 = (\\text{between}) / s^2 \\in [0, 1]\\) is the proportion of the variance explained by the groups: it is 1 if all the observations of each group are equal, and 0 if all the groups have the same mean.\n\noverall_mean, overall_var = listings.select(\n    m=pl.col(\"price_m2\").mean(), v=pl.col(\"price_m2\").var(ddof=0)\n).row(0)\ngroups = listings.group_by(\"district\").agg(\n    n_g=pl.len(), mean_g=pl.col(\"price_m2\").mean(), var_g=pl.col(\"price_m2\").var(ddof=0)\n)\nn = listings.height\nwithin = (groups[\"n_g\"] * groups[\"var_g\"]).sum() / n\nbetween = (groups[\"n_g\"] * (groups[\"mean_g\"] - overall_mean) ** 2).sum() / n\n\nprint(f\"total variance  : {overall_var:,.0f}\")\nprint(f\"within + between: {within:,.0f} + {between:,.0f} = {within + between:,.0f}\")\nprint(f\"eta^2 (share explained by the district): {between / overall_var:.2f}\")\n\ntotal variance  : 2,925,561\nwithin + between: 1,197,123 + 1,728,438 = 2,925,561\neta^2 (share explained by the district): 0.59\n\n\nThe district alone accounts for almost 60 % of the variance of the price per m². The rest is variation between dwellings of the same district: their exact location, size, condition and quality.",
+    "crumbs": [
+      "Topic 2. Univariate data",
+      "2.3 Dispersion, shape and outliers"
+    ]
+  },
+  {
+    "objectID": "topics/02-univariate/03-dispersion-shape.html#measures-of-shape",
+    "href": "topics/02-univariate/03-dispersion-shape.html#measures-of-shape",
+    "title": "2.3 Dispersion, shape and outliers",
+    "section": "Measures of shape",
+    "text": "Measures of shape\n\nDefinition 2 (Skewness and kurtosis)  \n\nSkewness coefficient: \\(\\displaystyle g_1 = \\frac{\\frac{1}{n}\\sum (x_i-\\bar{x})^3}{s^3}\\). It is 0 for symmetric data, positive for a long tail to the right and negative for a long tail to the left.\nQuartile (Bowley) skewness: \\(\\displaystyle \\frac{(Q_{0.75} - Me) - (Me - Q_{0.25})}{Q_{0.75} - Q_{0.25}} \\in [-1, 1]\\), which compares the two halves of the box and is not affected by the extremes.\nExcess kurtosis: \\(\\displaystyle g_2 = \\frac{\\frac{1}{n}\\sum (x_i-\\bar{x})^4}{s^4} - 3\\). It compares the weight of the tails with that of the normal distribution, for which \\(g_2 = 0\\).\n\n\nAll three are invariant to changes of units (exercise 6): they describe the shape, not the location or the scale.\n\nq1, me, q3 = [listings[\"price\"].quantile(p, \"linear\") for p in (0.25, 0.5, 0.75)]\nlistings.select(\n    skewness=pl.col(\"price\").skew(),\n    bowley=pl.lit((q3 - me - (me - q1)) / (q3 - q1)),\n    kurtosis=pl.col(\"price\").kurtosis(),  # already subtracts 3\n)\n\n\n\n\nskewness\nbowley\nkurtosis\n\n\n\n\n4.074\n0.331\n29.472\n\n\n\n\n\nBoth skewness measures are positive. The kurtosis is very large: there are far more extremely expensive dwellings than a bell-shaped distribution would have.",
+    "crumbs": [
+      "Topic 2. Univariate data",
+      "2.3 Dispersion, shape and outliers"
+    ]
+  },
+  {
+    "objectID": "topics/02-univariate/03-dispersion-shape.html#boxplot-and-outliers",
+    "href": "topics/02-univariate/03-dispersion-shape.html#boxplot-and-outliers",
+    "title": "2.3 Dispersion, shape and outliers",
+    "section": "Boxplot and outliers",
+    "text": "Boxplot and outliers\nThe boxplot summarises in one graph the median, the quartiles and the possible outliers:\n\nThe box goes from \\(Q_{0.25}\\) to \\(Q_{0.75}\\), and the line inside it marks the median.\nThe fences are \\(LF = Q_{0.25} - 1.5 \\cdot IQR\\) and \\(UF = Q_{0.75} + 1.5 \\cdot IQR\\), and the “whiskers” reach the most extreme observations within them.\nObservations outside \\([LF, UF]\\) are drawn one by one as outliers.\n\nBoxplots are especially useful for comparing groups:\n\norder = (\n    listings.group_by(\"district\")\n    .agg(median=pl.col(\"price_m2\").median())\n    .sort(\"median\")[\"district\"]\n    .to_list()\n)\n\nfig, ax = plt.subplots(figsize=(7, 7))\nsns.boxplot(x=listings[\"price_m2\"].to_numpy(), y=listings[\"district\"].to_numpy(),\n            order=order, color=COLORS[\"blue\"], showfliers=False, width=0.6,\n            medianprops=dict(color=COLORS[\"orange\"], linewidth=2), ax=ax)\nax.set_xlabel(\"Asking price per m² (€)\")\nax.set_ylabel(\"\")\nax.grid(axis=\"x\"); ax.grid(axis=\"y\", visible=False)\nplt.show()\n\n\n\n\n\n\n\nFigure 1: Boxplots of the asking price per m² by district, sorted by the median. Outliers are not drawn.\n\n\n\n\n\nThe median price per m² in Salamanca is more than three times that of Villaverde, and the central districts occupy the top of the graph. The boxes also show what the decomposition of the variance measured: the spread within each district is large (the box of Salamanca spans about 2,300 €/m²).\n\n\n\n\n\n\nNoteHistorical note: Tukey’s box-and-whisker plot\n\n\n\nJohn Tukey introduced the box-and-whisker plot as part of his exploratory data analysis (Tukey 1977). He wanted graphs that could be drawn by hand and were not distorted by outliers, which is why the box is built from quartiles and not from the mean and the standard deviation. The 1.5 × IQR rule was his practical choice (McGill et al. 1978).\n\n\n\niqr = q3 - q1\nlf, uf = q1 - 1.5 * iqr, q3 + 1.5 * iqr\noutliers = listings.filter(~pl.col(\"price\").is_between(lf, uf))\nprint(f\"Fences: [{lf:,.0f}, {uf:,.0f}] €  ·  outliers: {outliers.height:,} \"\n      f\"({outliers.height / listings.height:.1%} of the listings)\")\n\nFences: [-291,500, 904,500] €  ·  outliers: 5,512 (7.3% of the listings)\n\n\nThe lower fence is negative, so prices can only have outliers at the top, as is usual in right-skewed distributions.\n\n\n\n\n\n\nWarningAn outlier is not necessarily an error\n\n\n\nAn outlier may be an error (the dwelling with 93 bedrooms of part 1), but it may also be a genuinely expensive dwelling. In a right-skewed distribution the 1.5 × IQR rule flags many valid observations, here about one listing in fourteen. Before removing an observation we have to understand why it is outlying.",
+    "crumbs": [
+      "Topic 2. Univariate data",
+      "2.3 Dispersion, shape and outliers"
+    ]
+  },
+  {
+    "objectID": "topics/02-univariate/03-dispersion-shape.html#linear-transformations-and-standardisation",
+    "href": "topics/02-univariate/03-dispersion-shape.html#linear-transformations-and-standardisation",
+    "title": "2.3 Dispersion, shape and outliers",
+    "section": "Linear transformations and standardisation",
+    "text": "Linear transformations and standardisation\n\nProposition 4 (Linear transformations) If \\(y_i = a + b\\,x_i\\), then \\(\\bar{y} = a + b\\,\\bar{x}\\), \\(s_y^2 = b^2 s_x^2\\) and \\(s_y = |b|\\, s_x\\). If moreover \\(b &gt; 0\\), every quantile satisfies \\(Q_p(y) = a + b\\,Q_p(x)\\).\n\n\nProof. \\(\\bar y = \\frac1n\\sum_i (a + bx_i) = a + b\\bar x\\). Then \\(y_i - \\bar y = b(x_i - \\bar x)\\), so \\(s_y^2 = \\frac1n\\sum_i b^2(x_i-\\bar x)^2 = b^2s_x^2\\). The statement on quantiles is the result on monotone transformations of part 2, with the increasing function \\(g(x) = a + bx\\).\n\nAdding a constant moves the centre but not the spread; multiplying by a constant multiplies both. A special case is standardisation, \\[\nz_i = \\frac{x_i - \\bar{x}}{s_x}, \\quad\\text{that is,}\\quad a = -\\frac{\\bar x}{s_x},\\ b = \\frac1{s_x},\n\\] which by Proposition 4 gives \\(\\bar z = 0\\) and \\(s_z = 1\\). The value \\(z_i\\) says how many standard deviations observation \\(i\\) is above or below the mean, and allows comparing observations of different variables. Is a flat of 150 m² more unusual in size than a flat of 600,000 € is in price?\n\ndef z_score(column: str, value: float) -&gt; float:\n    x = listings[column]\n    return (value - x.mean()) / x.std(ddof=0)\n\ndef percentile_rank(column: str, value: float) -&gt; float:\n    return (listings[column] &lt;= value).mean()\n\nfor column, value in [(\"area_m2\", 150), (\"price\", 600_000)]:\n    print(f\"{column:&gt;8} = {value:&gt;7,}: z = {z_score(column, value):.2f}, \"\n          f\"F_n = {percentile_rank(column, value):.3f}\")\n\n area_m2 =     150: z = 0.75, F_n = 0.871\n   price = 600,000: z = 0.51, F_n = 0.835\n\n\nBoth measures agree that the flat of 150 m² is the more unusual one, but they say it differently: \\(z\\) measures distances in standard deviations, and \\(F_n\\) the proportion of listings below. With skewed variables the second is easier to interpret.",
+    "crumbs": [
+      "Topic 2. Univariate data",
+      "2.3 Dispersion, shape and outliers"
+    ]
+  },
+  {
+    "objectID": "topics/02-univariate/03-dispersion-shape.html#summary-of-the-topic",
+    "href": "topics/02-univariate/03-dispersion-shape.html#summary-of-the-topic",
+    "title": "2.3 Dispersion, shape and outliers",
+    "section": "Summary of the topic",
+    "text": "Summary of the topic\n\nTables, graphs and measures for each type of variable.\n\n\n\n\n\n\n\n\nType of variable\nTables\nGraphs\nMeasures\n\n\n\n\nQualitative nominal\n\\(n_i\\), \\(f_i\\)\nBar chart\nMode\n\n\nQualitative ordinal\n\\(n_i\\), \\(f_i\\), \\(N_i\\), \\(F_i\\)\nBar chart\nMode, median, quantiles\n\n\nQuantitative discrete\n\\(n_i\\), \\(f_i\\), \\(N_i\\), \\(F_i\\)\nBar chart, \\(F_n\\)\nAll\n\n\nQuantitative continuous\nBy classes\nHistogram, \\(F_n\\), boxplot\nAll\n\n\n\nThe exercises for this topic are in part 4.",
+    "crumbs": [
+      "Topic 2. Univariate data",
+      "2.3 Dispersion, shape and outliers"
+    ]
+  },
+  {
+    "objectID": "topics/02-univariate/03-dispersion-shape.html#references",
+    "href": "topics/02-univariate/03-dispersion-shape.html#references",
+    "title": "2.3 Dispersion, shape and outliers",
+    "section": "References",
+    "text": "References\n\n\nMcGill, Robert, John W. Tukey, and Wayne A. Larsen. 1978. “Variations of Box Plots.” The American Statistician 32 (1): 12–16.\n\n\nTukey, John W. 1977. Exploratory Data Analysis. Addison-Wesley.",
+    "crumbs": [
+      "Topic 2. Univariate data",
+      "2.3 Dispersion, shape and outliers"
+    ]
+  },
+  {
+    "objectID": "topics/02-univariate/01-freq-graphs.html",
+    "href": "topics/02-univariate/01-freq-graphs.html",
+    "title": "2.1 Frequency tables and graphs",
+    "section": "",
+    "text": "In this topic we study one variable at a time. The aim is to summarise the observations \\(x_1, x_2, \\dots, x_n\\) of a variable \\(X\\) with tables, graphs and a few numbers that describe how the data are distributed. The topic has four parts:\nWe work with the dwellings for sale in Madrid in 2018 and the variables described in Topic 1. Each row is a listing.\nlistings = pl.read_csv(\"data/processed/idealista/madrid_listings_2018.csv\").select(\n    \"listing_id\", \"district\", \"zone\", \"condition\",\n    \"price\", \"price_m2\", \"area_m2\", \"bedrooms\", \"bathrooms\",\n    \"floor\", \"lift\", \"terrace\", \"construction_year\", \"dist_centre_km\",\n)\nlistings.head()\n\n\n\n\nlisting_id\ndistrict\nzone\ncondition\nprice\nprice_m2\narea_m2\nbedrooms\nbathrooms\nfloor\nlift\nterrace\nconstruction_year\ndist_centre_km\n\n\n\n\nA10000037964896093228\nHortaleza\nPeriphery\nGood\n255,000.0\n2,628.9\n97\n3\n2\n4\nTrue\nFalse\n1966\n7.829\n\n\nA10000072440601830803\nPuente de Vallecas\nPeriphery\nTo renovate\n82,000.0\n1,322.6\n62\n2\n1\n1\nTrue\nFalse\n1965\n6.435\n\n\nA10000538600815177437\nPuente de Vallecas\nPeriphery\nGood\n133,000.0\n1,985.1\n67\n3\n1\n3\nFalse\nTrue\n1976\n4.836\n\n\nA10000654405436195291\nCiudad Lineal\nPeriphery\nGood\n204,000.0\n1,133.3\n180\n3\n2\n0\nTrue\nFalse\n1976\n4.665\n\n\nA10000872160480475600\nCarabanchel\nPeriphery\nGood\n161,000.0\n2,981.5\n54\n2\n1\n1\nFalse\nFalse\n1955\n4.063",
+    "crumbs": [
+      "Topic 2. Univariate data",
+      "2.1 Frequency tables and graphs"
+    ]
+  },
+  {
+    "objectID": "topics/02-univariate/01-freq-graphs.html#qualitative-data",
+    "href": "topics/02-univariate/01-freq-graphs.html#qualitative-data",
+    "title": "2.1 Frequency tables and graphs",
+    "section": "Qualitative data",
+    "text": "Qualitative data\n\nFrequency table\nLet a qualitative variable \\(X\\) with categories \\(c_1, \\dots, c_k\\) be observed on \\(n\\) individuals.\n\n\n\n\n\n\nNoteDefinition\n\n\n\n\nAbsolute frequency \\(n_i\\): number of observations in category \\(c_i\\). Then \\(\\sum_{i=1}^k n_i = n\\).\nRelative frequency \\(f_i = n_i / n\\): proportion of observations in category \\(c_i\\).\n\nThe set of pairs \\(\\{(c_i, n_i)\\}_{i=1}^k\\), or \\(\\{(c_i, f_i)\\}_{i=1}^k\\), is the frequency distribution of \\(X\\).\n\n\n\nProposition 1 (Properties of frequencies) \\(0 \\le n_i \\le n\\), \\(\\ \\sum_{i=1}^k n_i = n\\), \\(\\ 0 \\le f_i \\le 1\\) and \\(\\sum_{i=1}^k f_i = 1\\).\n\n\nProof. Each of the \\(n\\) observations belongs to exactly one category, because the categories are mutually exclusive and exhaustive. Counting the observations category by category therefore counts each of them once, so \\(\\sum_i n_i = n\\). Dividing by \\(n\\) gives \\(\\sum_i f_i = 1\\), and the bounds follow from \\(0 \\le n_i \\le n\\).\n\nThe two conditions on the categories, mutually exclusive (no observation in two categories) and exhaustive (every observation in some category), are what make a frequency table valid. A table of “features” (lift, terrace, parking…) does not satisfy them, because a dwelling can have several features or none.\nFrequency table of the district:\n\ndistrict_table = (\n    listings[\"district\"]\n    .value_counts(sort=True, name=\"n_i\")\n    .with_columns(f_i=pl.col(\"n_i\") / pl.col(\"n_i\").sum())\n)\ndistrict_table\n\n\n\nTable 1: Frequency distribution of the district of the listings.\n\n\n\n\n\n\ndistrict\nn_i\nf_i\n\n\n\n\nCentro\n9233\n0.122\n\n\nSalamanca\n6594\n0.087\n\n\nCarabanchel\n5268\n0.070\n\n\nChamberí\n4986\n0.066\n\n\nPuente de Vallecas\n4704\n0.062\n\n\nTetuán\n4649\n0.061\n\n\nCiudad Lineal\n4468\n0.059\n\n\nChamartín\n4031\n0.053\n\n\nLatina\n3836\n0.051\n\n\nArganzuela\n3566\n0.047\n\n\nRetiro\n3117\n0.041\n\n\nSan Blas-Canillejas\n2908\n0.038\n\n\nHortaleza\n2877\n0.038\n\n\nVillaverde\n2872\n0.038\n\n\nFuencarral-El Pardo\n2767\n0.037\n\n\nMoncloa-Aravaca\n2717\n0.036\n\n\nUsera\n2335\n0.031\n\n\nVilla de Vallecas\n2074\n0.027\n\n\nMoratalaz\n1047\n0.014\n\n\nVicálvaro\n954\n0.013\n\n\nBarajas\n732\n0.010\n\n\n\n\n\n\n\n\nCentro, the historic centre, has the most listings, about one in eight. This does not mean that it has the most dwellings: the table describes the dwellings for sale, and the share of dwellings that are on the market can differ from one district to another.\n\n\nBar chart\nA bar chart draws each category as a bar whose length is proportional to its frequency. For nominal variables the bars should be sorted by frequency, because the categories have no natural order.\n\nfig, ax = plt.subplots(figsize=(6, 6))\nax.barh(district_table[\"district\"], district_table[\"f_i\"], color=COLORS[\"blue\"])\nax.invert_yaxis()  # most frequent category at the top\nax.set_xlabel(\"Relative frequency\")\nax.grid(axis=\"x\"); ax.grid(axis=\"y\", visible=False)\nfor y, f in enumerate(district_table[\"f_i\"]):\n    ax.text(f + 0.001, y, f\"{f:.1%}\", va=\"center\", color=COLORS[\"ink_soft\"])\nplt.show()\n\n\n\n\n\n\n\nFigure 1: Bar chart of the district of the listings (relative frequencies).\n\n\n\n\n\n\n\n\n\n\n\nWarningWhat about pie charts?\n\n\n\nPie charts are very popular, but we compare angles and areas much less accurately than lengths on a common scale, as shown experimentally by Cleveland and McGill (1984). With more than two or three categories, a bar chart shows the same information more clearly.\n\n\n\ncondition_table = (\n    listings[\"condition\"]\n    .value_counts(sort=True, name=\"n_i\")\n    .with_columns(f_i=pl.col(\"n_i\") / pl.col(\"n_i\").sum())\n)\n\nfig, (ax_cond, ax_dist) = plt.subplots(1, 2, figsize=(10, 4))\n\nax_cond.pie(\n    condition_table[\"f_i\"], labels=condition_table[\"condition\"],\n    autopct=\"%1.0f%%\", startangle=90, counterclock=False,\n    colors=CYCLE, wedgeprops=dict(edgecolor=\"white\", linewidth=1.5),\n)\nax_cond.set_title(\"Condition (3 categories)\")\n\nax_dist.pie(\n    district_table[\"f_i\"], labels=district_table[\"district\"],\n    startangle=90, counterclock=False, textprops=dict(fontsize=7),\n    colors=plt.cm.tab20.colors * 2,\n    wedgeprops=dict(edgecolor=\"white\", linewidth=1),\n)\nax_dist.set_title(\"District (21 categories)\")\n\nfor ax in (ax_cond, ax_dist):\n    ax.set_aspect(\"equal\")  # circles, not ellipses\nplt.show()\n\n\n\n\n\n\n\nFigure 2: Pie charts of the condition of the dwelling (3 categories) and of the district (21 categories).\n\n\n\n\n\nWith three categories, one of them clearly dominant, the pie chart works: at a glance, about four out of five listings are second-hand dwellings in good condition. With 21 districts it does not: many slices have similar sizes, colours repeat, and the labels of the smallest slices are hard to read. Try to answer from the pie which district has more listings, Latina or Arganzuela, and then check the bar chart of Figure 1.\n\n\n\n\n\n\nNoteHistorical note: the first bar and pie charts\n\n\n\nBoth graphs were invented by the Scottish engineer and economist William Playfair. The bar chart appeared in his Commercial and Political Atlas (1786), to show Scotland’s trade with its partners, and the pie chart in his Statistical Breviary (1801). Playfair also drew the first line charts of economic time series.\n\n\n\n\nGraphical integrity\nA graph is an argument, and it can mislead even when every number in it is correct. Tufte (2001) proposed a simple measure of distortion, the lie factor: \\[\n\\text{Lie factor} = \\frac{\\text{size of the effect shown in the graph}}{\\text{size of the effect in the data}},\n\\] where the size of an effect is the relative change between the two quantities compared. A faithful graph has a lie factor close to 1. The most common distortion in bar charts is a vertical axis that does not start at zero, as in the right panel of Figure 3:\n\nmedians = (\n    listings.group_by(\"zone\")\n    .agg(median=pl.col(\"price_m2\").median())\n    .sort(\"zone\")\n)\ncentre, periphery = medians[\"median\"].to_list()\n\nfig, (ax_ok, ax_bad) = plt.subplots(1, 2, figsize=(9, 3.5))\nfor ax, bottom, title in [(ax_ok, 0, \"Axis from 0\"), (ax_bad, 2_000, \"Axis from 2,000\")]:\n    ax.bar(medians[\"zone\"], medians[\"median\"], width=0.5, color=COLORS[\"blue\"])\n    ax.set_ylim(bottom, 5_000)\n    ax.set_title(title)\n    ax.set_ylabel(\"Median price per m² (€)\")\nplt.show()\n\neffect_data = (centre - periphery) / periphery\neffect_graph = ((centre - 2_000) - (periphery - 2_000)) / (periphery - 2_000)\nprint(f\"Effect in the data : the centre is {effect_data:.0%} more expensive\")\nprint(f\"Effect in the graph: the bar is {effect_graph:.0%} longer\")\nprint(f\"Lie factor of the right panel: {effect_graph / effect_data:.1f}\")\n\n\n\n\n\n\n\nFigure 3: Median asking price per m² in the centre and in the periphery. Left, axis starting at zero; right, axis starting at 2,000 €/m².\n\n\n\n\n\nEffect in the data : the centre is 101% more expensive\nEffect in the graph: the bar is 775% longer\nLie factor of the right panel: 7.7\n\n\nIn the data, the centre is about twice as expensive as the periphery; in the right panel its bar is almost nine times as long. The rule follows from what the reader compares: in a bar chart we compare lengths, so the length must be proportional to the value, and the axis must start at zero. (Line charts, in which we compare positions and changes, do not need a zero.) Other principles of graphical integrity: label the axes with their units, use the same scale when panels are to be compared, and do not encode one number with an area or a volume, whose size grows faster than its length.\n\n\nOrdinal variables: cumulative frequencies\nIf the categories have a natural order, as the condition of the dwelling, it makes sense to accumulate frequencies:\n\n\n\n\n\n\nNoteDefinition\n\n\n\n\nCumulative absolute frequency: \\(N_i = n_1 + n_2 + \\dots + n_i\\).\nCumulative relative frequency: \\(F_i = N_i / n = f_1 + \\dots + f_i\\).\n\n\\(F_i\\) is the proportion of observations whose category is \\(c_i\\) or lower. It only makes sense when the categories are ordered.\n\n\nBy Proposition 1, the cumulative frequencies are non-decreasing, \\(0 \\le F_1 \\le F_2 \\le \\dots \\le F_k = 1\\), and \\(f_i = F_i - F_{i-1}\\) (with \\(F_0 = 0\\)): the table of cumulative frequencies contains the same information as the table of frequencies.\nThe table must follow the logical order of the categories, which we fix with pl.Enum:\n\ncondition_order = pl.Enum([\"To renovate\", \"Good\", \"New\"])\n\ncondition_cum = (\n    listings\n    .with_columns(pl.col(\"condition\").cast(condition_order))\n    .group_by(\"condition\")\n    .agg(n_i=pl.len())\n    .sort(\"condition\")\n    .with_columns(f_i=pl.col(\"n_i\") / pl.col(\"n_i\").sum())\n    .with_columns(N_i=pl.col(\"n_i\").cum_sum(), F_i=pl.col(\"f_i\").cum_sum())\n)\ncondition_cum\n\n\n\n\ncondition\nn_i\nf_i\nN_i\nF_i\n\n\n\n\nTo renovate\n14,152\n0.187\n14,152\n0.187\n\n\nGood\n59,172\n0.781\n73,324\n0.968\n\n\nNew\n2411\n0.032\n75,735\n1.000\n\n\n\n\n\nFor example, \\(F_2 \\approx 0.97\\) (second row): 97 % of the listings are in good condition or need renovation, that is, are not new. New-build dwellings are only about 3 % of the market.",
+    "crumbs": [
+      "Topic 2. Univariate data",
+      "2.1 Frequency tables and graphs"
+    ]
+  },
+  {
+    "objectID": "topics/02-univariate/01-freq-graphs.html#quantitative-data",
+    "href": "topics/02-univariate/01-freq-graphs.html#quantitative-data",
+    "title": "2.1 Frequency tables and graphs",
+    "section": "Quantitative data",
+    "text": "Quantitative data\n\nDiscrete variables\nA discrete variable with few distinct values, such as the number of bedrooms, has a table built as for an ordinal variable, sorted by value:\n\nbedrooms_table = (\n    listings[\"bedrooms\"]\n    .value_counts(name=\"n_i\")\n    .sort(\"bedrooms\")\n    .with_columns(f_i=pl.col(\"n_i\") / pl.col(\"n_i\").sum())\n    .with_columns(N_i=pl.col(\"n_i\").cum_sum(), F_i=pl.col(\"f_i\").cum_sum())\n)\nbedrooms_table\n\n\n\n\nbedrooms\nn_i\nf_i\nN_i\nF_i\n\n\n\n\n0\n2144\n0.028\n2144\n0.028\n\n\n1\n10,688\n0.141\n12,832\n0.169\n\n\n2\n23,057\n0.304\n35,889\n0.474\n\n\n3\n27,210\n0.359\n63,099\n0.833\n\n\n4\n9042\n0.119\n72,141\n0.953\n\n\n5\n2564\n0.034\n74,705\n0.986\n\n\n6\n606\n0.008\n75,311\n0.994\n\n\n7\n212\n0.003\n75,523\n0.997\n\n\n8\n116\n0.002\n75,639\n0.999\n\n\n9\n30\n0.000\n75,669\n0.999\n\n\n10\n20\n0.000\n75,689\n0.999\n\n\n11\n15\n0.000\n75,704\n1.000\n\n\n12\n12\n0.000\n75,716\n1.000\n\n\n13\n4\n0.000\n75,720\n1.000\n\n\n14\n5\n0.000\n75,725\n1.000\n\n\n15\n2\n0.000\n75,727\n1.000\n\n\n16\n2\n0.000\n75,729\n1.000\n\n\n18\n2\n0.000\n75,731\n1.000\n\n\n20\n2\n0.000\n75,733\n1.000\n\n\n33\n1\n0.000\n75,734\n1.000\n\n\n93\n1\n0.000\n75,735\n1.000\n\n\n\n\n\nThe table is long because of a few dwellings with many bedrooms, and its last rows show values such as 33 or 93 bedrooms, almost certainly errors in the listing. Real data contain errors; finding them is one of the first uses of a frequency table. To summarise the distribution it is clearer to group the tail into a last class “6 or more”:\n\nbedrooms_grouped = (\n    listings\n    .with_columns(\n        bedrooms=pl.when(pl.col(\"bedrooms\") &gt;= 6).then(pl.lit(\"6+\"))\n        .otherwise(pl.col(\"bedrooms\").cast(pl.String))\n    )\n    .group_by(\"bedrooms\")\n    .agg(n_i=pl.len())\n    .sort(\"bedrooms\")  # as text: \"0\" &lt; \"1\" &lt; … &lt; \"5\" &lt; \"6+\"\n    .with_columns(f_i=pl.col(\"n_i\") / pl.col(\"n_i\").sum())\n    .with_columns(F_i=pl.col(\"f_i\").cum_sum())\n)\nbedrooms_grouped\n\n\n\n\nbedrooms\nn_i\nf_i\nF_i\n\n\n\n\n0\n2144\n0.028\n0.028\n\n\n1\n10,688\n0.141\n0.169\n\n\n2\n23,057\n0.304\n0.474\n\n\n3\n27,210\n0.359\n0.833\n\n\n4\n9042\n0.119\n0.953\n\n\n5\n2564\n0.034\n0.986\n\n\n6+\n1030\n0.014\n1.000\n\n\n\n\n\n\nfig, ax = plt.subplots()\nax.bar(bedrooms_grouped[\"bedrooms\"], bedrooms_grouped[\"f_i\"], width=0.6,\n       color=COLORS[\"blue\"])\nax.set_xlabel(\"Number of bedrooms\")\nax.set_ylabel(\"Relative frequency\")\nplt.show()\n\n\n\n\n\n\n\nFigure 4: Bar chart of the number of bedrooms.\n\n\n\n\n\nMost listings have two or three bedrooms, and about 83 % have three or fewer (\\(F_i\\) in the row of 3).\n\n\nContinuous variables: grouping into classes\nA continuous variable such as the price takes almost as many different values as there are observations, so a table of single values summarises nothing. The data are grouped into classes (intervals) \\([L_{i-1}, L_i)\\), each with its class mark \\(x_i = (L_{i-1} + L_i)/2\\), the centre of the interval, and its width \\(a_i = L_i - L_{i-1}\\).\n\nbreaks = list(range(100_000, 1_000_001, 100_000))\n\nprice_table = (\n    listings\n    .with_columns(interval=pl.col(\"price\").cut(breaks, left_closed=True))\n    .group_by(\"interval\")\n    .agg(n_i=pl.len())\n    .sort(\"interval\")\n    .with_columns(f_i=pl.col(\"n_i\") / pl.col(\"n_i\").sum())\n    .with_columns(F_i=pl.col(\"f_i\").cum_sum())\n)\nprice_table\n\n\n\nTable 2: Asking price grouped into classes of 100,000 €.\n\n\n\n\n\n\ninterval\nn_i\nf_i\nF_i\n\n\n\n\n[-inf, 100000)\n4565\n0.060\n0.060\n\n\n[100000, 200000)\n24,398\n0.322\n0.382\n\n\n[200000, 300000)\n14,226\n0.188\n0.570\n\n\n[300000, 400000)\n9791\n0.129\n0.700\n\n\n[400000, 500000)\n6197\n0.082\n0.781\n\n\n[500000, 600000)\n4036\n0.053\n0.835\n\n\n[600000, 700000)\n2964\n0.039\n0.874\n\n\n[700000, 800000)\n2300\n0.030\n0.904\n\n\n[800000, 900000)\n1686\n0.022\n0.926\n\n\n[900000, 1000000)\n1115\n0.015\n0.941\n\n\n[1000000, inf)\n4457\n0.059\n1.000\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTipPolars detail\n\n\n\ncut() creates intervals closed on the right, \\((a, b]\\), unless left_closed=True is given, as here. The first and last intervals are open (\\(-\\infty\\) and \\(\\infty\\)), so that every observation falls into one class.\n\n\nReading the column \\(F_i\\): about 38 % of the listings ask for less than 200,000 €, and about 90 % ask for less than 800,000 €.\n\n\nHistogram\nThe histogram is the graph of a grouped variable: each class is drawn as a rectangle over its interval. When all the classes have the same width, the height of each rectangle can be its absolute frequency \\(n_i\\) or its relative frequency \\(f_i\\). Both versions have the same shape; only the scale of the vertical axis changes.\nWith Seaborn, the function sns.histplot draws both: the argument stat chooses what goes on the vertical axis (\"count\" for \\(n_i\\), \"probability\" for \\(f_i\\)).\n\nprice = listings[\"price\"].to_numpy() / 1000  # thousands of €\nbins = np.arange(0, 1_525, 25)\n\nfig, (ax_abs, ax_rel) = plt.subplots(1, 2, figsize=(9.5, 3.8))\nfor ax, stat, label in [(ax_abs, \"count\", \"Number of listings ($n_i$)\"),\n                        (ax_rel, \"probability\", \"Relative frequency ($f_i$)\")]:\n    sns.histplot(x=price, bins=bins, stat=stat, ax=ax,\n                 color=COLORS[\"blue\"], edgecolor=\"white\", linewidth=0.5, alpha=1)\n    ax.set_xlim(0, 1_500)\n    ax.set_xlabel(\"Asking price (thousands of €)\")\n    ax.set_ylabel(label)\nplt.show()\n\n\n\n\n\n\n\nFigure 5: Histogram of the asking price in classes of 25,000 €, with absolute frequencies (left) and relative frequencies (right). The horizontal axis stops at 1.5 million €: a few listings lie further to the right.\n\n\n\n\n\nFigure 5 shows a right-skewed distribution: about two thirds of the dwellings ask between 100,000 and 400,000 €, and a long tail of dwellings asks for much more (the most expensive, more than 8 million €). This is the typical shape of prices, incomes and wealth.\n\nClasses of different widths\nSometimes it is convenient to use classes of different widths, for example a wide class in the tail, where there are few observations. Then the height of a rectangle cannot be its frequency: a wide class collects many observations simply because it is wide. The rectangles must be drawn so that their area is proportional to the frequency, so the height of rectangle \\(i\\) is the density \\[\nh_i = \\frac{f_i}{a_i},\n\\tag{1}\\] where \\(a_i\\) is the width of the class. In sns.histplot this is stat=\"density\".\n\nProposition 2 (Areas of a density histogram) In a histogram with heights \\(h_i = f_i / a_i\\), the area of each rectangle is the relative frequency of its class, and the total area is 1. More generally, the area over any union of classes is the proportion of observations in those classes.\n\n\nProof. The area of rectangle \\(i\\) is \\(a_i h_i = a_i \\cdot f_i / a_i = f_i\\). Adding over the classes, the total area is \\(\\sum_i f_i = 1\\) by Proposition 1, and the area over a union of classes is the sum of their \\(f_i\\).\n\nThe density \\(h_i\\) has units: proportion of observations per unit of the variable (here, per thousand euros). This is what makes histograms with different classes comparable, and what will connect them with the density functions of probability.\nFigure 6 uses classes of 100,000 € up to 600,000 € and a single class from 600,000 € to 1.5 million €.\n\nbins_unequal = [0, 100, 200, 300, 400, 500, 600, 1_500]\n\nfig, (ax_f, ax_d) = plt.subplots(1, 2, figsize=(10, 3.8))\nsns.histplot(x=price, bins=bins_unequal, stat=\"probability\", ax=ax_f,\n             color=COLORS[\"orange\"], edgecolor=\"white\", linewidth=1, alpha=1)\nax_f.set_ylabel(\"Relative frequency ($f_i$)\")\nax_f.set_title(\"Height = frequency (misleading)\")\n\nsns.histplot(x=price, bins=bins_unequal, stat=\"density\", ax=ax_d,\n             color=COLORS[\"blue\"], edgecolor=\"white\", linewidth=1, alpha=1)\nax_d.set_ylabel(\"Density ($f_i / a_i$)\")\nax_d.set_title(\"Area = frequency (correct)\")\n\nfor ax in (ax_f, ax_d):\n    ax.set_xlabel(\"Asking price (thousands of €)\")\nplt.show()\n\n\n\n\n\n\n\nFigure 6: The same classes of different widths drawn with relative frequencies (left) and with densities (right). Only the density histogram represents the data correctly.\n\n\n\n\n\nDrawn with its frequency (left), the last class suggests that many dwellings cost more than 600,000 €, only because that class is nine times wider than the others: its rectangle is nine times too tall. Drawn with its density (right), each 100,000 € of that class holds few listings, and the tail decreases as it should.\n\n\n\n\n\n\nWarningData outside the classes\n\n\n\nsns.histplot (like plt.hist) leaves out the observations outside all the classes, here the listings above 1.5 million €, and computes the relative frequencies with the remaining ones.\n\n\n\n\n\n\n\n\nImportantThe number of classes matters\n\n\n\nToo few classes hide the shape of the distribution; too many make it noisy. A classical guide is Sturges’ rule, \\(k \\approx 1 + \\log_2 n\\) (Sturges 1926), although with large data sets it gives too few classes (about 17 for our 75,735 listings). Sturges derived it for data with a symmetric, bell-shaped distribution, which our prices do not have. In practice it is worth trying several widths and choosing the one that shows the shape best.\n\n\n\n\n\n\n\n\nNoteHistorical note: the word “histogram”\n\n\n\nThe term histogram was coined by Karl Pearson, who used it in his lectures in the early 1890s and in print in 1895, in his work on skewed distributions (Pearson 1895). Pearson was trying to describe biological and economic data whose distributions, like the prices of Figure 5, were far from the symmetric normal curve.",
+    "crumbs": [
+      "Topic 2. Univariate data",
+      "2.1 Frequency tables and graphs"
+    ]
+  },
+  {
+    "objectID": "topics/02-univariate/01-freq-graphs.html#references",
+    "href": "topics/02-univariate/01-freq-graphs.html#references",
+    "title": "2.1 Frequency tables and graphs",
+    "section": "References",
+    "text": "References\n\n\nCleveland, William S., and Robert McGill. 1984. “Graphical Perception: Theory, Experimentation, and Application to the Development of Graphical Methods.” Journal of the American Statistical Association 79 (387): 531–54.\n\n\nPearson, Karl. 1895. “Contributions to the Mathematical Theory of Evolution. II. Skew Variation in Homogeneous Material.” Philosophical Transactions of the Royal Society of London. Series A 186: 343–414.\n\n\nSturges, Herbert A. 1926. “The Choice of a Class Interval.” Journal of the American Statistical Association 21 (153): 65–66.\n\n\nTufte, Edward R. 2001. The Visual Display of Quantitative Information. 2nd ed. Graphics Press.",
+    "crumbs": [
+      "Topic 2. Univariate data",
+      "2.1 Frequency tables and graphs"
+    ]
+  },
+  {
+    "objectID": "topics/01-introduction/01-stats-population-samples.html",
+    "href": "topics/01-introduction/01-stats-population-samples.html",
+    "title": "1.1 Statistics, populations and samples",
+    "section": "",
+    "text": "TipLearning outcomes\n\n\n\nAfter this topic you should be able to:\n\nExplain what statistics studies and distinguish descriptive statistics from statistical inference.\nIdentify, in a concrete problem, the population, the individuals, the subpopulations and the sample.\nDistinguish between a parameter and a statistic, and understand why a statistic changes from one sample to another.\nClassify a variable by its type and measurement scale, and know which summaries make sense for each one (part 2 of this topic).",
+    "crumbs": [
+      "Topic 1. Introduction",
+      "1.1 Statistics, populations and samples"
+    ]
+  },
+  {
+    "objectID": "topics/01-introduction/01-stats-population-samples.html#what-is-statistics",
+    "href": "topics/01-introduction/01-stats-population-samples.html#what-is-statistics",
+    "title": "1.1 Statistics, populations and samples",
+    "section": "What is statistics?",
+    "text": "What is statistics?\nMany everyday questions are about groups that are too large to be observed completely, or about things that vary from one case to another. How much does a flat cost in Madrid? Is it much more expensive in the centre than in the outskirts? Have house prices gone up this year? None of these questions can be answered with a single observation. We have to collect data, summarise them and draw conclusions, and say how sure we are of those conclusions.\n\n\n\n\n\n\nNoteDefinition\n\n\n\nStatistics is the discipline that studies how to collect, organise, summarise and analyse data, and how to draw conclusions and make decisions from them under uncertainty.\n\n\nTwo ideas in this definition are essential:\n\nVariability. If all flats had the same price, looking at one would be enough. Statistics exists because individuals differ. What it studies is not each individual but the distribution of a characteristic in a group: how many flats cost less than 200,000 €, which prices are typical, how different they are.\nUncertainty. We rarely observe the whole group. Conclusions drawn from a part of it can be wrong, and statistics tells us by how much.\n\n\nBranches of statistics\n\nDescriptive statistics summarises and displays the observed data with tables, graphs and a few numbers. Its conclusions refer only to the data at hand. It is the subject of this course.\nStatistical inference uses the data of a sample to draw conclusions about the population it comes from, together with a measure of their reliability.\nProbability is the language that connects both: it describes how samples are generated, and so how much they can differ from the population.\n\nEvery data analysis begins, and often ends, with a careful description of the data.\n\n\n\n\n\n\nflowchart LR\n    P[\"Population&lt;br/&gt;(unknown parameters)\"] -- \"sampling&lt;br/&gt;(probability)\" --&gt; M[\"Sample&lt;br/&gt;(observed data)\"]\n    M -- \"descriptive&lt;br/&gt;statistics\" --&gt; R[\"Summaries&lt;br/&gt;(statistics)\"]\n    R -- \"statistical&lt;br/&gt;inference\" --&gt; P\n\n\n\n\nFigure 1: Statistical reasoning. Probability describes how samples are generated from the population; inference goes the opposite way.\n\n\n\n\n\n\n\nStatistics in practice\n\nOfficial statistics. The unemployment rate published by the Spanish National Statistics Institute (INE) comes from the Labour Force Survey, which interviews a sample of households every quarter. The INE housing price index is computed from the sales registered by notaries.\nEconomics and business. Banks value dwellings before granting a mortgage, and property portals estimate prices from the characteristics of similar dwellings.\nHealth. Clinical trials compare treatments on samples of patients.\nEngineering. Quality control checks samples of products from a production line.\nPublic policy. Does a rent subsidy help young people leave their parents’ home? Answering requires comparing groups and separating the effect of the policy from random variability.",
+    "crumbs": [
+      "Topic 1. Introduction",
+      "1.1 Statistics, populations and samples"
+    ]
+  },
+  {
+    "objectID": "topics/01-introduction/01-stats-population-samples.html#our-data-dwellings-for-sale-in-madrid",
+    "href": "topics/01-introduction/01-stats-population-samples.html#our-data-dwellings-for-sale-in-madrid",
+    "title": "1.1 Statistics, populations and samples",
+    "section": "Our data: dwellings for sale in Madrid",
+    "text": "Our data: dwellings for sale in Madrid\nThroughout the course we use real data: the listings of dwellings for sale in the city of Madrid published on the property portal idealista in 2018 (Rey-Blanco et al. 2024). Each row is a dwelling advertised for sale, with its asking price, its size, its location and its features (lift, terrace, condition…). The data are described in data/processed/idealista/README.md.\n\nlistings = pl.read_csv(\"data/processed/idealista/madrid_listings_2018.csv\")\n\nlistings.select(\"district\", \"price\", \"area_m2\", \"bedrooms\", \"lift\").head()\n\n\n\n\ndistrict\nprice\narea_m2\nbedrooms\nlift\n\n\n\n\nHortaleza\n255,000.0\n97\n3\nTrue\n\n\nPuente de Vallecas\n82,000.0\n62\n2\nTrue\n\n\nPuente de Vallecas\n133,000.0\n67\n3\nFalse\n\n\nCiudad Lineal\n204,000.0\n180\n3\nTrue\n\n\nCarabanchel\n161,000.0\n54\n2\nFalse\n\n\n\n\n\n\nprint(f\"Number of listings: {listings.height:,}\")\n\nNumber of listings: 75,735",
+    "crumbs": [
+      "Topic 1. Introduction",
+      "1.1 Statistics, populations and samples"
+    ]
+  },
+  {
+    "objectID": "topics/01-introduction/01-stats-population-samples.html#populations-individuals-and-samples",
+    "href": "topics/01-introduction/01-stats-population-samples.html#populations-individuals-and-samples",
+    "title": "1.1 Statistics, populations and samples",
+    "section": "Populations, individuals and samples",
+    "text": "Populations, individuals and samples\n\nPopulation and individuals\n\n\n\n\n\n\nNoteDefinition\n\n\n\n\nPopulation: the set of all the elements we want to study. Its number of elements, the population size, is denoted by \\(N\\).\nIndividual (or statistical unit): each element of the population.\n\n\n\nIndividuals need not be people: they can be dwellings, households, firms, municipalities or months. Defining the population precisely is the first step of any study, and requires saying who, where and when.\n\n\n\n\n\n\nTipExample: what exactly do our data describe?\n\n\n\nOur individuals are listings: dwellings advertised for sale in the city of Madrid on one portal during 2018. This is not the same as “the dwellings of Madrid” (most of them were not for sale) or “the dwellings sold in Madrid” (some listings were never sold, and many sales are not advertised on that portal). The prices are asking prices chosen by the sellers, usually higher than the price finally agreed. Every conclusion we draw refers to the population of listings, not to the others.\n\n\n\n\nSubpopulations\n\n\n\n\n\n\nNoteDefinition\n\n\n\nA subpopulation is a subset of the population defined by a characteristic of its individuals.\n\n\nSubpopulations allow us to study differences within the population: the listings of the Salamanca district, those with a terrace, or the newly built ones. When the population is divided into disjoint subpopulations that cover it completely (for example, the 21 districts of Madrid), they are called strata.\n\n\nCensus and sample\n\n\n\n\n\n\nNoteDefinition\n\n\n\n\nCensus: a study in which all the individuals of the population are observed.\nSample: the subset of the population that is actually observed. Its number of elements, the sample size, is denoted by \\(n\\).\n\n\n\nWhy not always observe the whole population?\n\nCost and time. Visiting and valuing every dwelling of Madrid would take years. A well-chosen sample gives precise results for a fraction of the cost.\nPopulations that cannot be listed. The buyers a developer will have next year do not exist yet.\nDestructive tests. To check how long a battery lasts, it has to be run down.\nQuality. A careful survey of a sample can contain fewer errors than a hasty census.\n\n\n\nRepresentative samples and random sampling\nA sample is useful only if it is representative: its composition resembles that of the population, apart from differences due to chance. The way to guarantee this is to choose it at random.\n\n\n\n\n\n\nNoteDefinition\n\n\n\nA simple random sample (without replacement) of size \\(n\\) from a population of size \\(N\\) is a sample chosen so that each of the \\(\\binom{N}{n}\\) possible groups of \\(n\\) individuals has the same probability, \\(1 / \\binom{N}{n}\\), of being selected.\n\n\nIn a simple random sample of size \\(n\\), every individual has probability \\(n/N\\) of being in the sample.\nOfficial surveys use more elaborate random designs (for example, choosing municipalities first and then households within them), but the principle is the same: chance decides who is in the sample, not the researcher or the respondent.\n\n\n\n\n\n\nNoteHistorical note: the Literary Digest poll (1936)\n\n\n\nBefore the 1936 US presidential election, the magazine Literary Digest mailed about 10 million ballots and received some 2.4 million replies. It predicted a clear victory for Alf Landon, but Franklin D. Roosevelt won by a landslide. The addresses came largely from lists of telephone subscribers and car owners, people with above-average income during the Great Depression, and only the most motivated replied (Squire 1988). The same year, George Gallup predicted Roosevelt’s victory with a much smaller sample chosen to mirror the electorate.\nA huge but biased sample does not correct its bias. A small but random sample allows reliable conclusions.\n\n\nOther common biases in real data:\n\nNon-response: people who do not answer a survey may differ from those who do.\nSurvivorship: studying only the shops that are still open overstates how well shops do.\nSelf-selection: an online poll collects the opinion of those who decide to take part. Our listings are self-selected too: they are the dwellings whose owners chose to sell, and to advertise them on that portal.\n\n\n\nParameters and statistics\n\n\n\n\n\n\nNoteDefinition\n\n\n\n\nA parameter is a number that describes the population. It is fixed, but usually unknown.\nA statistic is a number computed from the data of a sample. It is known once the sample has been observed, but it changes from one sample to another.\n\n\n\nWe use Greek letters for parameters and Latin letters for statistics:\n\nNotation for parameters and statistics.\n\n\n\n\n\n\n\nQuantity\nPopulation (parameter)\nSample (statistic)\n\n\n\n\nSize\n\\(N\\)\n\\(n\\)\n\n\nMean\n\\(\\mu = \\dfrac{1}{N}\\displaystyle\\sum_{i=1}^{N} x_i\\)\n\\(\\bar{x} = \\dfrac{1}{n}\\displaystyle\\sum_{i=1}^{n} x_i\\)\n\n\nVariance\n\\(\\sigma^2\\)\n\\(s^2\\)\n\n\nProportion\n\\(p\\)\n\\(\\hat{p}\\)\n\n\n\nLet us see the difference with an experiment. Suppose, for illustration only, that the 75,735 listings are the whole population. Then the mean asking price of all of them is a parameter, \\(\\mu\\), which we can compute exactly:\n\npopulation = listings\nmu = population[\"price\"].mean()\nprint(f\"N = {population.height:,} listings  ·  μ = {mu:,.0f} €\")\n\nN = 75,735 listings  ·  μ = 388,892 €\n\n\nNow we draw five simple random samples of \\(n = 30\\) listings and compute the mean price \\(\\bar{x}\\) of each one:\n\nmeans = [\n    population.sample(n=30, seed=seed)[\"price\"].mean()\n    for seed in range(5)\n]\npl.DataFrame({\"sample\": range(1, 6), \"sample mean (€)\": means})\n\n\n\n\nsample\nsample mean (€)\n\n\n\n\n1\n388,066.7\n\n\n2\n470,133.3\n\n\n3\n487,300.0\n\n\n4\n446,166.7\n\n\n5\n332,300.0\n\n\n\n\n\nEach sample gives a different \\(\\bar{x}\\), and none of them equals \\(\\mu\\). If we repeat the experiment many times we can see how the statistic is distributed:\n\nrng = np.random.default_rng(1)\nprices = population[\"price\"].to_numpy()\nmeans = np.array([rng.choice(prices, size=30, replace=False).mean() for _ in range(4_000)])\n\nfig, ax = plt.subplots()\nax.hist(means / 1000, bins=40, color=COLORS[\"blue\"], edgecolor=\"white\", linewidth=1)\nax.axvline(mu / 1000, color=COLORS[\"orange\"], linewidth=2)\nax.text(mu / 1000, ax.get_ylim()[1] * 0.95, \"  μ\", color=COLORS[\"orange\"],\n        va=\"top\", fontsize=12)\nax.set_xlabel(\"Sample mean price (thousands of €)\")\nax.set_ylabel(\"Number of samples\")\nplt.show()\n\nprint(f\"Mean of the 2,000 sample means: {means.mean():,.0f} €  (μ = {mu:,.0f} €)\")\nprint(f\"Share of samples whose mean is more than 50,000 € away from μ: \"\n      f\"{np.mean(np.abs(means - mu) &gt; 50_000):.0%}\")\n\n\n\n\n\n\n\nFigure 2: Mean asking price in 3,000 simple random samples of 30 listings. The vertical line marks the population mean μ.\n\n\n\n\n\nMean of the 2,000 sample means: 389,623 €  (μ = 388,892 €)\nShare of samples whose mean is more than 50,000 € away from μ: 50%\n\n\nFigure 2 anticipates the main ideas of statistical inference:\n\nThe statistic \\(\\bar{x}\\) depends on the sample that chance has selected.\nIts values are centred on the parameter \\(\\mu\\): the mean of the 2,000 sample means is very close to it, so there is no systematic error. (The histogram is still somewhat skewed to the right, like the prices themselves; with larger samples it becomes symmetric.)\nIts spread is the sampling error. With samples of 30 flats it is large, because prices vary a lot from one flat to another; it decreases as \\(n\\) grows (Exercise 4).\n\n\n\n\n\n\n\nCautionWhy is this only an illustration?\n\n\n\nIn practice we never know \\(\\mu\\): if we could compute it, we would not need a sample. Here we have treated the data as a population in order to compare the statistic with the parameter, which is impossible in a real study.\n\n\nSubpopulations have their own parameters, for example the mean price in the centre (the seven districts inside the M-30 ring road) and in the periphery:\n\n(\n    population\n    .group_by(\"zone\")\n    .agg(N=pl.len(), mean_price=pl.col(\"price\").mean())\n    .sort(\"mean_price\", descending=True)\n)\n\n\n\n\nzone\nN\nmean_price\n\n\n\n\nCentre\n36,176\n545,208.4\n\n\nPeriphery\n39,559\n245,943.7",
+    "crumbs": [
+      "Topic 1. Introduction",
+      "1.1 Statistics, populations and samples"
+    ]
+  },
+  {
+    "objectID": "topics/01-introduction/01-stats-population-samples.html#exercises",
+    "href": "topics/01-introduction/01-stats-population-samples.html#exercises",
+    "title": "1.1 Statistics, populations and samples",
+    "section": "Exercises",
+    "text": "Exercises\n\nExercise 1 (Population, sample and parameter) A supermarket chain wants to know the mean amount spent per purchase in its stores in the Madrid region during March. It records the amount of 1,200 receipts chosen at random among all those issued that month in the region.\n\nIdentify the population, the individual, the sample and the sizes \\(N\\) and \\(n\\) (if known).\nWhat is the parameter of interest? Which statistic would you use to estimate it?\nThe firm wants to compare the stores in the city of Madrid with those in the rest of the region. Which concept describes these two groups?\n\n\n\n\n\n\n\n\nTipSolution\n\n\n\n\n\n\nPopulation: all the receipts issued in March in the chain’s stores in the Madrid region. Individual: each receipt, that is, each purchase (not each customer). Sample: the 1,200 selected receipts, so \\(n = 1\\,200\\). \\(N\\) is the total number of receipts of the month: the firm knows it, although it is not given.\nParameter: the mean amount per purchase in the population, \\(\\mu\\). Statistic: the mean \\(\\bar{x}\\) of the 1,200 amounts in the sample.\nThey are two subpopulations. Since they do not overlap and together cover the whole population, they are strata.\n\n\n\n\n\nExercise 2 (An online poll) A property website reports that “62 % of Spaniards think now is a bad time to buy a house”, according to a poll answered by 25,000 visitors to the site. Can this result be generalised to the Spanish population? Would it help if 250,000 visitors had answered?\n\n\n\n\n\n\n\nTipSolution\n\n\n\n\n\nIt cannot be generalised. The sample is not random but self-selected: it is made of visitors to a property website (people who are probably thinking about buying or selling) who decided to answer. Nothing guarantees that they resemble the population. More answers do not help: as with the Literary Digest, a larger sample with the same bias only estimates the wrong quantity more precisely.\n\n\n\n\nExercise 3 (What do the data describe?) A newspaper uses our data to write: “In 2018 a flat in Madrid cost on average about 390,000 €”. Point out two reasons why this sentence may not describe correctly the prices paid for dwellings in Madrid in 2018.\n\n\n\n\n\n\n\nTipSolution\n\n\n\n\n\n\nThe prices are asking prices, not the prices finally paid, which are usually lower after negotiation.\nThe individuals are listings on one portal, not sales. Dwellings that are expensive or hard to sell may stay on the market and be over-represented, and sales made without that portal are missing.\n\nA third point, studied in Topic 2: the mean is pulled up by a few very expensive dwellings, so a “typical” flat costs less than the mean (the median is 257,000 €).\n\n\n\n\nExercise 4 (Sampling variability of a proportion (with Python)) Treating again the listings as if they were the population:\n\nCompute the population proportion \\(p\\) of listings in a building with a lift.\nDraw 1,000 simple random samples of size \\(n = 50\\) and compute the sample proportion \\(\\hat{p}\\) in each one. Draw their histogram together with \\(p\\).\nRepeat b) with \\(n = 500\\). What changes?\n\n\n\n\n\n\n\n\nTipSolution\n\n\n\n\n\n\nlift = population[\"lift\"].to_numpy()\np = lift.mean()\n\nrng = np.random.default_rng(2026)\nfig, axes = plt.subplots(1, 2, figsize=(9, 3.5), sharex=True)\nfor ax, n in zip(axes, [50, 500]):\n    p_hat = [rng.choice(lift, size=n, replace=False).mean() for _ in range(1_000)]\n    edges = (np.arange(n + 2) - 0.5) / n  # p_hat only takes the values k/n: one bar per value\n    ax.hist(p_hat, bins=edges, color=COLORS[\"blue\"])\n    ax.set_xlim(0.4, 1)\n    ax.axvline(p, color=COLORS[\"orange\"], linewidth=2)\n    ax.set_title(f\"n = {n}\")\n    ax.set_xlabel(\"Sample proportion with lift\")\n    print(f\"n = {n:&gt;3}: standard deviation of the 1,000 values of p_hat = {np.std(p_hat):.3f}\")\nplt.show()\nprint(f\"Population proportion p = {p:.3f}\")\n\nn =  50: standard deviation of the 1,000 values of p_hat = 0.066\nn = 500: standard deviation of the 1,000 values of p_hat = 0.021\n\n\n\n\n\n\n\n\n\nPopulation proportion p = 0.689\n\n\nBoth histograms are centred on \\(p\\), but with \\(n = 500\\) the sample proportions are much closer to it: the sampling error decreases as the sample size increases.",
+    "crumbs": [
+      "Topic 1. Introduction",
+      "1.1 Statistics, populations and samples"
+    ]
+  },
+  {
+    "objectID": "topics/01-introduction/01-stats-population-samples.html#references",
+    "href": "topics/01-introduction/01-stats-population-samples.html#references",
+    "title": "1.1 Statistics, populations and samples",
+    "section": "References",
+    "text": "References\n\n\nRey-Blanco, David, Pelayo Arbués, Fernando A. López, and Antonio Páez. 2024. “Using Machine Learning to Identify Spatial Market Segments. A Reproducible Study of Major Spanish Markets.” Environment and Planning B: Urban Analytics and City Science 51 (1): 89–108. https://doi.org/10.1177/23998083231166952.\n\n\nSquire, Peverill. 1988. “Why the 1936 Literary Digest Poll Failed.” Public Opinion Quarterly 52 (1): 125–33.",
+    "crumbs": [
+      "Topic 1. Introduction",
+      "1.1 Statistics, populations and samples"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Descriptive Statistics",
+    "section": "",
+    "text": "An introductory course (undergraduate level) on how to summarise, display and explore data: frequency tables and graphs, numerical summaries, the relationship between two variables, inequality and concentration measures, and index numbers.\nEach topic combines definitions with applications to real data and reproducible examples in Python (Polars, NumPy, Matplotlib and Seaborn). Exercises include their solutions."
+  },
+  {
+    "objectID": "index.html#topics",
+    "href": "index.html#topics",
+    "title": "Descriptive Statistics",
+    "section": "Topics",
+    "text": "Topics\n\n\n\nTopic\nStatus\n\n\n\n\nTopic 1. Introduction\nDone\n\n\nTopic 2. Univariate data\nDraft, to be reviewed\n\n\nTopic 3. Bivariate data\nIn preparation\n\n\nTopic 4. Inequality and concentration\nIn preparation\n\n\nTopic 5. Index numbers and time series\nIn preparation"
+  },
+  {
+    "objectID": "index.html#data",
+    "href": "index.html#data",
+    "title": "Descriptive Statistics",
+    "section": "Data",
+    "text": "Data\nThe examples use real data that need no background to understand: the dwellings advertised for sale in the city of Madrid on the property portal idealista in 2018, about 75,700 listings with their asking price, floor area, number of rooms, district and features (lift, terrace, condition…). The data were released for research by Rey-Blanco et al. (2024) under the Open Database License.\nThey are downloaded and cleaned by two scripts, src/download/download_idealista.py and src/processing/prepare_idealista.py, which produce the file data/processed/idealista/madrid_listings_2018.csv. The variables are described in data/processed/idealista/README.md."
+  },
+  {
+    "objectID": "index.html#main-references",
+    "href": "index.html#main-references",
+    "title": "Descriptive Statistics",
+    "section": "Main references",
+    "text": "Main references\nFreedman et al. (2007), Peña (2014), Tukey (1977) and Wickham et al. (2023). More specific references are given in each topic.\n\n\nFreedman, David, Robert Pisani, and Roger Purves. 2007. Statistics. 4th ed. W. W. Norton.\n\n\nPeña, Daniel. 2014. Fundamentos de Estadística. 2nd ed. Alianza Editorial.\n\n\nRey-Blanco, David, Pelayo Arbués, Fernando A. López, and Antonio Páez. 2024. “Using Machine Learning to Identify Spatial Market Segments. A Reproducible Study of Major Spanish Markets.” Environment and Planning B: Urban Analytics and City Science 51 (1): 89–108. https://doi.org/10.1177/23998083231166952.\n\n\nTukey, John W. 1977. Exploratory Data Analysis. Addison-Wesley.\n\n\nWickham, Hadley, Mine Çetinkaya-Rundel, and Garrett Grolemund. 2023. R for Data Science. 2nd ed. O’Reilly."
+  },
+  {
+    "objectID": "topics/01-introduction/02-types-of-variables.html",
+    "href": "topics/01-introduction/02-types-of-variables.html",
+    "title": "1.2 Types of variables",
+    "section": "",
+    "text": "We use the Madrid listings introduced in the first part of the topic. The file has 31 columns (described in data/processed/idealista/README.md); in this course we mostly use the following fourteen:\nlistings = pl.read_csv(\"data/processed/idealista/madrid_listings_2018.csv\").select(\n    \"listing_id\", \"district\", \"zone\", \"condition\",\n    \"price\", \"price_m2\", \"area_m2\", \"bedrooms\", \"bathrooms\",\n    \"floor\", \"lift\", \"terrace\", \"construction_year\", \"dist_centre_km\",\n)",
+    "crumbs": [
+      "Topic 1. Introduction",
+      "1.2 Types of variables"
+    ]
+  },
+  {
+    "objectID": "topics/01-introduction/02-types-of-variables.html#variables-and-data",
+    "href": "topics/01-introduction/02-types-of-variables.html#variables-and-data",
+    "title": "1.2 Types of variables",
+    "section": "Variables and data",
+    "text": "Variables and data\n\n\n\n\n\n\nNoteDefinition\n\n\n\n\nA variable is a characteristic of the individuals that can take different values, or categories, from one individual to another.\nData are the observed values of one or more variables on a set of individuals.\nWe write \\(x_i\\) for the value of the variable \\(X\\) for individual \\(i\\), \\(i = 1, \\dots, n\\).\nWith \\(p\\) variables \\(X_1, \\dots, X_p\\), the data form the data matrix \\(\\mathbf{X} = (x_{ij})\\) of size \\(n \\times p\\), where \\(x_{ij}\\) is the value of variable \\(X_j\\) for individual \\(i\\).\n\n\n\nIn the data matrix each row is an individual and each column a variable. This is exactly the structure of a Polars DataFrame, with \\(n = 75{,}735\\) rows and \\(p = 14\\) columns here:\n\nlistings.head()\n\n\n\n\nlisting_id\ndistrict\nzone\ncondition\nprice\nprice_m2\narea_m2\nbedrooms\nbathrooms\nfloor\nlift\nterrace\nconstruction_year\ndist_centre_km\n\n\n\n\nA10000037964896093228\nHortaleza\nPeriphery\nGood\n255,000.0\n2,628.9\n97\n3\n2\n4\nTrue\nFalse\n1966\n7.829\n\n\nA10000072440601830803\nPuente de Vallecas\nPeriphery\nTo renovate\n82,000.0\n1,322.6\n62\n2\n1\n1\nTrue\nFalse\n1965\n6.435\n\n\nA10000538600815177437\nPuente de Vallecas\nPeriphery\nGood\n133,000.0\n1,985.1\n67\n3\n1\n3\nFalse\nTrue\n1976\n4.836\n\n\nA10000654405436195291\nCiudad Lineal\nPeriphery\nGood\n204,000.0\n1,133.3\n180\n3\n2\n0\nTrue\nFalse\n1976\n4.665\n\n\nA10000872160480475600\nCarabanchel\nPeriphery\nGood\n161,000.0\n2,981.5\n54\n2\n1\n1\nFalse\nFalse\n1955\n4.063",
+    "crumbs": [
+      "Topic 1. Introduction",
+      "1.2 Types of variables"
+    ]
+  },
+  {
+    "objectID": "topics/01-introduction/02-types-of-variables.html#classification-of-variables",
+    "href": "topics/01-introduction/02-types-of-variables.html#classification-of-variables",
+    "title": "1.2 Types of variables",
+    "section": "Classification of variables",
+    "text": "Classification of variables\nThe type of a variable decides which tables, graphs and summaries make sense.\nQualitative (categorical) variables: their values are qualities, not quantities.\n\nNominal: the categories have no natural order. For example, the district or the zone.\nOrdinal: the categories have a natural order, but the distance between them is not defined. For example, the condition of the dwelling: “to renovate” is worse than “good”, which is worse than “new”, but it makes no sense to ask how much worse.\nBinary (dichotomous) variables have only two categories, such as having a lift or not. They are usually coded as 1 (yes) and 0 (no), and then their mean is the proportion of ones.\n\nQuantitative variables: their values are numbers that express an amount, measured in some units.\n\nDiscrete: they take separate values, usually whole numbers, that can be counted. For example, the number of bedrooms.\nContinuous: they can take, at least in theory, any value in an interval. For example, the price, the floor area or the distance to the centre.\n\n\n\n\n\n\n\nflowchart TD\n    V[\"Variable\"] --&gt; CL[\"Qualitative\"]\n    V --&gt; CU[\"Quantitative\"]\n    CL --&gt; N[\"Nominal&lt;br/&gt;&lt;i&gt;district&lt;/i&gt;\"]\n    CL --&gt; O[\"Ordinal&lt;br/&gt;&lt;i&gt;condition&lt;/i&gt;\"]\n    CU --&gt; D[\"Discrete&lt;br/&gt;&lt;i&gt;bedrooms&lt;/i&gt;\"]\n    CU --&gt; C[\"Continuous&lt;br/&gt;&lt;i&gt;price, area&lt;/i&gt;\"]\n\n\n\n\nFigure 1: Classification of statistical variables, with examples from the Madrid listings.\n\n\n\n\n\n\n\n\n\n\n\nWarningBeing recorded as a number does not make a variable quantitative\n\n\n\nMany qualitative variables are recorded with numbers: postcodes, district codes (01 for Centro, 04 for Salamanca…) or identifiers. Computing the mean of these codes makes no sense. The type of a variable depends on what it measures, not on how it is stored.\n\n\n\n\n\n\n\n\nTipDiscrete or continuous in practice\n\n\n\nEvery measurement has limited precision: prices are rounded to the euro and areas to the square metre. Strictly, all observed data are discrete. In practice we treat a variable as continuous when it takes many different values and intermediate values make sense. The price is continuous for practical purposes; the number of bedrooms is not.",
+    "crumbs": [
+      "Topic 1. Introduction",
+      "1.2 Types of variables"
+    ]
+  },
+  {
+    "objectID": "topics/01-introduction/02-types-of-variables.html#measurement-scales",
+    "href": "topics/01-introduction/02-types-of-variables.html#measurement-scales",
+    "title": "1.2 Types of variables",
+    "section": "Measurement scales",
+    "text": "Measurement scales\nA finer classification, due to Stevens (1946), looks at the operations that make sense with the values of a variable:\n\n\n\nTable 1: Measurement scales, the operations they allow and the transformations that leave their meaning unchanged.\n\n\n\n\n\n\n\n\n\n\n\n\nScale\nWhat it allows\nAdmissible transformations\nExample\nMeasures of centre\n\n\n\n\nNominal\nEqual or different: \\(=\\), \\(\\neq\\)\nAny one-to-one relabelling\nDistrict\nMode\n\n\nOrdinal\nAlso order: \\(&lt;\\), \\(&gt;\\)\nStrictly increasing \\(g\\)\nCondition\nMode, median\n\n\nInterval\nAlso differences: \\(x_i - x_j\\)\n\\(a + bx\\), \\(b &gt; 0\\)\nYear of construction, floor\nMode, median, mean\n\n\nRatio\nAlso ratios: \\(x_i / x_j\\)\n\\(bx\\), \\(b &gt; 0\\)\nPrice, area, distance\nAll\n\n\n\n\n\n\nThe third column gives a precise criterion. A scale is defined by the transformations that do not change the information it carries: the condition of a dwelling could be coded 1, 2, 3 or 0, 5, 100, since any increasing coding keeps the order; temperatures can be expressed in °C or °F, \\(F = 32 + 1.8\\,C\\); prices in euros or in dollars. A statement about the data is meaningful for a scale if its truth does not depend on which admissible transformation is used. For example, “the median condition in the centre is higher than in the periphery” is meaningful for ordinal data, because increasing transformations preserve medians, but a comparison of mean codes is not (Topic 2).\nThe difference between the last two scales is the meaning of zero. On a ratio scale zero means absence of the quantity (0 m², 0 €), so it makes sense to say that a flat of 120 m² is twice as large as one of 60 m². On an interval scale zero is a convention. A building from 2000 is not “twice as old” as one from 1000, and the ground floor is numbered 0 only by custom (in other countries it is the first floor). Differences, however, do make sense: a building from 1990 is 30 years newer than one from 1960. Most quantitative variables in economics are on a ratio scale, which allows percentages of change and relative measures such as the coefficient of variation (Topic 2).\n\n\n\n\n\n\nNoteHistorical note: S. S. Stevens and the scales of measurement\n\n\n\nThe psychologist Stanley Smith Stevens proposed the four scales in a short paper in Science in 1946 (Stevens 1946), after a long debate on whether sensations such as loudness could be “measured” at all. His classification is still the standard one, although it has been criticised as too rigid: for example, answers on a scale from 1 to 5 are ordinal, but they are often averaged as if they were interval data.",
+    "crumbs": [
+      "Topic 1. Introduction",
+      "1.2 Types of variables"
+    ]
+  },
+  {
+    "objectID": "topics/01-introduction/02-types-of-variables.html#types-of-data-by-structure",
+    "href": "topics/01-introduction/02-types-of-variables.html#types-of-data-by-structure",
+    "title": "1.2 Types of variables",
+    "section": "Types of data by structure",
+    "text": "Types of data by structure\nHow the data are organised in time also matters:\n\nCross-sectional data: many individuals observed at the same time. For example, the dwellings for sale in Madrid in 2018, our data.\nTime series: a single individual or aggregate observed at many moments. For example, the INE housing price index, one value per quarter.\nPanel (longitudinal) data: many individuals, the same ones, observed at several moments. For example, the asking price of the same dwellings in each quarter they stay on the market: we can see whether the seller lowers the price.\n\n\n\n\n\n\n\n\n\n\nType\nIndividuals\nMoments\nExample\n\n\n\n\nCross-section\nmany\none\nListings in Madrid in 2018\n\n\nTime series\none\nmany\nQuarterly housing price index\n\n\nPanel\nmany, the same ones\nmany\nPrice of each listing, quarter by quarter\n\n\n\nMost of this course uses cross-sectional data. Some tools for time series are introduced in Topic 5.",
+    "crumbs": [
+      "Topic 1. Introduction",
+      "1.2 Types of variables"
+    ]
+  },
+  {
+    "objectID": "topics/01-introduction/02-types-of-variables.html#types-of-variables-in-python",
+    "href": "topics/01-introduction/02-types-of-variables.html#types-of-variables-in-python",
+    "title": "1.2 Types of variables",
+    "section": "Types of variables in Python",
+    "text": "Types of variables in Python\nPolars gives each column a data type (dtype), which says how it is stored. The storage type does not necessarily match the statistical type:\n\npl.DataFrame({\n    \"variable\": listings.columns,\n    \"Polars type\": [str(t) for t in listings.dtypes],\n    \"statistical type\": [\n        \"Identifier (not a study variable)\",  # listing_id\n        \"Qualitative, nominal\",               # district\n        \"Qualitative, nominal (binary)\",      # zone\n        \"Qualitative, ordinal\",               # condition\n        \"Quantitative, continuous\",           # price\n        \"Quantitative, continuous\",           # price_m2\n        \"Quantitative, continuous\",           # area_m2\n        \"Quantitative, discrete\",             # bedrooms\n        \"Quantitative, discrete\",             # bathrooms\n        \"Quantitative, discrete (interval)\",  # floor\n        \"Qualitative, binary\",                # lift\n        \"Qualitative, binary\",                # terrace\n        \"Quantitative, discrete (interval)\",  # construction_year\n        \"Quantitative, continuous\",           # dist_centre_km\n    ],\n})\n\n\n\n\nvariable\nPolars type\nstatistical type\n\n\n\n\nlisting_id\nString\nIdentifier (not a study variable)\n\n\ndistrict\nString\nQualitative, nominal\n\n\nzone\nString\nQualitative, nominal (binary)\n\n\ncondition\nString\nQualitative, ordinal\n\n\nprice\nFloat64\nQuantitative, continuous\n\n\nprice_m2\nFloat64\nQuantitative, continuous\n\n\narea_m2\nInt64\nQuantitative, continuous\n\n\nbedrooms\nInt64\nQuantitative, discrete\n\n\nbathrooms\nInt64\nQuantitative, discrete\n\n\nfloor\nInt64\nQuantitative, discrete (interval)\n\n\nlift\nBoolean\nQualitative, binary\n\n\nterrace\nBoolean\nQualitative, binary\n\n\nconstruction_year\nInt64\nQuantitative, discrete (interval)\n\n\ndist_centre_km\nFloat64\nQuantitative, continuous\n\n\n\n\n\nTwo remarks:\n\nconstruction_year is stored as an integer, and its mean can be computed. It makes sense (the “average age” of the buildings), because differences between years are meaningful.\ncondition is stored as text (String), so Polars does not know that its categories are ordered. If we sort them, the order is alphabetical, which is not the logical one:\n\n\nlistings[\"condition\"].unique().sort()\n\n\n\n\ncondition\n\n\n\n\nGood\n\n\nNew\n\n\nTo renovate\n\n\n\n\n\nTo declare an ordinal variable we use the type pl.Enum, which keeps the categories in the order given. Sorting and comparisons then follow the logical order:\n\ncondition_order = pl.Enum([\"To renovate\", \"Good\", \"New\"])\ncondition = listings[\"condition\"].cast(condition_order)\n\ncondition.unique().sort()\n\n\n\n\ncondition\n\n\n\n\nTo renovate\n\n\nGood\n\n\nNew\n\n\n\n\n\n\n# Proportion of listings in good condition or better\nround((condition &gt;= \"Good\").mean(), 3)\n\n0.813\n\n\nThe last expression uses two ideas of this topic: the comparison \\(\\geq\\) only makes sense because the variable is ordinal, and the mean of a binary variable (true = 1, false = 0) is a proportion.",
+    "crumbs": [
+      "Topic 1. Introduction",
+      "1.2 Types of variables"
+    ]
+  },
+  {
+    "objectID": "topics/01-introduction/02-types-of-variables.html#summary-of-the-topic",
+    "href": "topics/01-introduction/02-types-of-variables.html#summary-of-the-topic",
+    "title": "1.2 Types of variables",
+    "section": "Summary of the topic",
+    "text": "Summary of the topic\n\nStatistics studies how to draw conclusions from data that show variability, measuring the uncertainty of those conclusions.\nDescriptive statistics summarises the observed data. Inference generalises from the sample to the population, using probability.\nThe population (\\(N\\)) is the set of interest; the sample (\\(n\\)) is the part observed. A representative sample must be chosen at random, and a larger sample does not correct a selection bias.\nA parameter describes the population, and is fixed and unknown. A statistic is computed from a sample and changes from sample to sample.\nVariables are qualitative (nominal or ordinal) or quantitative (discrete or continuous). The measurement scale decides which operations and summaries make sense.",
+    "crumbs": [
+      "Topic 1. Introduction",
+      "1.2 Types of variables"
+    ]
+  },
+  {
+    "objectID": "topics/01-introduction/02-types-of-variables.html#exercises",
+    "href": "topics/01-introduction/02-types-of-variables.html#exercises",
+    "title": "1.2 Types of variables",
+    "section": "Exercises",
+    "text": "Exercises\n\nExercise 1 (Classifying variables) Classify the following variables of a dwelling by type (qualitative nominal or ordinal, quantitative discrete or continuous) and measurement scale:\n\nPostcode.\nEnergy rating (A, B, C, …, G).\nNumber of bedrooms.\nMonthly rent (€).\nType of heating (none, individual, central).\nDistance to the nearest metro station (km).\nYear of the last renovation.\nOwner’s satisfaction with the neighbourhood, on a scale from 1 to 5.\n\n\n\n\n\n\n\n\nTipSolution\n\n\n\n\n\n\nQualitative nominal, although it is written with numbers.\nQualitative ordinal: A is better than B, but the “distance” between ratings is not defined.\nQuantitative discrete, ratio scale (a flat with 4 bedrooms has twice as many as one with 2).\nQuantitative continuous, ratio scale.\nQualitative nominal.\nQuantitative continuous, ratio scale.\nQuantitative discrete, interval scale: subtracting years makes sense (years since the renovation), dividing them does not.\nQualitative ordinal. Computing its mean is common, but it assumes that the distance between 1 and 2 is the same as between 4 and 5.\n\n\n\n\n\nExercise 2 (Types in Python)  \n\nCompute, with Polars, the proportion of listings with a terrace.\nPolars computes listings[\"listing_id\"] without complaining if we sort it. Would it make sense to compute its median? Why?\nDeclare zone as an Enum. Does the order of its categories matter?\n\n\n\n\n\n\n\n\nTipSolution\n\n\n\n\n\n\nprint(f\"a) Proportion with terrace: {listings['terrace'].mean():.3f}\")\nzone = listings[\"zone\"].cast(pl.Enum([\"Centre\", \"Periphery\"]))\nprint(\"c)\", zone.unique().sort().to_list())\n\na) Proportion with terrace: 0.351\nc) ['Centre', 'Periphery']\n\n\n\nAbout a third of the listings have a terrace. The mean of a binary variable is a proportion.\nNo. The identifier only labels each listing; it is a qualitative variable, even if it can be sorted as text.\nThe order of an Enum only matters for ordinal variables. zone is nominal, so any order is valid; we only choose one for tables and graphs.",
+    "crumbs": [
+      "Topic 1. Introduction",
+      "1.2 Types of variables"
+    ]
+  },
+  {
+    "objectID": "topics/01-introduction/02-types-of-variables.html#references",
+    "href": "topics/01-introduction/02-types-of-variables.html#references",
+    "title": "1.2 Types of variables",
+    "section": "References",
+    "text": "References\n\n\nStevens, Stanley S. 1946. “On the Theory of Scales of Measurement.” Science 103 (2684): 677–80.",
+    "crumbs": [
+      "Topic 1. Introduction",
+      "1.2 Types of variables"
+    ]
+  },
+  {
+    "objectID": "topics/02-univariate/02-centre-position.html",
+    "href": "topics/02-univariate/02-centre-position.html",
+    "title": "2.2 The empirical distribution, centre and position",
+    "section": "",
+    "text": "Graphs show the whole distribution. Summary measures condense it into a few numbers that describe its centre, its spread and its shape. This part introduces the empirical distribution function, which contains all the information of the data, and the measures of centre and position; the next part covers dispersion and shape. We continue with the Madrid listings.\nlistings = pl.read_csv(\"data/processed/idealista/madrid_listings_2018.csv\").select(\n    \"listing_id\", \"district\", \"zone\", \"condition\",\n    \"price\", \"price_m2\", \"area_m2\", \"bedrooms\", \"bathrooms\",\n    \"floor\", \"lift\", \"terrace\", \"construction_year\", \"dist_centre_km\",\n)\nNotation. For data \\(x_1, \\dots, x_n\\) we write \\(x_{(1)} \\le x_{(2)} \\le \\dots \\le x_{(n)}\\) for the same values sorted in increasing order, the order statistics. Thus \\(x_{(1)}\\) is the minimum and \\(x_{(n)}\\) the maximum.",
+    "crumbs": [
+      "Topic 2. Univariate data",
+      "2.2 The empirical distribution, centre and position"
+    ]
+  },
+  {
+    "objectID": "topics/02-univariate/02-centre-position.html#the-empirical-distribution-function",
+    "href": "topics/02-univariate/02-centre-position.html#the-empirical-distribution-function",
+    "title": "2.2 The empirical distribution, centre and position",
+    "section": "The empirical distribution function",
+    "text": "The empirical distribution function\n\nDefinition 1 (Empirical distribution function) The empirical distribution function of \\(x_1, \\dots, x_n\\) is the function \\(F_n : \\mathbb{R} \\to [0, 1]\\), \\[\nF_n(x) = \\frac{1}{n}\\,\\#\\{i : x_i \\le x\\},\n\\] the proportion of observations less than or equal to \\(x\\).\n\nIt extends the cumulative frequencies \\(F_i\\) of part 1 to every real number \\(x\\), and does not require grouping the data.\n\nProposition 1 (Properties of the empirical distribution function)  \n\n\\(F_n\\) is non-decreasing, \\(F_n(x) = 0\\) for \\(x &lt; x_{(1)}\\) and \\(F_n(x) = 1\\) for \\(x \\ge x_{(n)}\\).\n\\(F_n\\) is a step function: it is constant between consecutive distinct values, and at each observed value \\(v\\) it jumps by the relative frequency of \\(v\\).\nFor \\(a &lt; b\\), the proportion of observations in \\((a, b]\\) is \\(F_n(b) - F_n(a)\\).\n\n\n\nProof. If \\(x \\le y\\), every observation with \\(x_i \\le x\\) also satisfies \\(x_i \\le y\\), so the count defining \\(F_n(x)\\) cannot exceed that of \\(F_n(y)\\). No observation is below \\(x_{(1)}\\) and all are at most \\(x_{(n)}\\), which gives the values 0 and 1. The set \\(\\{i : x_i \\le x\\}\\) only changes when \\(x\\) reaches an observed value \\(v\\), and then it gains the observations equal to \\(v\\), which proves 2. Finally, \\(\\{i : x_i \\le b\\}\\) is the disjoint union of \\(\\{i : x_i \\le a\\}\\) and \\(\\{i : a &lt; x_i \\le b\\}\\), so the counts add up, which proves 3.\n\n\nprice_sorted = np.sort(listings[\"price\"].to_numpy())\nn = len(price_sorted)\nF300 = np.mean(price_sorted &lt;= 300_000)\n\nfig, ax = plt.subplots()\nax.step(price_sorted / 1000, np.arange(1, n + 1) / n, where=\"post\", color=COLORS[\"blue\"])\nax.plot([300, 300, 0], [0, F300, F300], ls=\"--\", color=COLORS[\"orange\"])\nax.set_xlim(0, 1_500)\nax.set_ylim(0, 1.02)\nax.set_xlabel(\"Asking price (thousands of €)\")\nax.set_ylabel(\"$F_n(x)$\")\nplt.show()\nprint(f\"F_n(300,000) = {F300:.3f}\")\n\n\n\n\n\n\n\nFigure 1: Empirical distribution function of the asking price (axis cut at 1.5 million €). The dashed lines read off F_n(300,000).\n\n\n\n\n\nF_n(300,000) = 0.571\n\n\nAbout 57 % of the listings ask for 300,000 € or less. The empirical distribution function answers any question of this kind without grouping, and it is the basis of the quantiles defined below. With 75,735 observations the steps are too small to see, and \\(F_n\\) looks like a continuous curve: steep where the data are concentrated, flat in the tail.",
+    "crumbs": [
+      "Topic 2. Univariate data",
+      "2.2 The empirical distribution, centre and position"
+    ]
+  },
+  {
+    "objectID": "topics/02-univariate/02-centre-position.html#measures-of-centre",
+    "href": "topics/02-univariate/02-centre-position.html#measures-of-centre",
+    "title": "2.2 The empirical distribution, centre and position",
+    "section": "Measures of centre",
+    "text": "Measures of centre\n\nDefinition 2 (Mean, median and mode)  \n\nThe mean is \\(\\displaystyle \\bar{x} = \\frac{1}{n}\\sum_{i=1}^{n} x_i\\).\nThe median is the central value of the ordered data: \\(Me = x_{((n+1)/2)}\\) if \\(n\\) is odd, and \\(Me = \\frac12\\big(x_{(n/2)} + x_{(n/2+1)}\\big)\\) if \\(n\\) is even.\nThe mode is the most frequent value (or category).\n\n\n\nlistings.select(\n    mean=pl.col(\"price\").mean(),\n    median=pl.col(\"price\").median(),\n)\n\n\n\n\nmean\nmedian\n\n\n\n\n388,892.1\n257,000.0\n\n\n\n\n\nThe mean (about 389,000 €) is much larger than the median (257,000 €): a few very expensive dwellings pull the mean upwards but hardly affect the median. Half of the listings ask for less than 257,000 €, and the mean is above what most of them ask.\n\nProperties of the mean and the median\n\nProposition 2 (Least-squares property of the mean) For any data \\(x_1, \\dots, x_n\\):\n\n\\(\\sum_{i=1}^n (x_i - \\bar x) = 0\\): the deviations from the mean cancel out.\nFor every \\(c \\in \\mathbb{R}\\), \\(\\displaystyle \\sum_{i=1}^n (x_i - c)^2 = \\sum_{i=1}^n (x_i - \\bar x)^2 + n(\\bar x - c)^2 .\\)\n\nHence the mean is the unique value \\(c\\) that minimises \\(\\sum_i (x_i - c)^2\\).\n\n\nProof. \n\n\\(\\sum_i (x_i - \\bar x) = \\sum_i x_i - n\\bar x = n\\bar x - n\\bar x = 0\\).\nAdd and subtract \\(\\bar x\\): \\(x_i - c = (x_i - \\bar x) + (\\bar x - c)\\). Squaring and adding, \\[\n\\sum_i (x_i - c)^2 = \\sum_i (x_i - \\bar x)^2 + 2(\\bar x - c)\\sum_i (x_i - \\bar x) + n(\\bar x - c)^2,\n\\] and the middle term is zero by 1. The last term is non-negative and vanishes only for \\(c = \\bar x\\).\n\n\nThe “add and subtract, expand, the cross term vanishes” argument of this proof is the most frequent proof in statistics: it reappears in the decomposition of the variance into groups (part 3), in regression and in analysis of variance.\n\nProposition 3 (The median minimises the sum of absolute deviations) For any data, a median \\(Me\\) satisfies \\(\\sum_i |x_i - Me| \\le \\sum_i |x_i - c|\\) for every \\(c \\in \\mathbb{R}\\).\n\n\nProof. The function \\(g(c) = \\sum_i |x_i - c|\\) is continuous and piecewise linear. On an interval that contains no observation, moving \\(c\\) to the right by \\(\\delta &gt; 0\\) increases by \\(\\delta\\) the distance to each observation on its left and decreases by \\(\\delta\\) the distance to each one on its right, so the slope of \\(g\\) is \\[\n\\#\\{i : x_i &lt; c\\} - \\#\\{i : x_i &gt; c\\}.\n\\] For \\(c\\) below the median at least half of the observations are above \\(c\\), so the slope is \\(\\le 0\\); for \\(c\\) above the median it is \\(\\ge 0\\). Hence \\(g\\) decreases up to the median and increases after it, and attains its minimum there.\n\nThe two propositions say what each measure is best at: the mean is the best single value when errors are penalised by their square, and the median when they are penalised by their absolute value. Squares penalise large errors heavily, which is why the mean follows the extreme observations.\n\n\n\n\n\n\nCautionRobustness: mean versus median\n\n\n\nWhat happens if we add a single listing, a palace for sale at 100 million €?\n\nprice_with_palace = pl.concat([listings[\"price\"], pl.Series([100_000_000.0])])\n\npl.DataFrame({\n    \"measure\": [\"mean\", \"median\"],\n    \"original\": [listings[\"price\"].mean(), listings[\"price\"].median()],\n    \"with the palace\": [price_with_palace.mean(), price_with_palace.median()],\n})\n\n\n\n\nmeasure\noriginal\nwith the palace\n\n\n\n\nmean\n388,892.1\n390,207.4\n\n\nmedian\n257,000.0\n257,000.0\n\n\n\n\n\nEven among more than 75,000 listings, one observation raises the mean by about 1,300 €, while the median does not move. In general, changing a single observation by an amount \\(\\Delta\\) changes the mean by \\(\\Delta / n\\), with no limit, while the median can only move to a neighbouring order statistic. This is why housing and income statistics often report the median rather than the mean.\n\n\n\n\nWeighted means and means of groups\n\nDefinition 3 (Weighted mean) Given weights \\(w_1, \\dots, w_n \\ge 0\\) with \\(\\sum_i w_i &gt; 0\\), the weighted mean is \\(\\displaystyle \\bar x_w = \\frac{\\sum_{i=1}^n w_i x_i}{\\sum_{i=1}^n w_i}\\).\n\n\nProposition 4 (Mean of a union of groups) If the \\(n\\) observations are divided into \\(G\\) groups with sizes \\(n_1, \\dots, n_G\\) and means \\(\\bar x_1, \\dots, \\bar x_G\\), then \\(\\displaystyle \\bar x = \\sum_{g=1}^G \\frac{n_g}{n}\\,\\bar x_g\\): the overall mean is the mean of the group means weighted by the group sizes.\n\n\nProof. The sum of the observations of group \\(g\\) is \\(n_g \\bar x_g\\), so \\(\\bar x = \\frac1n\\sum_g n_g \\bar x_g\\).\n\n\nby_zone = listings.group_by(\"zone\").agg(n_g=pl.len(), mean_g=pl.col(\"price\").mean())\nby_district = listings.group_by(\"district\").agg(mean_g=pl.col(\"price\").mean())\n\nprint(f\"Overall mean                    : {listings['price'].mean():,.0f} €\")\nprint(f\"Weighted mean of the zone means : \"\n      f\"{(by_zone['n_g'] * by_zone['mean_g']).sum() / by_zone['n_g'].sum():,.0f} €\")\nprint(f\"Simple mean of the 21 district means: {by_district['mean_g'].mean():,.0f} €\")\n\nOverall mean                    : 388,892 €\nWeighted mean of the zone means : 388,892 €\nSimple mean of the 21 district means: 349,573 €\n\n\nThe simple mean of the district means gives each district the same weight, whatever its number of listings, and does not equal the overall mean.\n\n\n\n\n\n\nTipExample: what is “the” price per m² of a market?\n\n\n\nThe mean of price_m2 gives the same weight to a studio and to a mansion. A housing market is often summarised instead by the total value over the total area, \\(\\sum_i p_i / \\sum_i a_i\\). Writing \\(r_i = p_i / a_i\\) for the price per m² of dwelling \\(i\\), \\[\n\\frac{\\sum_i p_i}{\\sum_i a_i} = \\sum_i \\frac{a_i}{\\sum_j a_j}\\, r_i ,\n\\] a mean of the prices per m² weighted by the areas:\n\nlistings.select(\n    simple_mean=pl.col(\"price_m2\").mean(),\n    area_weighted=pl.col(\"price\").sum() / pl.col(\"area_m2\").sum(),\n)\n\n\n\n\nsimple_mean\narea_weighted\n\n\n\n\n3,636.3\n3,880.4\n\n\n\n\n\nThe two answers differ because large dwellings, concentrated in the expensive districts, ask more per m². Neither is wrong: they answer different questions (the typical listing or the market as a whole), and a report must say which one it uses.\n\n\n\n\nGrouped data\nWhen only a frequency table with classes is available, as in many official publications, the individual values are unknown. The usual approximation assumes that all the observations of a class are at its class mark \\(x_i\\), which gives \\(\\bar x \\approx \\sum_i f_i x_i\\). For the distance to the centre, grouped in classes of 1 km:\n\ndist_table = (\n    listings\n    .with_columns(lower=pl.col(\"dist_centre_km\").floor())\n    .group_by(\"lower\").agg(n_i=pl.len()).sort(\"lower\")\n    .with_columns(mark=pl.col(\"lower\") + 0.5, f_i=pl.col(\"n_i\") / pl.col(\"n_i\").sum())\n    .with_columns(F_i=pl.col(\"f_i\").cum_sum())\n)\nprint(f\"Mean from the classes: {(dist_table['f_i'] * dist_table['mark']).sum():.3f} km\")\nprint(f\"Exact mean           : {listings['dist_centre_km'].mean():.3f} km\")\n\nMean from the classes: 4.475 km\nExact mean           : 4.475 km\n\n\nThe error is small because the classes are narrow. A table with an open last class (“1 million € or more”) has no class mark for that class, and the grouped mean cannot be computed without an assumption about it. For grouped data the modal class is the one with the greatest density \\(f_i / a_i\\), which coincides with the most frequent class only when all the widths are equal.",
+    "crumbs": [
+      "Topic 2. Univariate data",
+      "2.2 The empirical distribution, centre and position"
+    ]
+  },
+  {
+    "objectID": "topics/02-univariate/02-centre-position.html#measures-of-position-quantiles",
+    "href": "topics/02-univariate/02-centre-position.html#measures-of-position-quantiles",
+    "title": "2.2 The empirical distribution, centre and position",
+    "section": "Measures of position: quantiles",
+    "text": "Measures of position: quantiles\n\nDefinition 4 (Quantile) The quantile of order \\(p \\in (0, 1)\\) is \\[\nQ_p = \\min\\{x : F_n(x) \\ge p\\},\n\\] the smallest observed value that leaves at least a proportion \\(p\\) of the data at or below it. Special cases are the quartiles \\(Q_{0.25}\\), \\(Q_{0.5}\\) and \\(Q_{0.75}\\), and the percentiles \\(P_k = Q_{k/100}\\).\n\nFor even \\(n\\), this definition gives \\(Q_{0.5} = x_{(n/2)}\\), while Definition 2 averages the two central values: any value between them leaves half of the data on each side, and both conventions are used. With finite data the definition also produces jumps, and software often smooths it by linear interpolation between order statistics: with \\(h = 1 + (n-1)p\\), \\[\nQ_p = x_{(\\lfloor h \\rfloor)} + \\big(h - \\lfloor h \\rfloor\\big)\\big(x_{(\\lfloor h \\rfloor + 1)} - x_{(\\lfloor h \\rfloor)}\\big).\n\\] This is the default of NumPy, R and Excel; Hyndman and Fan (1996) compare nine such conventions. Polars uses interpolation=\"nearest\" unless told otherwise. With large data the differences are negligible:\n\nlistings.select(\n    [pl.col(\"price\").quantile(p, interpolation=\"linear\").alias(f\"Q_{p}\")\n     for p in [0.10, 0.25, 0.50, 0.75, 0.90]]\n)\n\n\n\n\nQ_0.1\nQ_0.25\nQ_0.5\nQ_0.75\nQ_0.9\n\n\n\n\n116,000.0\n157,000.0\n257,000.0\n456,000.0\n785,000.0\n\n\n\n\n\nA quarter of the listings ask for less than 157,000 €, and a quarter for more than 456,000 €; only one in ten asks for more than 785,000 €.\n\nProposition 5 (Quantiles and monotone transformations) If \\(g\\) is strictly increasing and \\(y_i = g(x_i)\\), then \\(Q_p(y) = g\\big(Q_p(x)\\big)\\) for every \\(p\\). The mean has this property only for linear transformations \\(g(x) = a + bx\\).\n\n\nProof. A strictly increasing \\(g\\) preserves the order, so \\(x_i \\le x\\) if and only if \\(g(x_i) \\le g(x)\\), and \\(F_n^{y}(g(x)) = F_n^{x}(x)\\). The smallest observed \\(x\\) with \\(F_n^{x}(x) \\ge p\\) is therefore mapped to the smallest observed \\(y\\) with \\(F_n^{y}(y) \\ge p\\). For the mean, \\(\\frac1n\\sum(a + bx_i) = a + b\\bar x\\); the counterexample below shows that it fails for the logarithm.\n\n\nlog_price = listings[\"price\"].log()\nprint(f\"median of log(price) = {log_price.median():.4f}   \"\n      f\"log(median price) = {np.log(listings['price'].median()):.4f}\")\nprint(f\"mean of log(price)   = {log_price.mean():.4f}   \"\n      f\"log(mean price)   = {np.log(listings['price'].mean()):.4f}\")\n\nmedian of log(price) = 12.4568   log(median price) = 12.4568\nmean of log(price)   = 12.5436   log(mean price)   = 12.8711\n\n\nThis is why the median and the quantiles are the natural summaries of ordinal variables (Stevens’ scales of Topic 1): they do not change their meaning under any relabelling that preserves the order.\n\nQuantiles of grouped data\nIf only classes are known, we assume that the observations are spread uniformly within each class. The cumulative frequency is then a polygon, the ogive, joining the points \\((L_i, F_i)\\), and the quantile is read off it by linear interpolation: if class \\(i\\), \\([L_{i-1}, L_i)\\), is the first with \\(F_i \\ge p\\), \\[\nQ_p \\approx L_{i-1} + \\frac{p - F_{i-1}}{f_i}\\, a_i .\n\\tag{1}\\]\n\np = 0.5\nrow = dist_table.with_columns(F_prev=pl.col(\"F_i\").shift(1, fill_value=0.0)) \\\n    .filter(pl.col(\"F_i\") &gt;= p).row(0, named=True)\nmedian_grouped = row[\"lower\"] + (p - row[\"F_prev\"]) / row[\"f_i\"] * 1.0\n\nx_sorted = np.sort(listings[\"dist_centre_km\"].to_numpy())\nfig, ax = plt.subplots()\nax.step(x_sorted, np.arange(1, len(x_sorted) + 1) / len(x_sorted), where=\"post\",\n        color=COLORS[\"grey\"], linewidth=1)\nax.plot(np.r_[0, dist_table[\"lower\"] + 1], np.r_[0, dist_table[\"F_i\"]], \"o-\",\n        color=COLORS[\"blue\"], markersize=4)\nax.axhline(p, color=COLORS[\"orange\"], ls=\"--\", linewidth=1)\nax.set_xlabel(\"Distance to the centre (km)\")\nax.set_ylabel(\"Cumulative relative frequency\")\nplt.show()\nprint(f\"Median from the classes: {median_grouped:.3f} km   \"\n      f\"exact median: {listings['dist_centre_km'].median():.3f} km\")\n\n\n\n\n\n\n\nFigure 2: Ogive of the distance to the centre in classes of 1 km (points and segments) over the empirical distribution function (thin line).\n\n\n\n\n\nMedian from the classes: 4.122 km   exact median: 4.114 km\n\n\n\n\nThe geometric mean\nFor positive data, the geometric mean is \\[\nG = \\Big(\\prod_{i=1}^n x_i\\Big)^{1/n} = \\exp\\Big(\\frac1n\\sum_{i=1}^n \\log x_i\\Big),\n\\] the mean computed on the logarithmic scale and brought back. It is the right mean for quantities that combine by multiplication, such as growth rates (Topic 5).\n\nProposition 6 (Inequality of the arithmetic and geometric means) For positive data, \\(G \\le \\bar x\\), with equality if and only if all the \\(x_i\\) are equal.\n\n\nProof. We use the inequality \\(\\log t \\le t - 1\\) for \\(t &gt; 0\\), with equality only at \\(t = 1\\) (the line \\(t - 1\\) is tangent to the concave function \\(\\log t\\) at \\(t = 1\\)). With \\(t = x_i / \\bar x\\), \\[\n\\frac1n\\sum_i \\log\\frac{x_i}{\\bar x} \\le \\frac1n\\sum_i\\Big(\\frac{x_i}{\\bar x} - 1\\Big) = 0,\n\\] so \\(\\log G - \\log \\bar x \\le 0\\). Equality requires \\(x_i / \\bar x = 1\\) for every \\(i\\).\n\n\nlistings.select(\n    arithmetic=pl.col(\"price\").mean(),\n    geometric=pl.col(\"price\").log().mean().exp(),\n    median=pl.col(\"price\").median(),\n)\n\n\n\n\narithmetic\ngeometric\nmedian\n\n\n\n\n388,892.1\n280,307.5\n257,000.0\n\n\n\n\n\nFor right-skewed data such as prices, the geometric mean is much closer to the median than the arithmetic mean is.\n\n\n\n\n\n\nNoteHistorical note: the median\n\n\n\nIn 1774 Pierre-Simon Laplace showed that, to combine several discordant observations, the value that minimises the expected absolute error is the median of their distribution, the probabilistic version of Proposition 3. The idea remained marginal for a century, while astronomers and geodesists used the mean, which minimises squared errors and is easier to compute. It was Francis Galton who popularised the median, and the English word, in the 1880s, as a summary of skewed data that was easy to obtain by simply ranking the observations.",
+    "crumbs": [
+      "Topic 2. Univariate data",
+      "2.2 The empirical distribution, centre and position"
+    ]
+  },
+  {
+    "objectID": "topics/02-univariate/02-centre-position.html#references",
+    "href": "topics/02-univariate/02-centre-position.html#references",
+    "title": "2.2 The empirical distribution, centre and position",
+    "section": "References",
+    "text": "References\n\n\nHyndman, Rob J., and Yanan Fan. 1996. “Sample Quantiles in Statistical Packages.” The American Statistician 50 (4): 361–65.",
+    "crumbs": [
+      "Topic 2. Univariate data",
+      "2.2 The empirical distribution, centre and position"
+    ]
+  },
+  {
+    "objectID": "topics/02-univariate/04-exercises.html",
+    "href": "topics/02-univariate/04-exercises.html",
+    "title": "2.4 Exercises",
+    "section": "",
+    "text": "Solutions are hidden: open them only after trying. Exercises 3, 6 and 10 are also meant to be done with pen and paper. The exercises with Python use the Madrid listings:\nlistings = pl.read_csv(\"data/processed/idealista/madrid_listings_2018.csv\").select(\n    \"listing_id\", \"district\", \"zone\", \"condition\",\n    \"price\", \"price_m2\", \"area_m2\", \"bedrooms\", \"bathrooms\",\n    \"floor\", \"lift\", \"terrace\", \"construction_year\", \"dist_centre_km\",\n)",
+    "crumbs": [
+      "Topic 2. Univariate data",
+      "2.4 Exercises"
+    ]
+  },
+  {
+    "objectID": "topics/02-univariate/04-exercises.html#references",
+    "href": "topics/02-univariate/04-exercises.html#references",
+    "title": "2.4 Exercises",
+    "section": "References",
+    "text": "References",
+    "crumbs": [
+      "Topic 2. Univariate data",
+      "2.4 Exercises"
+    ]
+  },
+  {
+    "objectID": "topics/04-inequality-concentration.html",
+    "href": "topics/04-inequality-concentration.html",
+    "title": "Topic 4. Inequality and concentration",
+    "section": "",
+    "text": "NoteTopic in preparation\n\n\n\nThis topic is a placeholder. The planned contents are listed below.",
+    "crumbs": [
+      "Topic 4. Inequality and concentration"
+    ]
+  },
+  {
+    "objectID": "topics/04-inequality-concentration.html#measuring-inequality-what-an-index-should-satisfy",
+    "href": "topics/04-inequality-concentration.html#measuring-inequality-what-an-index-should-satisfy",
+    "title": "Topic 4. Inequality and concentration",
+    "section": "Measuring inequality: what an index should satisfy",
+    "text": "Measuring inequality: what an index should satisfy",
+    "crumbs": [
+      "Topic 4. Inequality and concentration"
+    ]
+  },
+  {
+    "objectID": "topics/04-inequality-concentration.html#the-lorenz-curve",
+    "href": "topics/04-inequality-concentration.html#the-lorenz-curve",
+    "title": "Topic 4. Inequality and concentration",
+    "section": "The Lorenz curve",
+    "text": "The Lorenz curve",
+    "crumbs": [
+      "Topic 4. Inequality and concentration"
+    ]
+  },
+  {
+    "objectID": "topics/04-inequality-concentration.html#the-gini-index",
+    "href": "topics/04-inequality-concentration.html#the-gini-index",
+    "title": "Topic 4. Inequality and concentration",
+    "section": "The Gini index",
+    "text": "The Gini index",
+    "crumbs": [
+      "Topic 4. Inequality and concentration"
+    ]
+  },
+  {
+    "objectID": "topics/04-inequality-concentration.html#quantile-ratios-p90p10-s80s20",
+    "href": "topics/04-inequality-concentration.html#quantile-ratios-p90p10-s80s20",
+    "title": "Topic 4. Inequality and concentration",
+    "section": "Quantile ratios (P90/P10, S80/S20)",
+    "text": "Quantile ratios (P90/P10, S80/S20)",
+    "crumbs": [
+      "Topic 4. Inequality and concentration"
+    ]
+  },
+  {
+    "objectID": "topics/04-inequality-concentration.html#application-housing-affordability-price-to-income-ratios-and-the-concentration-of-housing-value-across-districts",
+    "href": "topics/04-inequality-concentration.html#application-housing-affordability-price-to-income-ratios-and-the-concentration-of-housing-value-across-districts",
+    "title": "Topic 4. Inequality and concentration",
+    "section": "Application: housing affordability (price-to-income ratios) and the concentration of housing value across districts",
+    "text": "Application: housing affordability (price-to-income ratios) and the concentration of housing value across districts",
+    "crumbs": [
+      "Topic 4. Inequality and concentration"
+    ]
+  },
+  {
+    "objectID": "topics/04-inequality-concentration.html#market-concentration-the-herfindahlhirschman-index",
+    "href": "topics/04-inequality-concentration.html#market-concentration-the-herfindahlhirschman-index",
+    "title": "Topic 4. Inequality and concentration",
+    "section": "Market concentration: the Herfindahl–Hirschman index",
+    "text": "Market concentration: the Herfindahl–Hirschman index",
+    "crumbs": [
+      "Topic 4. Inequality and concentration"
+    ]
+  },
+  {
+    "objectID": "topics/04-inequality-concentration.html#exercises",
+    "href": "topics/04-inequality-concentration.html#exercises",
+    "title": "Topic 4. Inequality and concentration",
+    "section": "Exercises",
+    "text": "Exercises",
+    "crumbs": [
+      "Topic 4. Inequality and concentration"
+    ]
+  },
+  {
+    "objectID": "topics/04-inequality-concentration.html#references",
+    "href": "topics/04-inequality-concentration.html#references",
+    "title": "Topic 4. Inequality and concentration",
+    "section": "References",
+    "text": "References",
+    "crumbs": [
+      "Topic 4. Inequality and concentration"
+    ]
+  }
+]
