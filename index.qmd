@@ -5,8 +5,8 @@ toc: false
 ---
 
 An introductory course (undergraduate level) on how to summarise, display and
-explore data: frequency tables and graphs, numerical summaries, the relationship
-between two variables, inequality and concentration measures, and index numbers.
+explore data: frequency tables and graphs, numerical summaries and the
+relationship between two variables.
 
 Each topic combines definitions with applications to real data and reproducible
 examples in **Python** ([Polars](https://docs.pola.rs/),
@@ -20,8 +20,6 @@ examples in **Python** ([Polars](https://docs.pola.rs/),
 | [Topic 1. Introduction](topics/01-introduction/01-stats-population-samples.ipynb) | Draft, to be reviewed |
 | [Topic 2. Univariate data](topics/02-univariate/01-freq-graphs.ipynb) | Draft, to be reviewed |
 | [Topic 3. Bivariate data](topics/03-bivariate.qmd) | In preparation |
-| [Topic 4. Inequality and concentration](topics/04-inequality-concentration.qmd) | In preparation |
-| [Topic 5. Index numbers and time series](topics/05-index-numbers-time-series.qmd) | In preparation |
 
 ## Data
 

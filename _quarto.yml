@@ -27,8 +27,6 @@ website:
             - topics/02-univariate/03-dispersion-shape.ipynb
             - topics/02-univariate/04-exercises.ipynb
         - topics/03-bivariate.qmd
-        - topics/04-inequality-concentration.qmd
-        - topics/05-index-numbers-time-series.qmd
 
 lang: en
 bibliography: references.bib
